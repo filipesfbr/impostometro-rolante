@@ -37,12 +37,6 @@ export const IcoEscudo = () => (
     <path d="M5.6 8l1.7 1.7 3.2-3.4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
-export const IcoInfo = ({ size = 18 }: Svg) => (
-  <svg width={size} height={size} viewBox="0 0 18 18" aria-hidden="true">
-    <circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" strokeWidth="1.8" />
-    <path d="M9 8v4.5M9 5.5v.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-  </svg>
-);
 export const IcoRelogio = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
     <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" strokeWidth="2" />
@@ -52,17 +46,6 @@ export const IcoRelogio = () => (
 export const IcoCheck = ({ size = 18 }: Svg) => (
   <svg width={size} height={size} viewBox="0 0 18 18" aria-hidden="true">
     <path d="M4 9.5l3.2 3.2L14 5.8" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-export const IcoGirando = () => (
-  <svg className="spin" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-    <circle cx="9" cy="9" r="6.5" fill="none" stroke="currentColor" strokeOpacity=".25" strokeWidth="2.2" />
-    <path d="M9 2.5a6.5 6.5 0 0 1 6.5 6.5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-  </svg>
-);
-export const IcoTraco = () => (
-  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-    <path d="M5 9h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
   </svg>
 );
 export const IcoBaixar = () => (

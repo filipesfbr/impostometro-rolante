@@ -26,7 +26,7 @@ export type Resumo = {
   versao: 1;
   coletado_em: string;
   ultimo_lancamento: string;
-  fonte: Pick<Fonte, 'portal' | 'portalReceitas' | 'api' | 'token' | 'entidade' | 'repositorio'>;
+  fonte: Pick<Fonte, 'portal' | 'portalReceitas' | 'entidade' | 'repositorio'>;
   populacao: Record<string, number>;
   categorias: Categoria[];
   validacao: { meses_ok: number; meses_total: number };

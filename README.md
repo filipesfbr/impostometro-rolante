@@ -19,13 +19,12 @@ GitHub Actions (todo dia, 06:17 em Brasília)
        ├─ R5: registra alterações em dias já coletados
        └─ grava na branch `data` (histórico público dos snapshots, R3)
             └─ deploy: site estático (Vite + React) no GitHub Pages
-Visitante ──► "Conferir agora": o navegador consulta o portal ao vivo e compara
 ```
 
 | Pasta | O quê |
 |---|---|
 | `coletor/` | coleta, validação, agregação, classificação, diff e o resumo que o site lê (`site.json`) |
-| `config/` | `fonte.json` (endereço, token e entidade do portal) e `categorias.json` (código → categoria, R6) |
+| `config/` | `fonte.json` (endereço, token e entidade do portal), `categorias.json` (código → categoria, R6) e `populacao-ibge.json` (última estimativa do IBGE, usada quando a API do IBGE não responde) |
 | `site/` | a página (única, navegação por âncoras) |
 | `data/` | **não fica na `main`**: é a branch `data`, gerada pelo coletor |
 | `docs/` | regras da fonte de verdade |
