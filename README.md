@@ -83,6 +83,18 @@ develop → main (PR, merge commit) → tag + Release → sync main → develop 
 | `deploy.yml` | push na `main`, chamado pela coleta, manual | build com a branch `data` e publica no Pages |
 | `coleta.yml` | todo dia 09:17 UTC, manual | coleta → commit na `data` → deploy |
 
+### Rodar a coleta na mão
+
+Pelo GitHub: **Actions → Coleta diária → Run workflow** (branch `main`). Ou pelo terminal:
+
+```bash
+gh workflow run coleta.yml --ref main
+gh run watch   # acompanha até terminar
+```
+
+A coleta leva cerca de 2 minutos, grava na branch `data` e publica o site em seguida. Se algum mês
+não bater com o portal, nada é publicado e o site continua na coleta anterior.
+
 O código vai por PR; os dados vão direto na `data`, pela coleta. Assim o histórico de releases fica
 só com mudança de código, e o da `data` é o registro diário do que o portal mostrava.
 
@@ -93,3 +105,8 @@ só com mudança de código, e o da `data` é o registro diário do que o portal
    (`delete_branch_on_merge: false`, sem rebase), cria os rulesets (`main`, `develop`, `data`) e liga
    o GitHub Pages pelo Actions.
 3. Rode a primeira coleta na mão: `gh workflow run coleta.yml --ref main`.
+
+## Licença
+
+Código sob [MIT](LICENSE). Os dados são públicos e pertencem à fonte: Portal da Transparência da
+Prefeitura de Rolante e IBGE.
