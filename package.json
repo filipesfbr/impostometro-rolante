@@ -1,6 +1,6 @@
 {
   "name": "impostometro-rolante",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Quanto a Prefeitura de Rolante-RS arrecada, com dados do Portal da Transparência. Site independente.",
