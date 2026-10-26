@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Resumo } from '../../coletor/src/resumo.ts';
 import { formatDateTime } from './lib/format.ts';
-import { ConferirAgora, DeOndeVem, MesAMes, PorHabitante } from './components/Secoes.tsx';
+import { DeOndeVem, MesAMes, PorHabitante } from './components/Secoes.tsx';
 import { Composicao, Hero, Orcamento } from './components/Topo.tsx';
 import { Tributos } from './components/Tributos.tsx';
 import { Dados, IcoCheck, IcoRelogio, IcoSeta } from './components/ui.tsx';
@@ -131,7 +131,6 @@ export function App() {
               <Tributos />
               <MesAMes />
               <PorHabitante />
-              <ConferirAgora />
               <DeOndeVem />
             </main>
           </Dados.Provider>

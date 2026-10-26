@@ -5,6 +5,14 @@ import { Delta, IcoTabela, useDados } from './ui.tsx';
 
 type Serie = (number | null)[];
 
+/** Rótulo do eixo: "jan" ou, em gráfico estreito, "j" (o CSS escolhe). */
+const Mes = ({ m }: { m: string }) => (
+  <>
+    <span className="ext">{m}</span>
+    <span className="ini">{m[0]}</span>
+  </>
+);
+
 /** Escala "redonda" com 4 divisões, na unidade em que o eixo é lido (mi ou mil). */
 export function escala(maximo: number) {
   const mi = maximo >= 1e8;
@@ -124,7 +132,7 @@ export function Barras({ atual, anterior, parcial, rotulo }: Props) {
             </div>
             <div className="mlabs" aria-hidden="true">
               {MESES.map((m, i) => (
-                <span key={m} className={atual[i] === null ? 'fut' : ''}>{m}</span>
+                <span key={m} className={atual[i] === null ? 'fut' : ''}><Mes m={m} /></span>
               ))}
             </div>
             <p style={{ fontSize: 13, color: 'var(--ink-3)', marginLeft: 34 }}>Eixo em {esc.nome}.</p>
@@ -182,7 +190,7 @@ export function Acumulado({ atual, anterior }: { atual: Serie; anterior: Serie |
             <span><i style={{ background: 'var(--cur)' }} />{ano} (linha contínua)</span>
             {b && <span><i style={{ background: 'var(--prev)' }} />{ano - 1} (tracejada)</span>}
           </div>
-          <div role="img" aria-label={`Acumulado no ano: ${ano} chega a ${brl(a.filter((v) => v !== null).at(-1) ?? 0)}${b ? `; ${ano - 1} fechou em ${brl(b.at(-1) ?? 0)}` : ''}.`}>
+          <div className="chart" role="img" aria-label={`Acumulado no ano: ${ano} chega a ${brl(a.filter((v) => v !== null).at(-1) ?? 0)}${b ? `; ${ano - 1} fechou em ${brl(b.at(-1) ?? 0)}` : ''}.`}>
             <div className="plot">
               {esc.marcas.map((g) => (
                 <div key={g.v} className="gl" style={{ bottom: `${(g.v / esc.max) * 100}%` }}>
@@ -195,7 +203,7 @@ export function Acumulado({ atual, anterior }: { atual: Serie; anterior: Serie |
               </svg>
             </div>
             <div className="mlabs" style={{ marginTop: 6 }} aria-hidden="true">
-              {MESES.map((m) => <span key={m}>{m}</span>)}
+              {MESES.map((m) => <span key={m}><Mes m={m} /></span>)}
             </div>
             <p style={{ fontSize: 13, color: 'var(--ink-3)', marginLeft: 34, marginTop: 8 }}>Eixo em {esc.nome}.</p>
           </div>

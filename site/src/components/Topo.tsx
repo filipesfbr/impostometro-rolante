@@ -80,6 +80,9 @@ export function Orcamento() {
   );
 }
 
+/** "R$ 100" em texto corrido, sem quebrar entre o símbolo e o número. */
+const reais = (n: number) => `R$\u00a0${n}`;
+
 const PARTES = [
   { id: 'municipal', nome: 'Arrecadado aqui', bg: 'var(--seg-a)' },
   { id: 'fora', nome: 'Recebido de fora', bg: 'var(--seg-b)' },
@@ -102,7 +105,7 @@ export function Composicao() {
         <div>
           <h2 id="h-comp" className="eyebrow" style={{ margin: 0 }}>De onde vem o dinheiro · {ano}</h2>
           <p className="key" style={{ marginTop: 14 }}>
-            De cada R$ 100 que a prefeitura recebe, cerca de R$ {pts[0]} são arrecadados em Rolante.
+            De cada {reais(100)} que a prefeitura recebe, cerca de {reais(pts[0]!)} são arrecadados em Rolante.
           </p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(320px,100%),1fr))', gap: '32px 64px', alignItems: 'center' }}>
@@ -114,7 +117,7 @@ export function Composicao() {
             >
               {celulas.map((bg, i) => <i key={i} style={{ background: bg }} />)}
             </div>
-            <figcaption style={{ fontSize: 14, color: 'var(--ink-3)' }}>Cada ponto é R$ 1 de cada R$ 100 recebidos em {ano}.</figcaption>
+            <figcaption style={{ fontSize: 14, color: 'var(--ink-3)' }}>Cada ponto é {reais(1)} de cada {reais(100)} recebidos em {ano}.</figcaption>
           </figure>
           <div>
             {PARTES.map((p) => (

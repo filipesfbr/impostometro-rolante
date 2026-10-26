@@ -1,6 +1,8 @@
 // Toda a formatação pt-BR do site. Valores monetários entram em centavos inteiros.
 
 const MENOS = '−';
+// Espaço inseparável: "R$" e "mi"/"mil" nunca ficam sozinhos no fim da linha.
+const NBSP = ' ';
 const nf = (min: number, max = min) =>
   new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });
 const n0 = nf(0);
@@ -16,16 +18,16 @@ export const MESES_EXTENSO = [
 const sinal = (v: number) => (v < 0 ? MENOS : '');
 
 /** 10599142190 → "R$ 105.991.421,90" */
-export const formatBRL = (centavos: number) => `${sinal(centavos)}R$ ${n2.format(Math.abs(centavos) / 100)}`;
+export const formatBRL = (centavos: number) => `${sinal(centavos)}R$${NBSP}${n2.format(Math.abs(centavos) / 100)}`;
 
 /** 10599142190 → "R$ 106,0 mi" · 73217517 → "R$ 732 mil" · 1659260 → "R$ 16,6 mil" · 440647232 → "R$ 4,41 mi" */
 export function formatBRLShort(centavos: number): string {
   const r = Math.abs(centavos) / 100;
   let s: string;
-  if (r >= 1e6) s = `${(r >= 1e7 ? n1 : n2).format(r / 1e6)} mi`;
-  else if (r >= 1e3) s = `${(r >= 1e5 ? n0 : n1).format(r / 1e3)} mil`;
+  if (r >= 1e6) s = `${(r >= 1e7 ? n1 : n2).format(r / 1e6)}${NBSP}mi`;
+  else if (r >= 1e3) s = `${(r >= 1e5 ? n0 : n1).format(r / 1e3)}${NBSP}mil`;
   else s = n2.format(r);
-  return `${sinal(centavos)}R$ ${s}`;
+  return `${sinal(centavos)}R$${NBSP}${s}`;
 }
 
 /** Valor em milhões para eixos e leituras de gráfico: 1033599526 → "10,34" */

@@ -1,8 +1,7 @@
-import { useRef, useState } from 'react';
-import { formatBRL, formatDate, formatDateTime, formatInt, formatPerCapita, MESES, MESES_EXTENSO } from '../lib/format.ts';
-import { conferir, linkPortal, PortalPediuVerificacao, type ResultadoMes } from '../lib/portal.ts';
+import { useState } from 'react';
+import { formatDate, formatInt, formatPerCapita, MESES_EXTENSO } from '../lib/format.ts';
 import { Barras } from './Graficos.tsx';
-import { Fonte, IcoBaixar, IcoCheck, IcoGirando, IcoInfo, IcoTraco, LinkPortal, Seg, useDados } from './ui.tsx';
+import { Fonte, IcoBaixar, LinkPortal, Seg, useDados } from './ui.tsx';
 
 export function MesAMes() {
   const { ano, atual, anterior } = useDados();
@@ -76,121 +75,11 @@ export function PorHabitante() {
   );
 }
 
-type Status = { fase: 'parado' } | { fase: 'rodando' } | { fase: 'feito' } | { fase: 'erro'; verificacao: boolean };
-
-export function ConferirAgora() {
-  const { dados, ano, atual } = useDados();
-  const meses = atual.por_mes.flatMap((v, i) => (v === null ? [] : [i + 1]));
-  const [status, setStatus] = useState<Status>({ fase: 'parado' });
-  const [res, setRes] = useState<ResultadoMes[]>([]);
-  const abort = useRef<AbortController | null>(null);
-  const coleta = formatDateTime(dados.coletado_em);
-
-  const rodar = async () => {
-    abort.current?.abort();
-    abort.current = new AbortController();
-    setRes([]);
-    setStatus({ fase: 'rodando' });
-    try {
-      await conferir(dados, ano, (r) => setRes((x) => [...x, r]), abort.current.signal);
-      setStatus({ fase: 'feito' });
-    } catch (e) {
-      setStatus({ fase: 'erro', verificacao: e instanceof PortalPediuVerificacao });
-    }
-  };
-
-  const rodando = status.fase === 'rodando';
-  const ok = res.filter((r) => r.estado === 'confere').length;
-  const novos = res.filter((r) => r.estado === 'mais-novo');
-  const alterados = res.filter((r) => r.estado === 'alterado');
-  const resumo =
-    status.fase === 'parado'
-      ? 'Ainda não conferido nesta visita.'
-      : rodando
-        ? `Consultando o portal: ${res.length} de ${meses.length} meses.`
-        : status.fase === 'erro'
-          ? `Conferidos ${res.length} de ${meses.length} meses antes de o portal parar de responder.`
-          : `${ok} de ${meses.length} meses conferem com o portal.${novos.length ? ` Em ${MESES_EXTENSO[novos[0]!.mes - 1]}, o portal já tem lançamentos mais novos que a nossa coleta.` : ''}`;
-
-  return (
-    <section id="conferir" className="sec" aria-labelledby="h-conf">
-      <div className="conf">
-        <div>
-          <p style={{ fontSize: 14, fontWeight: 600 }}>Não precisa acreditar na gente</p>
-          <h2 id="h-conf" className="h2" style={{ margin: '10px 0 12px', fontSize: 'clamp(40px,11cqw,88px)' }}>Conferir agora</h2>
-          <p style={{ maxWidth: '48ch', fontSize: 18, lineHeight: '26px' }}>
-            Ao tocar, o seu navegador consulta o portal oficial neste momento e compara, mês a mês, com o que está publicado aqui.
-          </p>
-        </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px 20px', alignItems: 'center' }}>
-          <button type="button" className="btn-ink" onClick={rodar} disabled={rodando}>
-            {rodando ? `Conferindo… ${res.length} de ${meses.length}` : status.fase === 'parado' ? 'Conferir agora' : 'Conferir de novo'}
-            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3.5 9h11M10 4.5L14.5 9 10 13.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-          </button>
-          <p style={{ fontSize: 15, fontWeight: 500, maxWidth: '46ch' }} aria-live="polite">{resumo}</p>
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(170px,100%),1fr))', gap: 8 }}>
-          {meses.map((m) => {
-            const r = res.find((x) => x.mes === m);
-            const ativo = rodando && !r && res.length === meses.indexOf(m);
-            const cls = r ? { confere: 'ok', 'mais-novo': 'newer', alterado: 'changed' }[r.estado] : ativo ? 'active' : '';
-            const txt = r ? { confere: 'confere', 'mais-novo': 'portal mais novo', alterado: 'portal alterou' }[r.estado] : ativo ? 'consultando' : '—';
-            return (
-              <div key={m} className={`cp ${cls}`}>
-                {r?.estado === 'confere' ? <IcoCheck /> : ativo ? <IcoGirando /> : r ? <IcoInfo /> : <IcoTraco />}
-                <span>{MESES[m - 1]}</span>
-                <small>{txt}</small>
-              </div>
-            );
-          })}
-        </div>
-        {novos.map((r) => (
-          <div key={r.mes} className="msg info" role="status">
-            <IcoInfo size={20} />
-            <p>
-              <b>{MESES_EXTENSO[r.mes - 1]}: o portal já tem lançamentos mais novos.</b> Nossa coleta é de {coleta}. Em mês corrente isso é
-              esperado; a próxima coleta traz os novos valores. <LinkPortal href={linkPortal(dados.fonte, { ano, mes: r.mes })}>Ver no portal</LinkPortal>
-            </p>
-          </div>
-        ))}
-        {alterados.map((r) => (
-          <div key={r.mes} className="msg info" role="status">
-            <IcoInfo size={20} />
-            <p>
-              <b>{MESES_EXTENSO[r.mes - 1]}: o valor no portal é diferente da nossa coleta.</b> Em {coleta} publicamos {formatBRL(r.nosso)}; agora o portal mostra{' '}
-              {formatBRL(r.portal)}. A próxima coleta atualiza o número e registra a mudança no{' '}
-              <a href="#historico">histórico de alterações</a>. <LinkPortal href={linkPortal(dados.fonte, { ano, mes: r.mes })} />
-            </p>
-          </div>
-        ))}
-        {status.fase === 'erro' && (
-          <div className="msg err" role="status">
-            <IcoInfo size={20} />
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-              <p>
-                Não conseguimos consultar o portal agora.{' '}
-                {status.verificacao ? 'Ele está pedindo uma verificação de segurança.' : 'Ele pode estar fora do ar.'} Os dados deste site continuam
-                como na última coleta ({coleta}).
-              </p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-                <a className="btn-ink" style={{ minHeight: 48, fontSize: 15, textDecoration: 'none' }} href={linkPortal(dados.fonte, { ano })} target="_blank" rel="noopener">
-                  Abrir o portal ↗
-                </a>
-                <button type="button" className="btn2" onClick={rodar}>Tentar de novo</button>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-    </section>
-  );
-}
-
 const REGRAS = [
   ['Sem estimativas', 'Só aparece o que o portal publicou. Se não há dado, o espaço fica vazio.'],
   ['A soma tem que bater', 'Só publicamos quando a soma dos lançamentos confere, ao centavo, com o total do portal, mês a mês.'],
   ['Sem nomes de pessoas', 'Nomes de contribuintes não são coletados nem guardados.'],
-  ['Confira você mesmo', 'Cada número tem um link para o portal, e o botão “Conferir agora” compara ao vivo.'],
+  ['Confira você mesmo', 'Cada número tem um link que abre o portal oficial com o mesmo filtro.'],
 ];
 
 export function DeOndeVem() {
