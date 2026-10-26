@@ -1,0 +1,7 @@
+[
+  { "receita": "1114511101000000", "descricao": "ISS - Próprio", "data": "2026-01-05T00:00:00", "nome": "CONTRIBUINTE FICTICIO A", "valor": 100.1 },
+  { "receita": "1114511101000000", "descricao": "ISS - Próprio", "data": "2026-01-05T00:00:00", "nome": "CONTRIBUINTE FICTICIO B", "valor": 0.2 },
+  { "receita": "1112500100000000", "descricao": "IPTU - Principal", "data": "2026-01-05T00:00:00", "nome": "", "valor": 50 },
+  { "receita": "1715001101000000", "descricao": "Cota-Parte do FPM", "data": "2026-01-10T00:00:00", "nome": "", "valor": 1000.55 },
+  { "receita": "1715001101000000", "descricao": "Cota-Parte do FPM", "data": "2026-01-10T00:00:00", "nome": "", "valor": -200.11 }
+]

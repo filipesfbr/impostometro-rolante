@@ -1,0 +1,11 @@
+[
+  { "id": "iss", "nome": "ISS", "grupo": "municipal", "prefixos": ["111451"] },
+  { "id": "iptu", "nome": "IPTU", "grupo": "municipal", "prefixos": ["111250"] },
+  { "id": "itbi", "nome": "ITBI", "grupo": "municipal", "prefixos": ["111253"] },
+  { "id": "irrf", "nome": "IRRF", "grupo": "municipal", "prefixos": ["11130"] },
+  { "id": "taxas", "nome": "Taxas", "grupo": "municipal", "prefixos": ["112"] },
+  { "id": "cosip", "nome": "Contribuição de Iluminação Pública", "grupo": "municipal", "prefixos": ["124"] },
+  { "id": "outros-municipais", "nome": "Outros tributos municipais", "grupo": "municipal", "prefixos": ["11", "12"] },
+  { "id": "transferencias", "nome": "Transferências", "grupo": "fora", "prefixos": ["17", "24"] },
+  { "id": "outras", "nome": "Outras receitas", "grupo": "outras", "prefixos": [""] }
+]

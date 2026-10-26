@@ -1,0 +1,11 @@
+{
+  "api": "https://apitransparencia.abase.com.br/",
+  "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
+  "portalReceitas": "https://transparencia.abase.com.br/receitas/apvqyIT7vjY=",
+  "token": "apvqyIT7vjY=",
+  "entidade": 0,
+  "ibge": "4316006",
+  "repositorio": "https://github.com/filipesfbr/impostometro-rolante",
+  "userAgent": "ImpostometroRolante/1.0 (+https://github.com/filipesfbr/impostometro-rolante)",
+  "intervaloMs": 2000
+}
