@@ -1,0 +1,141 @@
+{
+  "coletado_em": "2026-10-26T16:41:20-03:00",
+  "fonte": {
+    "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
+    "api": "https://apitransparencia.abase.com.br/",
+    "entidade": 0
+  },
+  "ultimo_lancamento": "2026-10-26",
+  "anos": [
+    2025,
+    2026
+  ],
+  "validacao": {
+    "2025": {
+      "1": {
+        "soma": 947648792,
+        "totalizador": 947648792,
+        "ok": true
+      },
+      "2": {
+        "soma": 1189566025,
+        "totalizador": 1189566025,
+        "ok": true
+      },
+      "3": {
+        "soma": 819319575,
+        "totalizador": 819319575,
+        "ok": true
+      },
+      "4": {
+        "soma": 1312060221,
+        "totalizador": 1312060221,
+        "ok": true
+      },
+      "5": {
+        "soma": 1352186751,
+        "totalizador": 1352186751,
+        "ok": true
+      },
+      "6": {
+        "soma": 1380474464,
+        "totalizador": 1380474464,
+        "ok": true
+      },
+      "7": {
+        "soma": 1047611417,
+        "totalizador": 1047611417,
+        "ok": true
+      },
+      "8": {
+        "soma": 975903073,
+        "totalizador": 975903073,
+        "ok": true
+      },
+      "9": {
+        "soma": 1069795386,
+        "totalizador": 1069795386,
+        "ok": true
+      },
+      "10": {
+        "soma": 877372378,
+        "totalizador": 877372378,
+        "ok": true
+      },
+      "11": {
+        "soma": 1008140745,
+        "totalizador": 1008140745,
+        "ok": true
+      },
+      "12": {
+        "soma": 1509940332,
+        "totalizador": 1509940332,
+        "ok": true
+      }
+    },
+    "2026": {
+      "1": {
+        "soma": 1033599526,
+        "totalizador": 1033599526,
+        "ok": true
+      },
+      "2": {
+        "soma": 909962775,
+        "totalizador": 909962775,
+        "ok": true
+      },
+      "3": {
+        "soma": 972491327,
+        "totalizador": 972491327,
+        "ok": true
+      },
+      "4": {
+        "soma": 1170828108,
+        "totalizador": 1170828108,
+        "ok": true
+      },
+      "5": {
+        "soma": 1074920104,
+        "totalizador": 1074920104,
+        "ok": true
+      },
+      "6": {
+        "soma": 1143282715,
+        "totalizador": 1143282715,
+        "ok": true
+      },
+      "7": {
+        "soma": 1541588584,
+        "totalizador": 1541588584,
+        "ok": true
+      },
+      "8": {
+        "soma": 923355447,
+        "totalizador": 923355447,
+        "ok": true
+      },
+      "9": {
+        "soma": 1062804445,
+        "totalizador": 1062804445,
+        "ok": true
+      },
+      "10": {
+        "soma": 766309636,
+        "totalizador": 766309636,
+        "ok": true
+      }
+    }
+  },
+  "arquivos": {
+    "receitas/2025.json": "sha256:9dd4eb9fcf2f6e36f4fc64641e3b4e0132e226a0bc785f83ac73a0de4df956b9",
+    "receitas/2025.csv": "sha256:8e453e0972f4e85f7ea968a6a68fb3f3b9b7cb6b4d3d0054abeaeceb1cc8e4c8",
+    "totais/2025.json": "sha256:084d2af37c2f062bbf5d99053894b29c056e3ba26f2f695bef370c49fdeec98b",
+    "receitas/2026.json": "sha256:c23053713bbd8fe5fb85e54e27eb3ffef5607abfd147959d39bdba6f182380b1",
+    "receitas/2026.csv": "sha256:4e5bd6332890b69274a425ccbe870e80bd002b64f173388b605202001fb89ccc",
+    "totais/2026.json": "sha256:1646a0529812e7c1844a2f75e05350e399e02eb755920ae77681b463f70225c0",
+    "codigos.json": "sha256:b8904cba58813541c3e49c42aa2a1220b6da7622178ea15d4504358acba1ee0c",
+    "populacao.json": "sha256:53ef5d5b7e24fbf228a861462f830b75f820a11a989cac4a858aef28a16bdd92",
+    "historico-alteracoes.json": "sha256:37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "site.json": "sha256:11f68ffcd212c74cf4a9ecee5677905bd0e321dac82fd62f0f36a19abd64dea7"
+  }
+}

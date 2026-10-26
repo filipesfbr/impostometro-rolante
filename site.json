@@ -1,0 +1,3841 @@
+{
+  "versao": 1,
+  "coletado_em": "2026-10-26T16:41:20-03:00",
+  "ultimo_lancamento": "2026-10-26",
+  "fonte": {
+    "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
+    "portalReceitas": "https://transparencia.abase.com.br/receitas/apvqyIT7vjY=",
+    "entidade": 0,
+    "repositorio": "https://github.com/filipesfbr/impostometro-rolante"
+  },
+  "populacao": {
+    "2019": 21349,
+    "2020": 21453,
+    "2021": 21591,
+    "2024": 21733,
+    "2025": 21752,
+    "2026": 21753
+  },
+  "categorias": [
+    {
+      "id": "iss",
+      "nome": "ISS",
+      "grupo": "municipal",
+      "prefixos": [
+        "111451"
+      ]
+    },
+    {
+      "id": "iptu",
+      "nome": "IPTU",
+      "grupo": "municipal",
+      "prefixos": [
+        "111250"
+      ]
+    },
+    {
+      "id": "itbi",
+      "nome": "ITBI",
+      "grupo": "municipal",
+      "prefixos": [
+        "111253"
+      ]
+    },
+    {
+      "id": "irrf",
+      "nome": "IRRF",
+      "grupo": "municipal",
+      "prefixos": [
+        "11130"
+      ]
+    },
+    {
+      "id": "taxas",
+      "nome": "Taxas",
+      "grupo": "municipal",
+      "prefixos": [
+        "112"
+      ]
+    },
+    {
+      "id": "cosip",
+      "nome": "Contribuição de Iluminação Pública",
+      "grupo": "municipal",
+      "prefixos": [
+        "124"
+      ]
+    },
+    {
+      "id": "outros-municipais",
+      "nome": "Outros tributos municipais",
+      "grupo": "municipal",
+      "prefixos": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "id": "transferencias",
+      "nome": "Transferências",
+      "grupo": "fora",
+      "prefixos": [
+        "17",
+        "24"
+      ]
+    },
+    {
+      "id": "outras",
+      "nome": "Outras receitas",
+      "grupo": "outras",
+      "prefixos": [
+        ""
+      ]
+    }
+  ],
+  "validacao": {
+    "meses_ok": 22,
+    "meses_total": 22
+  },
+  "historico": [],
+  "anos": {
+    "2025": {
+      "ano": 2025,
+      "ate": "2025-12-31",
+      "mes_parcial": null,
+      "arrecadado": 13490019159,
+      "orcado": 13000000000,
+      "percentual": 103.77,
+      "por_mes": [
+        947648792,
+        1189566025,
+        819319575,
+        1312060221,
+        1352186751,
+        1380474464,
+        1047611417,
+        975903073,
+        1069795386,
+        877372378,
+        1008140745,
+        1509940332
+      ],
+      "municipal_por_mes": [
+        162443458,
+        122672105,
+        194853592,
+        393400795,
+        131800119,
+        159335856,
+        119983300,
+        149845036,
+        150457631,
+        127646722,
+        121314476,
+        133098736
+      ],
+      "grupos": {
+        "municipal": 1966851826,
+        "fora": 11010596325,
+        "outras": 512571008
+      },
+      "categorias": {
+        "iss": {
+          "total": 766292049,
+          "por_mes": [
+            128389695,
+            52909587,
+            72882863,
+            55995769,
+            42461340,
+            71928070,
+            45230530,
+            73699571,
+            71427139,
+            68749101,
+            43275438,
+            39342946
+          ],
+          "codigos": [
+            {
+              "c": "1114511101000000",
+              "d": "ISS - Próprio",
+              "v": 452083973
+            },
+            {
+              "c": "1114511102000000",
+              "d": "ISS - MDE",
+              "v": 188235255
+            },
+            {
+              "c": "1114511103000000",
+              "d": "ISS - ASPS",
+              "v": 112963613
+            },
+            {
+              "c": "1114511301000000",
+              "d": "ISS - Dívida Ativa - Próprio",
+              "v": 4223036
+            },
+            {
+              "c": "1114511201000000",
+              "d": "ISS - Multas e Juros - Próprio",
+              "v": 2656768
+            },
+            {
+              "c": "1114511302000000",
+              "d": "ISS - Dívida Ativa - MDE",
+              "v": 1760619
+            },
+            {
+              "c": "1114511202000000",
+              "d": "ISS - Multas e Juros - MDE",
+              "v": 1107785
+            },
+            {
+              "c": "1114511303000000",
+              "d": "ISS - Dívida Ativa - ASPS",
+              "v": 1055261
+            },
+            {
+              "c": "1114511401000000",
+              "d": "ISS - Multas e Juros Dívida Ativa - Próprio",
+              "v": 925154
+            },
+            {
+              "c": "1114511203000000",
+              "d": "ISS - Multas e Juros - ASPS",
+              "v": 663527
+            },
+            {
+              "c": "1114511402000000",
+              "d": "ISS - Multas e Juros Dívida Ativa - MDE",
+              "v": 386270
+            },
+            {
+              "c": "1114511403000000",
+              "d": "ISS - Multas e Juros Dívida Ativa - ASPS",
+              "v": 230788
+            },
+            {
+              "c": "1114511500000000",
+              "d": "Imposto sobre serviços de qualquer natureza - issqn - Multas",
+              "v": 0
+            },
+            {
+              "c": "1114511600000000",
+              "d": "Imposto sobre serviços de qualquer natureza - issqn - Juros de Mora",
+              "v": 0
+            }
+          ]
+        },
+        "iptu": {
+          "total": 337768488,
+          "por_mes": [
+            6155384,
+            6248297,
+            41139245,
+            189154909,
+            12829970,
+            11468911,
+            15608573,
+            11669609,
+            12923286,
+            12735083,
+            9215786,
+            8619435
+          ],
+          "codigos": [
+            {
+              "c": "1112500101000000",
+              "d": "IPTU - Principal - Próprio",
+              "v": 154975597
+            },
+            {
+              "c": "1112500102000000",
+              "d": "IPTU - Principal - MDE",
+              "v": 64574286
+            },
+            {
+              "c": "1112500103000000",
+              "d": "IPTU - Principal - ASPS",
+              "v": 38742911
+            },
+            {
+              "c": "1112500301000000",
+              "d": "IPTU - Dívida Ativa - Próprio",
+              "v": 35350072
+            },
+            {
+              "c": "1112500302000000",
+              "d": "IPTU - Dívida Ativa - MDE",
+              "v": 14736533
+            },
+            {
+              "c": "1112500401000000",
+              "d": "IPTU - Multas e Juros Dívida Ativa - Próprio",
+              "v": 11601811
+            },
+            {
+              "c": "1112500303000000",
+              "d": "IPTU - Dívida Ativa - ASPS",
+              "v": 8830066
+            },
+            {
+              "c": "1112500402000000",
+              "d": "IPTU - Multas e Juros Dívida Ativa - MDE",
+              "v": 4847973
+            },
+            {
+              "c": "1112500403000000",
+              "d": "IPTU - Multas e Juros Dívida Ativa - ASPS",
+              "v": 2886009
+            },
+            {
+              "c": "1112500201000000",
+              "d": "IPTU - Multas e Juros - Próprio",
+              "v": 733935
+            },
+            {
+              "c": "1112500202000000",
+              "d": "IPTU - Multas e Juros - MDE",
+              "v": 306854
+            },
+            {
+              "c": "1112500203000000",
+              "d": "IPTU - Multas e Juros - ASPS",
+              "v": 182441
+            }
+          ]
+        },
+        "itbi": {
+          "total": 101886686,
+          "por_mes": [
+            6311674,
+            7774978,
+            8636931,
+            5596120,
+            10121063,
+            13807870,
+            5521987,
+            5565074,
+            9796347,
+            8055558,
+            12109451,
+            8589633
+          ],
+          "codigos": [
+            {
+              "c": "1112530101000000",
+              "d": "ITBI - Próprio",
+              "v": 60210987
+            },
+            {
+              "c": "1112530102000000",
+              "d": "ITBI - MDE",
+              "v": 25087949
+            },
+            {
+              "c": "1112530103000000",
+              "d": "ITBI - ASPS",
+              "v": 15052721
+            },
+            {
+              "c": "1112530301000000",
+              "d": "ITBI - Dívida Ativa - PRÓPRIO",
+              "v": 725585
+            },
+            {
+              "c": "1112530302000000",
+              "d": "ITBI - Dívida Ativa - MDE",
+              "v": 302328
+            },
+            {
+              "c": "1112530303000000",
+              "d": "ITBI - Dívida Ativa - ASPS",
+              "v": 181392
+            },
+            {
+              "c": "1112530401000000",
+              "d": "ITBI - Dívida Ativa - Multas e Juros - PRÓPRIO",
+              "v": 162460
+            },
+            {
+              "c": "1112530402000000",
+              "d": "ITBI - Dívida Ativa - Multas e Juros - MDE",
+              "v": 67692
+            },
+            {
+              "c": "1112530403000000",
+              "d": "ITBI - Dívida Ativa - Multas e Juros - ASPS",
+              "v": 40613
+            },
+            {
+              "c": "1112530201000000",
+              "d": "ITBI - Multas e Juros - Próprio",
+              "v": 32976
+            },
+            {
+              "c": "1112530202000000",
+              "d": "ITBI - Multas e Juros - MDE",
+              "v": 13740
+            },
+            {
+              "c": "1112530203000000",
+              "d": "ITBI - Multas e Juros - ASPS",
+              "v": 8243
+            }
+          ]
+        },
+        "irrf": {
+          "total": 365553363,
+          "por_mes": [
+            2977035,
+            35646327,
+            26648165,
+            27588270,
+            31529092,
+            29757967,
+            32893110,
+            29204248,
+            28802242,
+            29598966,
+            35339083,
+            55568858
+          ],
+          "codigos": [
+            {
+              "c": "1113031101010000",
+              "d": "IRRF - Trabalho - PRÓPRIO",
+              "v": 183899660
+            },
+            {
+              "c": "1113031101020000",
+              "d": "IRRF - Trabalho - MDE",
+              "v": 76624960
+            },
+            {
+              "c": "1113031101030000",
+              "d": "IRRF - Trabalho - ASPS",
+              "v": 45974946
+            },
+            {
+              "c": "1113034101010000",
+              "d": "IRRF - Outros Rendimentos - PRÓPRIO",
+              "v": 29335915
+            },
+            {
+              "c": "1113034101020000",
+              "d": "IRRF - Outros Rendimentos - MDE",
+              "v": 12223856
+            },
+            {
+              "c": "1113034101030000",
+              "d": "IRRF - Outros Rendimentos - ASPS",
+              "v": 7334154
+            },
+            {
+              "c": "1113031102010000",
+              "d": "IRRF sobre Rendimentos do Trabalho - Principal - Ativos/Inativos do Poder Legislativo - PRÓPRIO",
+              "v": 5561189
+            },
+            {
+              "c": "1113031102020000",
+              "d": "IRRF sobre Rendimentos do Trabalho - Principal - Ativos/Inativos do Poder Legislativo - MDE",
+              "v": 2317162
+            },
+            {
+              "c": "1113031102030000",
+              "d": "IRRF sobre Rendimentos do Trabalho - Principal - Ativos/Inativos do Poder Legislativo - ASPS",
+              "v": 1390297
+            },
+            {
+              "c": "1113034102010000",
+              "d": "IRRF - Outros Rendimentos - Principal - Poder Legislativo - PRÓPRIO",
+              "v": 534734
+            },
+            {
+              "c": "1113034102020000",
+              "d": "IRRF - Outros Rendimentos - Principal - Poder Legislativo - Principal - MDE",
+              "v": 222806
+            },
+            {
+              "c": "1113034102030000",
+              "d": "IRRF - Outros Rendimentos - Principal - Poder Legislativo - Principal - ASPS",
+              "v": 133684
+            }
+          ]
+        },
+        "taxas": {
+          "total": 258365847,
+          "por_mes": [
+            7869291,
+            8920134,
+            35655351,
+            100875019,
+            22448487,
+            21449965,
+            12339019,
+            9476566,
+            9534738,
+            10422376,
+            9146868,
+            10228033
+          ],
+          "codigos": [
+            {
+              "c": "1122530100000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Principal",
+              "v": 96407686
+            },
+            {
+              "c": "1122010103000000",
+              "d": "Taxa de Incêndio - Principal",
+              "v": 38400142
+            },
+            {
+              "c": "1121010105000000",
+              "d": "Taxa de Vistoria e Fiscalização - Principal",
+              "v": 23453440
+            },
+            {
+              "c": "1122530300000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Dívida Ativa",
+              "v": 21749905
+            },
+            {
+              "c": "1121010107000000",
+              "d": "Taxa de Vistoria e Inspeção Sanitária",
+              "v": 13552522
+            },
+            {
+              "c": "1122010102000000",
+              "d": "Taxa de Expediente - Principal",
+              "v": 11482205
+            },
+            {
+              "c": "1121010102000000",
+              "d": "Taxa de Licença para Execução de Obras - Principal",
+              "v": 9209727
+            },
+            {
+              "c": "1121010106000000",
+              "d": "Taxa de Controle e Fiscal. Ambiental - Principal",
+              "v": 8718102
+            },
+            {
+              "c": "1122010303000000",
+              "d": "Taxa de Incêndio - Dívida Ativa",
+              "v": 7785188
+            },
+            {
+              "c": "1121010305000000",
+              "d": "Taxa de Vistoria e Fiscalização - Dívida Ativa",
+              "v": 6736442
+            },
+            {
+              "c": "1122530400000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora da Dívida Ativa",
+              "v": 3895420
+            },
+            {
+              "c": "1121010101000000",
+              "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Principal",
+              "v": 3410446
+            },
+            {
+              "c": "1122010403000000",
+              "d": "Taxa de Incêndio - Multas e Juros Dívida Ativa",
+              "v": 2724678
+            },
+            {
+              "c": "1121010104000000",
+              "d": "Taxa de Vistoria Sanitária de Obras - Principal",
+              "v": 2500946
+            },
+            {
+              "c": "1121010307000000",
+              "d": "Taxa de Vistoria e Inspeção Sanitária - Dívida Ativa",
+              "v": 1791695
+            },
+            {
+              "c": "1122010301000000",
+              "d": "Taxa de Limpeza Pública - Dívida Ativa",
+              "v": 1485481
+            },
+            {
+              "c": "1121010405000000",
+              "d": "Taxa de Vistoria e Fiscalização - Multas e Juros Dívida Ativa",
+              "v": 1396785
+            },
+            {
+              "c": "1122010401000000",
+              "d": "Taxa de Limpeza Pública - Multas e Juros Dívida Ativa",
+              "v": 572985
+            },
+            {
+              "c": "1122530200000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora",
+              "v": 385381
+            },
+            {
+              "c": "1122010302000000",
+              "d": "Taxa de Expediente - Dívida Ativa",
+              "v": 384749
+            },
+            {
+              "c": "1121010407000000",
+              "d": "Taxa de Vistoria e Inspeção Sanitária - Dívida Ativa - Multas e Juros",
+              "v": 364495
+            },
+            {
+              "c": "1121010306000000",
+              "d": "Taxa de Controle e Fiscal. Ambiental - Dívida Ativa",
+              "v": 353074
+            },
+            {
+              "c": "1121010302000000",
+              "d": "Taxa de Licença para Execução de Obras - Divida Ativa",
+              "v": 315494
+            },
+            {
+              "c": "1121010301000000",
+              "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Dívida Ativa",
+              "v": 289683
+            },
+            {
+              "c": "1122010203000000",
+              "d": "Taxa de Incêndio - Multas e Juros",
+              "v": 151737
+            },
+            {
+              "c": "1121010205000000",
+              "d": "Taxa de Vistoria e Fiscalização - Multas e Juros",
+              "v": 144388
+            },
+            {
+              "c": "1121010406000000",
+              "d": "Taxa de Controle e Fiscal. Ambiental - Multas e Juros Dívida Ativa",
+              "v": 142643
+            },
+            {
+              "c": "1121010402000000",
+              "d": "Taxa de Licença para Execução de Obras - Multas e Juros Divida Ativa",
+              "v": 112324
+            },
+            {
+              "c": "1121010304000000",
+              "d": "Taxa de Vistoria Sanitária de Obras - Dívida Ativa",
+              "v": 101274
+            },
+            {
+              "c": "1122010402000000",
+              "d": "Taxa de Expediente - Multas e Juros Dívida Ativa",
+              "v": 73261
+            },
+            {
+              "c": "1121010207000000",
+              "d": "Taxa de Vistoria e Inspeção Sanitária - Multas e Juros",
+              "v": 70017
+            },
+            {
+              "c": "1121010404000000",
+              "d": "Taxa de Vistoria Sanitária de Obras - Multas e Juros Dívida Ativa",
+              "v": 40147
+            },
+            {
+              "c": "1122010404000000",
+              "d": "Taxa de Registro de Rótulos e Embalagens - Multas e Juros Dívida Ativa",
+              "v": 37899
+            },
+            {
+              "c": "1121010201000000",
+              "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Multas e Juros",
+              "v": 28299
+            },
+            {
+              "c": "1121010206000000",
+              "d": "Taxa de Controle e Fiscal. Ambiental - Multas e Juros",
+              "v": 25204
+            },
+            {
+              "c": "1122010202000000",
+              "d": "Taxa de Expediente - Multas e Juros",
+              "v": 24398
+            },
+            {
+              "c": "1121010401000000",
+              "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Multas e Juros Dívida Ativa",
+              "v": 23612
+            },
+            {
+              "c": "1121010202000000",
+              "d": "Taxa de Licença para Execução de Obras - Multas e Juros",
+              "v": 16441
+            },
+            {
+              "c": "1121010204000000",
+              "d": "Taxa de Vistoria Sanitária de Obras - Multas e Juros",
+              "v": 7532
+            },
+            {
+              "c": "1121010103000000",
+              "d": "Taxa de Alinhamento e Nivelamento - Principal",
+              "v": 0
+            }
+          ]
+        },
+        "cosip": {
+          "total": 132822057,
+          "por_mes": [
+            9809503,
+            10973137,
+            9751543,
+            14079978,
+            12254217,
+            10748360,
+            8155497,
+            20075704,
+            17185722,
+            -2381457,
+            11865817,
+            10304036
+          ],
+          "codigos": [
+            {
+              "c": "1241500100000000",
+              "d": "Contribuição para o custeio do serviço de iluminação pública - Principal",
+              "v": 132822057
+            }
+          ]
+        },
+        "outros-municipais": {
+          "total": 4163336,
+          "por_mes": [
+            930876,
+            199645,
+            139494,
+            110730,
+            155950,
+            174713,
+            234584,
+            154264,
+            788157,
+            467095,
+            362033,
+            445795
+          ],
+          "codigos": [
+            {
+              "c": "1131530300000000",
+              "d": "Contribuição de melhoria para pavimentação e obras complementares - Dívida Ativa",
+              "v": 3164566
+            },
+            {
+              "c": "1131530400000000",
+              "d": "Contribuição de melhoria para pavimentação e obras complementares - Multas e Juros de Mora da Dívida Ativa",
+              "v": 948606
+            },
+            {
+              "c": "1131530100000000",
+              "d": "Contribuição de melhoria para pavimentação e obras complementares - Principal",
+              "v": 17832
+            },
+            {
+              "c": "1119990100000000",
+              "d": "Outros impostos - Principal",
+              "v": 15260
+            },
+            {
+              "c": "1131530200000000",
+              "d": "Contribuição de melhoria para pavimentação e obras complementares - Multas e Juros de Mora",
+              "v": 10882
+            },
+            {
+              "c": "1119990300000000",
+              "d": "Outros impostos - Dívida Ativa",
+              "v": 5512
+            },
+            {
+              "c": "1119990800000000",
+              "d": "Outros impostos - Juros de Mora da Dívida Ativa",
+              "v": 402
+            },
+            {
+              "c": "1119990400000000",
+              "d": "Outros impostos - Multas e Juros de Mora da Dívida Ativa",
+              "v": 276
+            }
+          ]
+        },
+        "transferencias": {
+          "total": 11010596325,
+          "por_mes": [
+            775173533,
+            1026455788,
+            621472328,
+            869306527,
+            1215448699,
+            1147544455,
+            923038956,
+            753547386,
+            914605385,
+            684315812,
+            767806083,
+            1311881373
+          ],
+          "codigos": [
+            {
+              "c": "1751500100000000",
+              "d": "Transferências de recursos do fundo de manutenção e desenvolvimento da educação básica e de valorização dos profissionais da educação - FUNDEB - Principal",
+              "v": 3383697468
+            },
+            {
+              "c": "1711511101000000",
+              "d": "Cota-Parte do FPM - Cota Mensal - Próprio",
+              "v": 2013113112
+            },
+            {
+              "c": "1721500101000000",
+              "d": "Cota-parte do ICMS - Próprio",
+              "v": 1035271881
+            },
+            {
+              "c": "1711511103000000",
+              "d": "Cota-Parte do FPM - Cota Mensal - ASPS",
+              "v": 503278272
+            },
+            {
+              "c": "2419990113000000",
+              "d": "Ministério do Desenvolvimento Regional - Reconstrução",
+              "v": 428070929
+            },
+            {
+              "c": "1711512101000000",
+              "d": "Cota-Parte FPM - Cotas Extraordinárias - Próprio",
+              "v": 310225632
+            },
+            {
+              "c": "2411511103000000",
+              "d": "Ministério da Saúde - Portaria 3689/24 - Construção UBS",
+              "v": 278362200
+            },
+            {
+              "c": "1721510101000000",
+              "d": "Cota-Parte do IPVA - Principal - PRÓPRIO",
+              "v": 272370484
+            },
+            {
+              "c": "1721500103000000",
+              "d": "Cota-parte do ICMS - ASPS",
+              "v": 258817972
+            },
+            {
+              "c": "1713501101000000",
+              "d": "APS - Captação Ponderada",
+              "v": 218571390
+            },
+            {
+              "c": "1715500100000000",
+              "d": "Transferências de recursos de complementação da união ao FUNDEB - VAAT - Principal",
+              "v": 212400671
+            },
+            {
+              "c": "1714500100000000",
+              "d": "Transferências do salário-educação - Principal",
+              "v": 170543983
+            },
+            {
+              "c": "1711511102000000",
+              "d": "Cota-Parte do FPM - Cota Mensal - MDE",
+              "v": 167759427
+            },
+            {
+              "c": "1724510101000000",
+              "d": "Transferências de convênios para o transporte escolar - Principal",
+              "v": 146038150
+            },
+            {
+              "c": "1715520100000000",
+              "d": "Transferências de recursos de complementação da união ao FUNDEB - VAAR - Principal",
+              "v": 135569503
+            },
+            {
+              "c": "1713501103000000",
+              "d": "ACS - Agentes Comunitários de Saúde",
+              "v": 103527600
+            },
+            {
+              "c": "1711512102000000",
+              "d": "Cota-Parte FPM - Cotas Extraordinárias - MDE",
+              "v": 103408545
+            },
+            {
+              "c": "2419990114000000",
+              "d": "Ministério das Cidades - C-965344/2024",
+              "v": 95905800
+            },
+            {
+              "c": "2419990118000000",
+              "d": "Ministério Desenv. Ass. Social - C-973999/2025",
+              "v": 95700000
+            },
+            {
+              "c": "1713501104000000",
+              "d": "Ações Estratégicas",
+              "v": 88917988
+            },
+            {
+              "c": "1721500102000000",
+              "d": "Cota-parte do ICMS - MDE",
+              "v": 86272658
+            },
+            {
+              "c": "1721510103000000",
+              "d": "Cota-Parte do IPVA - Principal - ASPS",
+              "v": 68092626
+            },
+            {
+              "c": "1712524100000000",
+              "d": "Cota-parte do fundo especial do petróleo - fep - Principal",
+              "v": 64738233
+            },
+            {
+              "c": "1713502101000000",
+              "d": "Teto Financeiro",
+              "v": 56975389
+            },
+            {
+              "c": "2412509103000000",
+              "d": "Ministério da Educação - FNDE PAC-957531-4",
+              "v": 46902950
+            },
+            {
+              "c": "2419510112000000",
+              "d": "Emenda Parlamentar nº 202636660011 - Pompeu de Mattos",
+              "v": 39600000
+            },
+            {
+              "c": "2419510113000000",
+              "d": "Emenda Parlamentar - 202528630002 - Giovani Cherini",
+              "v": 39600000
+            },
+            {
+              "c": "1723500101000000",
+              "d": "PIAPS - Sociodemográfico",
+              "v": 34779919
+            },
+            {
+              "c": "2411511104000000",
+              "d": "Ministério da Saúde - Portaria 7658/25",
+              "v": 32309300
+            },
+            {
+              "c": "1723500104000000",
+              "d": "PIAPS - (ESF, EAP, ESB)",
+              "v": 30740356
+            },
+            {
+              "c": "1714520101000000",
+              "d": "PNAE - Fundamental",
+              "v": 27794047
+            },
+            {
+              "c": "1713501128000000",
+              "d": "Portaria 7632 - Emenda Individual",
+              "v": 25000000
+            },
+            {
+              "c": "2414990105000000",
+              "d": "Convênio Ministério Justiça e Segurança - 955666/2024",
+              "v": 23658520
+            },
+            {
+              "c": "2414990104000000",
+              "d": "Convênio MAPA nº 957278/2024 - Aquis. Maq. Equip.",
+              "v": 22836957
+            },
+            {
+              "c": "1721510102000000",
+              "d": "Cota-Parte do IPVA - Principal - MDE",
+              "v": 22697545
+            },
+            {
+              "c": "2419510114000000",
+              "d": "Emenda Parlamentar - 202536660004 - Pompeu Mattos",
+              "v": 19800000
+            },
+            {
+              "c": "1714530101000000",
+              "d": "Transporte Escolar PNATE",
+              "v": 19659048
+            },
+            {
+              "c": "1714520103000000",
+              "d": "PNAE - Creche",
+              "v": 18878600
+            },
+            {
+              "c": "1715530100000000",
+              "d": "Transferências de recursos do FUNDEB destinados à criação de matrículas em eti - Principal",
+              "v": 18721855
+            },
+            {
+              "c": "1713504102000000",
+              "d": "Assistência Farmacêutica",
+              "v": 18171360
+            },
+            {
+              "c": "1714520104000000",
+              "d": "PNAE - Pré-Escola",
+              "v": 15114200
+            },
+            {
+              "c": "1713501127000000",
+              "d": "Portaria 7287/25 - Emenda Individual",
+              "v": 15000000
+            },
+            {
+              "c": "1723500115000000",
+              "d": "Saúde Mental - Port.307/2007",
+              "v": 14400000
+            },
+            {
+              "c": "1713505102000000",
+              "d": "Piso Enfermagem",
+              "v": 13402593
+            },
+            {
+              "c": "2422990101000000",
+              "d": "Convênio SEMA/RS - FPE - 4912/2024",
+              "v": 12500000
+            },
+            {
+              "c": "1721520101000000",
+              "d": "Cota-Parte do IPI - Municípios - Principal - PRÓPRIO",
+              "v": 11993708
+            },
+            {
+              "c": "1724990103010000",
+              "d": "Programa de atendimento à criança - PIM",
+              "v": 11208600
+            },
+            {
+              "c": "2422990102000000",
+              "d": "Convênio DAER - FPE - 3058/2024",
+              "v": 10000000
+            },
+            {
+              "c": "2429990102000000",
+              "d": "Transferência Emenda Parlamentar - Patricia Alba",
+              "v": 10000000
+            },
+            {
+              "c": "1723500123000000",
+              "d": "APS - Portaria SES 200/2025",
+              "v": 10000000
+            },
+            {
+              "c": "1716500113000000",
+              "d": "Medida Provisória - 1284/24",
+              "v": 10000000
+            },
+            {
+              "c": "1729990104000000",
+              "d": "Portaria SEMA 128/26 - FUMBEA-RS",
+              "v": 10000000
+            },
+            {
+              "c": "2422990103000000",
+              "d": "Convênio FPE - 5469/2024",
+              "v": 9380334
+            },
+            {
+              "c": "1719580100000000",
+              "d": "Transferência obrigatória decorrente da lei complementar nº 176/2020 - Principal",
+              "v": 8591642
+            },
+            {
+              "c": "1716500109000000",
+              "d": "Piso Básico Fixo",
+              "v": 7684005
+            },
+            {
+              "c": "1723500124000000",
+              "d": "Programa Inverno Gaúcho",
+              "v": 6500000
+            },
+            {
+              "c": "1723500103000000",
+              "d": "Farmácia Básica",
+              "v": 6310408
+            },
+            {
+              "c": "1723500122000000",
+              "d": "Programa Qualifica Vigilância RS",
+              "v": 6112602
+            },
+            {
+              "c": "1713504103000000",
+              "d": "Assistência Farmacêutica - Portaria GM/MS - 6376",
+              "v": 6017256
+            },
+            {
+              "c": "1723500111000000",
+              "d": "Emenda Parlamentar 1653 - Elizandro Sabino",
+              "v": 6000000
+            },
+            {
+              "c": "2421500106000000",
+              "d": "Transferência do Estado - Portaria 1253/2025 - Infraestr. Farmácia",
+              "v": 6000000
+            },
+            {
+              "c": "1716500104000000",
+              "d": "SCFV - Serv. Conv. Fortalec. Vínculos",
+              "v": 5971935
+            },
+            {
+              "c": "2411511105000000",
+              "d": "Ministério da Saúde - Portaria 7769/25",
+              "v": 5731000
+            },
+            {
+              "c": "1716500105000000",
+              "d": "SUAS - Primeira Infância",
+              "v": 5421000
+            },
+            {
+              "c": "2429990101000000",
+              "d": "Transferência Emenda Parlamentar - Carlos Burigo",
+              "v": 5000000
+            },
+            {
+              "c": "2421500107000000",
+              "d": "Transferência do Estado - Portaria SES 1228/2025",
+              "v": 5000000
+            },
+            {
+              "c": "1723500102000000",
+              "d": "Oficina Terapêutica - Saúde Mental",
+              "v": 4900157
+            },
+            {
+              "c": "1716500102000000",
+              "d": "IGD-BF",
+              "v": 4660191
+            },
+            {
+              "c": "1713501129000000",
+              "d": "Portaria 8849 - Alimentação e Nutrição - PNAN",
+              "v": 3081963
+            },
+            {
+              "c": "1721520103000000",
+              "d": "Cota-Parte do IPI - Municípios - Principal - ASPS",
+              "v": 2998427
+            },
+            {
+              "c": "1791990101000000",
+              "d": "Doações em benefício de crianças e adolescentes - PF - Principal",
+              "v": 2756807
+            },
+            {
+              "c": "1723500125000000",
+              "d": "Programa Transporte Eletivo - Port. SES 976/25",
+              "v": 2621640
+            },
+            {
+              "c": "1721530100000000",
+              "d": "Cota-parte da contribuição de intervenção no domínio econômico - Principal",
+              "v": 2559561
+            },
+            {
+              "c": "1714520105000000",
+              "d": "PNAE - AEE",
+              "v": 2543200
+            },
+            {
+              "c": "1716500112000000",
+              "d": "Medida Provisória - 1218/24",
+              "v": 2509791
+            },
+            {
+              "c": "1711520101000000",
+              "d": "Cota-Parte do ITR - Principal - PRÓPRIO",
+              "v": 2396244
+            },
+            {
+              "c": "2412509102000000",
+              "d": "Ministério da Educação - FNDE PAR 202142114-5",
+              "v": 1704328
+            },
+            {
+              "c": "1716500111000000",
+              "d": "PROCAD - SUAS",
+              "v": 1200000
+            },
+            {
+              "c": "1713503102000000",
+              "d": "Vigilância Sanitária",
+              "v": 1195700
+            },
+            {
+              "c": "1721520102000000",
+              "d": "Cota-Parte do IPI - Municípios - Principal - MDE",
+              "v": 999477
+            },
+            {
+              "c": "1712510100000000",
+              "d": "Cota-parte da compensação financeira pela exploração de recursos minerais - cfem - Principal",
+              "v": 882184
+            },
+            {
+              "c": "1711520103000000",
+              "d": "Cota-Parte do ITR - Principal - ASPS",
+              "v": 599056
+            },
+            {
+              "c": "2414990101000000",
+              "d": "Convênio MAPA nº 940773/2023 - Aquis. Máquinas Equipam.",
+              "v": 455584
+            },
+            {
+              "c": "1729990101000000",
+              "d": "Cota-Parte das Multas de Trânsitro",
+              "v": 212670
+            },
+            {
+              "c": "1711520102000000",
+              "d": "Cota-Parte do ITR - Principal - MDE",
+              "v": 199687
+            },
+            {
+              "c": "1711520104000000",
+              "d": "Cota-Parte do ITR - Principal - FUNDEB",
+              "v": 5
+            },
+            {
+              "c": "1721500104000000",
+              "d": "Cota-parte do ICMS - Fundeb",
+              "v": 0
+            },
+            {
+              "c": "1721520104000000",
+              "d": "Cota-Parte do IPI - Municípios - Principal - FUNDEB",
+              "v": 0
+            },
+            {
+              "c": "1721510104000000",
+              "d": "Cota-Parte do IPVA - Principal - FUNDEB",
+              "v": 0
+            },
+            {
+              "c": "1711511104000000",
+              "d": "Cota-Parte do FPM - Cota Mensal - FUNDEB",
+              "v": 0
+            },
+            {
+              "c": "1716500103000000",
+              "d": "IGD/SUAS",
+              "v": 0
+            },
+            {
+              "c": "2419990116000000",
+              "d": "Emenda Parlamentar - 202536660004 - Pompeu Mattos",
+              "v": 0
+            }
+          ]
+        },
+        "outras": {
+          "total": 512571008,
+          "por_mes": [
+            10031801,
+            40438132,
+            2993655,
+            49352899,
+            4937933,
+            73594153,
+            4589161,
+            72510651,
+            4732370,
+            65409844,
+            119020186,
+            64960223
+          ],
+          "codigos": [
+            {
+              "c": "1921990100000000",
+              "d": "Outras indenizações - Principal",
+              "v": 107648909
+            },
+            {
+              "c": "1321010101993300",
+              "d": "Rendimentos - ETE Redes Corsan",
+              "v": 86609198
+            },
+            {
+              "c": "1321010102990000",
+              "d": "Remuneração de outros depósitos bancários de recursos não vinculados - Principal",
+              "v": 74581698
+            },
+            {
+              "c": "1321010101020000",
+              "d": "Remuneração de depósitos bancários de recursos vinculados - FUNDEB - Principal",
+              "v": 41012035
+            },
+            {
+              "c": "1922990199990000",
+              "d": "Outras Restituições",
+              "v": 25344239
+            },
+            {
+              "c": "1922990104000000",
+              "d": "Restituição pelo pagamento indevido - Principal",
+              "v": 20624003
+            },
+            {
+              "c": "1411010100000000",
+              "d": "Receita agropecuária - Principal",
+              "v": 13604917
+            },
+            {
+              "c": "1321010101040000",
+              "d": "Remuneração de depósitos bancários de recursos vinculados - manutencao e desenvolvimento do ensino - mde - Principal",
+              "v": 11176717
+            },
+            {
+              "c": "1321010101997000",
+              "d": "Rendimentos - Defesa Civil - Portaria 4146/24",
+              "v": 9263923
+            },
+            {
+              "c": "1321010101999400",
+              "d": "Rendimentos - Portaria 3689/24",
+              "v": 7655209
+            },
+            {
+              "c": "1999992304000000",
+              "d": "Receitas decorrentes do recebimento de certidão - título executivo do tce - Dívida Ativa",
+              "v": 7567072
+            },
+            {
+              "c": "1321010101036300",
+              "d": "Rendimentos - Portaria 4649/2022",
+              "v": 6780799
+            },
+            {
+              "c": "1321010101998600",
+              "d": "Rendimentos - FINISA III",
+              "v": 6453849
+            },
+            {
+              "c": "1321010101990600",
+              "d": "Rendimentos - Sistema de Esgoto Sanitário",
+              "v": 6343230
+            },
+            {
+              "c": "1321010101998800",
+              "d": "Rendimentos - FUNDEB - VAAR",
+              "v": 5492956
+            },
+            {
+              "c": "1321010101037000",
+              "d": "Rendimentos - Portaria 4233/24 - Saúde Mental",
+              "v": 5033530
+            },
+            {
+              "c": "1321010101990100",
+              "d": "Rendimentos - Alienação de Bens",
+              "v": 4922068
+            },
+            {
+              "c": "1321010101080500",
+              "d": "Rendimentos - Salário Educação",
+              "v": 4859571
+            },
+            {
+              "c": "1411010300000000",
+              "d": "Receita agropecuária - Dívida Ativa",
+              "v": 4092007
+            },
+            {
+              "c": "1321010101999200",
+              "d": "Rendimentos - Reconstrução",
+              "v": 3871776
+            },
+            {
+              "c": "1321010101996700",
+              "d": "Rendimentos - Defesa Civil - Portaria 4137/24",
+              "v": 3033324
+            },
+            {
+              "c": "1321010101996900",
+              "d": "Rendimentos - Defesa Civil - Portaria 4151/24",
+              "v": 2629626
+            },
+            {
+              "c": "1321010101998700",
+              "d": "Rendimentos - FUNDEB - VAAT",
+              "v": 2576083
+            },
+            {
+              "c": "1321010101990400",
+              "d": "Rendimentos - Transporte Escolar do Estado",
+              "v": 2278400
+            },
+            {
+              "c": "1321010101035700",
+              "d": "Rendimentos - Incentivo Financeiro - APS",
+              "v": 1908668
+            },
+            {
+              "c": "1321010101070800",
+              "d": "Rendimentos - FUNDICA",
+              "v": 1804463
+            },
+            {
+              "c": "1321010101034000",
+              "d": "Rendimentos - Equipamentos UBS",
+              "v": 1783589
+            },
+            {
+              "c": "1321010101990200",
+              "d": "Rendimentos - Iluminação Pública - CIP",
+              "v": 1735718
+            },
+            {
+              "c": "1321010101050000",
+              "d": "Remuneração de depósitos bancários de recursos vinculados - ações e serviços públicos de saúde - asps - Principal",
+              "v": 1729426
+            },
+            {
+              "c": "1321010101036900",
+              "d": "Rendimentos - Portaria GM/MS 4507 - APS - Calamidade",
+              "v": 1647604
+            },
+            {
+              "c": "1321010101998400",
+              "d": "Rendimentos - Emenda Parlamentar nº 202428580010",
+              "v": 1644643
+            },
+            {
+              "c": "1321010101030300",
+              "d": "Rendimentos - Vigilância em Saúde - União",
+              "v": 1456116
+            },
+            {
+              "c": "1321010101997600",
+              "d": "Rendimentos - Conv. FPE - 4912/2024",
+              "v": 1443159
+            },
+            {
+              "c": "1321010101037300",
+              "d": "Rendimentos - Vigilância em Saúde",
+              "v": 1343656
+            },
+            {
+              "c": "1321010101080100",
+              "d": "Rendimentos - PNAE - Fundamental",
+              "v": 1157776
+            },
+            {
+              "c": "1321010101997700",
+              "d": "Rendimentos - Praça Boa Esperança",
+              "v": 1127776
+            },
+            {
+              "c": "1321010101999000",
+              "d": "Rendimentos - Emenda Patricia Alba",
+              "v": 933434
+            },
+            {
+              "c": "1411010400000000",
+              "d": "Receita agropecuária - Multas e Juros de Mora da Dívida Ativa",
+              "v": 904022
+            },
+            {
+              "c": "1321010101994400",
+              "d": "Rendimentos - Conv. FPE 3210/2023 - Recuperação Solo",
+              "v": 873300
+            },
+            {
+              "c": "1321010101037100",
+              "d": "Rendimentos - Portaria 4704/24",
+              "v": 872929
+            },
+            {
+              "c": "1321010101999100",
+              "d": "Rendimentos - FEP - Fundo Esp. Petróleo",
+              "v": 849512
+            },
+            {
+              "c": "1321010101080300",
+              "d": "Rendimentos - PNAE - Pré-Escola",
+              "v": 819869
+            },
+            {
+              "c": "1321010101080200",
+              "d": "Rendimentos - PNAE - Creche",
+              "v": 748559
+            },
+            {
+              "c": "1321010101992000",
+              "d": "Rendimentos - Emenda 202536660004 - Pompeu de Mattos",
+              "v": 746144
+            },
+            {
+              "c": "1321010101999900",
+              "d": "Rendimentos - Emenda 202528630002 - Giovani Cherini",
+              "v": 746144
+            },
+            {
+              "c": "1321010101998100",
+              "d": "Rendimentos - Emenda Parlamentar nº 202428670004",
+              "v": 730142
+            },
+            {
+              "c": "1321010101994900",
+              "d": "Rendimentos - FINISA II",
+              "v": 724641
+            },
+            {
+              "c": "1321010101995700",
+              "d": "Rendimentos - PNAB Aldir Blanc",
+              "v": 698514
+            },
+            {
+              "c": "1321010101035600",
+              "d": "Rendimentos - PACS - União",
+              "v": 697832
+            },
+            {
+              "c": "1321010101070500",
+              "d": "Rendimentos - IGD - Bolsa Família",
+              "v": 654202
+            },
+            {
+              "c": "1321010101071600",
+              "d": "Rendimentos - PVAC",
+              "v": 645350
+            },
+            {
+              "c": "1321010101037800",
+              "d": "Rendimentos - Portaria 200/25",
+              "v": 626238
+            },
+            {
+              "c": "1321010101036800",
+              "d": "Rendimentos - Reforma UBS",
+              "v": 620462
+            },
+            {
+              "c": "1321010101035400",
+              "d": "Rendimentos - Portaria SES 214 E 397/2022",
+              "v": 599861
+            },
+            {
+              "c": "1321010101993100",
+              "d": "Rendimentos - Emenda Parlamentar - 202240330018",
+              "v": 596766
+            },
+            {
+              "c": "1321010101034800",
+              "d": "Rendimentos - Farmácia Cuidar Mais",
+              "v": 586212
+            },
+            {
+              "c": "1321010101081200",
+              "d": "Rendimentos - Novas Turmas",
+              "v": 580641
+            },
+            {
+              "c": "1321010101031300",
+              "d": "Rendimentos - Teto Financeiro",
+              "v": 578500
+            },
+            {
+              "c": "1321010101037200",
+              "d": "Rendimentos - Portaria 4522/24",
+              "v": 576219
+            },
+            {
+              "c": "1999992404000000",
+              "d": "Receitas decorrentes do recebimento de certidão - título executivo do tce - Multas e Juros de Mora da Dívida Ativa",
+              "v": 572746
+            },
+            {
+              "c": "1321010101999500",
+              "d": "Rendimentos - Portaria 7086/25",
+              "v": 570640
+            },
+            {
+              "c": "1321010101070100",
+              "d": "Rendimentos - CRAS",
+              "v": 553500
+            },
+            {
+              "c": "1321010101081100",
+              "d": "Rendimentos - ETI - Escola Tempo Integral",
+              "v": 551188
+            },
+            {
+              "c": "1321010101997300",
+              "d": "Rendimentos - Fundo Defesa Civil",
+              "v": 495336
+            },
+            {
+              "c": "1321010101999300",
+              "d": "Rendimentos - Portaria 7287/25",
+              "v": 426808
+            },
+            {
+              "c": "1321010101037900",
+              "d": "Rendimentos - Portaria 7632",
+              "v": 426571
+            },
+            {
+              "c": "1321010101036100",
+              "d": "Rendimentos - Oficina Terapêutica - Saúde Mental - Estado",
+              "v": 414541
+            },
+            {
+              "c": "1321010101998900",
+              "d": "Rendimentos - Emenda Carlos Burigo",
+              "v": 408380
+            },
+            {
+              "c": "1999992199000000",
+              "d": "Outras receitas não arrecadadas e não projetadas pela rfb - primárias - Principal",
+              "v": 388900
+            },
+            {
+              "c": "1321010101034200",
+              "d": "Rendimentos - Sociodemográfico",
+              "v": 382665
+            },
+            {
+              "c": "1321010101072100",
+              "d": "Rendimentos - Medida Provisória 1284",
+              "v": 376055
+            },
+            {
+              "c": "1321010101031000",
+              "d": "Rendimentos - Farmácia Basica",
+              "v": 337968
+            },
+            {
+              "c": "1321010101036600",
+              "d": "Rendimentos - Incremento APS",
+              "v": 329466
+            },
+            {
+              "c": "1321010101999700",
+              "d": "Rendimentos - Edital SEDAC 12/2025 FAC",
+              "v": 324298
+            },
+            {
+              "c": "1321010101990500",
+              "d": "Rendimentos - FUNASA - Esgotamento",
+              "v": 290577
+            },
+            {
+              "c": "1321010101070400",
+              "d": "Rendimentos - PIM- SUAS",
+              "v": 289827
+            },
+            {
+              "c": "1321010101080400",
+              "d": "Rendimentos - PNATE",
+              "v": 273062
+            },
+            {
+              "c": "1321010101036700",
+              "d": "Rendimentos - Transformação Digital SUS",
+              "v": 262157
+            },
+            {
+              "c": "1321010101030400",
+              "d": "Rendimentos - Assistência Farmacêutica - União",
+              "v": 252671
+            },
+            {
+              "c": "1321010101031900",
+              "d": "Rendimentos - Farmácia Básica Estado",
+              "v": 241354
+            },
+            {
+              "c": "1321010101995200",
+              "d": "Rendimentos - Emenda Parlamentar nº202328580005",
+              "v": 234547
+            },
+            {
+              "c": "1321010101036200",
+              "d": "Rendimentos - Piso de Enfermagem",
+              "v": 227366
+            },
+            {
+              "c": "1321010101999600",
+              "d": "Rendimentos - Convênio FPE - 1786/2023 - Poços",
+              "v": 221230
+            },
+            {
+              "c": "1321010101037600",
+              "d": "Rendimentos - Programa Qualifica Vigilância RS",
+              "v": 215482
+            },
+            {
+              "c": "1321010101030900",
+              "d": "Rendimentos -PIM - Estado",
+              "v": 214624
+            },
+            {
+              "c": "1321010101030200",
+              "d": "Rendimentos - Atenção Saúde MAC - União",
+              "v": 204682
+            },
+            {
+              "c": "1321010101995000",
+              "d": "Rendimentos - Emenda Parlamentar 202339200001",
+              "v": 197827
+            },
+            {
+              "c": "1321010101035200",
+              "d": "Rendimentos - Estruturação Especializada",
+              "v": 192691
+            },
+            {
+              "c": "1411010200000000",
+              "d": "Receita agropecuária - Multas e Juros de Mora",
+              "v": 185984
+            },
+            {
+              "c": "1321010101991800",
+              "d": "Rendimentos - Transf. Especial Retro Escav.",
+              "v": 180657
+            },
+            {
+              "c": "1321010101037700",
+              "d": "Rendimentos - Programa Inverno Gaúcho",
+              "v": 179038
+            },
+            {
+              "c": "1321010101071900",
+              "d": "Rendimentos - INCREM. TEMP. MP 1218/24",
+              "v": 176982
+            },
+            {
+              "c": "1321010101081400",
+              "d": "Rendimentos - PNAE - AEE",
+              "v": 176681
+            },
+            {
+              "c": "1321010101998000",
+              "d": "Rendimentos - Emenda Parlamentar nº 202439200006",
+              "v": 174429
+            },
+            {
+              "c": "1321010101999800",
+              "d": "Rendimentos - Emenda 202536660004 - Pompeu Mattos",
+              "v": 169240
+            },
+            {
+              "c": "1321010101070300",
+              "d": "Rendimentos - Serv. Fortal. Vínculos",
+              "v": 166099
+            },
+            {
+              "c": "1321010101034100",
+              "d": "Rendimentos - Atenção Primária ESF, EAP, ESB",
+              "v": 163203
+            },
+            {
+              "c": "1922990199010000",
+              "d": "Restituição Empresas Prest. Serv. Transporte Escolar",
+              "v": 158911
+            },
+            {
+              "c": "1321010101995400",
+              "d": "Rendimentos - Emenda Parlamentar nº 202328630001",
+              "v": 147833
+            },
+            {
+              "c": "1321010101991000",
+              "d": "Rendimentos - CIDE",
+              "v": 140477
+            },
+            {
+              "c": "1321010101081600",
+              "d": "Rendimentos - FUNDEB - ETI",
+              "v": 138783
+            },
+            {
+              "c": "2221010102020000",
+              "d": "Terrenos",
+              "v": 132000
+            },
+            {
+              "c": "1321010101995100",
+              "d": "Rendimentos - Emenda Parlamentar nº202328680003",
+              "v": 120795
+            },
+            {
+              "c": "1321010101037500",
+              "d": "Rendimentos - PIM",
+              "v": 112832
+            },
+            {
+              "c": "1321010101991200",
+              "d": "Rendimentos - Emenda Parlamentar 202232980001",
+              "v": 111714
+            },
+            {
+              "c": "1321010101998200",
+              "d": "Rendimentos - Emenda Parlamentar nº 202440330010",
+              "v": 105536
+            },
+            {
+              "c": "1321010101034300",
+              "d": "Rendimentos - Rede Bem Cuidar",
+              "v": 99576
+            },
+            {
+              "c": "1321010101036000",
+              "d": "Rendimentos - Saúde Mental - Estado",
+              "v": 97976
+            },
+            {
+              "c": "1321010101072000",
+              "d": "Rendimentos - Medida Provisória 1218",
+              "v": 94382
+            },
+            {
+              "c": "1321010101031700",
+              "d": "Rendimentos - Piso At. Basica em Visa",
+              "v": 93716
+            },
+            {
+              "c": "1321010101991300",
+              "d": "Rendimentos - Emenda Parlamentar 202241210001",
+              "v": 87455
+            },
+            {
+              "c": "1321010101997800",
+              "d": "Rendimentos - Emenda Parlamentar nº 202441840008",
+              "v": 79256
+            },
+            {
+              "c": "1321010101037400",
+              "d": "Rendimentos - PORTARIA SES - 300/24",
+              "v": 67921
+            },
+            {
+              "c": "1321010101997100",
+              "d": "Rendimentos - Portaria SES 476/23",
+              "v": 66145
+            },
+            {
+              "c": "1321010101997500",
+              "d": "Rendimentos - Matroplan - Convênio FPE - 369/2023",
+              "v": 62706
+            },
+            {
+              "c": "1321010101998500",
+              "d": "Rendimentos - Convênio MAPA nº 957278/2024",
+              "v": 58554
+            },
+            {
+              "c": "1321010101036500",
+              "d": "Rendimentos - Portaria SES - 322/24",
+              "v": 58233
+            },
+            {
+              "c": "1321010101071400",
+              "d": "Rendimentos - Port. 886 - Estruturação SUAS",
+              "v": 54168
+            },
+            {
+              "c": "1321010101071100",
+              "d": "Rendimentos - Estruturação Rede SUAS",
+              "v": 47874
+            },
+            {
+              "c": "1321010101992100",
+              "d": "Rendimentos - Emenda Parlamentar Praça",
+              "v": 46915
+            },
+            {
+              "c": "1321010101990300",
+              "d": "Rendimentos - Multas de Trânsito",
+              "v": 45959
+            },
+            {
+              "c": "1321010101071500",
+              "d": "Rendimentos - Procad - SUAS",
+              "v": 41858
+            },
+            {
+              "c": "1321010101070200",
+              "d": "Rendimentos - IGD/SUAS",
+              "v": 31186
+            },
+            {
+              "c": "1321010101993800",
+              "d": "Rendimentos - Emenda Parlamentar 202220980009",
+              "v": 27824
+            },
+            {
+              "c": "1922990299000000",
+              "d": "Outras restituições - Multas e Juros de Mora",
+              "v": 27810
+            },
+            {
+              "c": "1321010101038000",
+              "d": "Rendimentos - Transporte Eletivo",
+              "v": 25945
+            },
+            {
+              "c": "1321010101035500",
+              "d": "Rendimentos - Educação e Formação em Saúde",
+              "v": 21157
+            },
+            {
+              "c": "1321010101081500",
+              "d": "Rendimentos - Reforma Escola ou Creche",
+              "v": 16398
+            },
+            {
+              "c": "1911010300000000",
+              "d": "Multas previstas em legislação específica - Dívida Ativa",
+              "v": 13101
+            },
+            {
+              "c": "1321010101081300",
+              "d": "Rendimentos - PAR Equipamentos",
+              "v": 9962
+            },
+            {
+              "c": "1321010101071700",
+              "d": "Rendimentos - Bloco Proteção Social Básica",
+              "v": 7412
+            },
+            {
+              "c": "1321010101031600",
+              "d": "Rendimentos - Saúde Bucal",
+              "v": 5526
+            },
+            {
+              "c": "1911010100000000",
+              "d": "Multas previstas em legislação específica - Principal",
+              "v": 5292
+            },
+            {
+              "c": "1911010400000000",
+              "d": "Multas previstas em legislação específica - Multas e Juros de Mora da Dívida Ativa",
+              "v": 3376
+            },
+            {
+              "c": "1321010101030500",
+              "d": "Rendimentos - SAMU - 192 - Estado",
+              "v": 2728
+            },
+            {
+              "c": "1321010101998300",
+              "d": "Rendimentos - Portaria 2472",
+              "v": 2305
+            },
+            {
+              "c": "1321010101035900",
+              "d": "Rendimentos Portaria 646/2023 - Emendas Individuais",
+              "v": 2011
+            },
+            {
+              "c": "1321010101080700",
+              "d": "Rendimentos - PDDE",
+              "v": 585
+            },
+            {
+              "c": "1321010101071800",
+              "d": "Rendimentos - Bloco Benefícios Eventuais",
+              "v": 117
+            },
+            {
+              "c": "1321010101997200",
+              "d": "Rendimentos - Defesa Civil - Portaria 2508/24",
+              "v": 0
+            },
+            {
+              "c": "1321010101995500",
+              "d": "Rendimentos - Lei Paulo Gustavo - Demais Cultura",
+              "v": 0
+            },
+            {
+              "c": "1321010101995600",
+              "d": "Rendimentos - Lei Paulo Gustavo - Audiov.",
+              "v": 0
+            },
+            {
+              "c": "1321010101997900",
+              "d": "Rendimentos - Defesa Civil - Portaria 2523/24",
+              "v": 0
+            },
+            {
+              "c": "1321010101080900",
+              "d": "Rendimentos - Escola Rio Branco",
+              "v": 0
+            },
+            {
+              "c": "1321010101993900",
+              "d": "Rendimentos - Conv. FPE - 3361/2023 - RS Qualificação",
+              "v": 0
+            },
+            {
+              "c": "1321010101996800",
+              "d": "Rendimentos - Defesa Civil - Portaria 4145/24",
+              "v": 0
+            },
+            {
+              "c": "1321010101997400",
+              "d": "Rendimentos - Convênio FPE - nº 2023/5204",
+              "v": 0
+            }
+          ]
+        }
+      },
+      "anterior": null
+    },
+    "2026": {
+      "ano": 2026,
+      "ate": "2026-10-26",
+      "mes_parcial": 10,
+      "arrecadado": 10599142667,
+      "orcado": 14264000000,
+      "percentual": 74.31,
+      "por_mes": [
+        1033599526,
+        909962775,
+        972491327,
+        1170828108,
+        1074920104,
+        1143282715,
+        1541588584,
+        923355447,
+        1062804445,
+        766309636,
+        null,
+        null
+      ],
+      "municipal_por_mes": [
+        80118998,
+        90716008,
+        179209992,
+        381802131,
+        137477213,
+        128998358,
+        121290260,
+        97968963,
+        146276359,
+        112030156,
+        null,
+        null
+      ],
+      "grupos": {
+        "municipal": 1475888438,
+        "fora": 8827047828,
+        "outras": 296206401
+      },
+      "categorias": {
+        "iss": {
+          "total": 440647232,
+          "por_mes": [
+            32717880,
+            22805378,
+            24480780,
+            39890577,
+            55022156,
+            42501549,
+            47743824,
+            40862207,
+            63482240,
+            71140641,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1114511101000000",
+              "d": "ISS - Próprio",
+              "v": 426348416
+            },
+            {
+              "c": "1114511301000000",
+              "d": "ISS - Dívida Ativa - Próprio",
+              "v": 8420572
+            },
+            {
+              "c": "1114511201000000",
+              "d": "ISS - Multas e Juros - Próprio",
+              "v": 4725659
+            },
+            {
+              "c": "1114511401000000",
+              "d": "ISS - Multas e Juros Dívida Ativa - Próprio",
+              "v": 1152585
+            },
+            {
+              "c": "1114511102000000",
+              "d": "ISS - MDE",
+              "v": 0
+            },
+            {
+              "c": "1114511103000000",
+              "d": "ISS - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1114511202000000",
+              "d": "ISS - Multas e Juros - MDE",
+              "v": 0
+            },
+            {
+              "c": "1114511203000000",
+              "d": "ISS - Multas e Juros - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1114511302000000",
+              "d": "ISS - Dívida Ativa - MDE",
+              "v": 0
+            },
+            {
+              "c": "1114511303000000",
+              "d": "ISS - Dívida Ativa - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1114511402000000",
+              "d": "ISS - Multas e Juros Dívida Ativa - MDE",
+              "v": 0
+            },
+            {
+              "c": "1114511403000000",
+              "d": "ISS - Multas e Juros Dívida Ativa - ASPS",
+              "v": 0
+            }
+          ]
+        },
+        "iptu": {
+          "total": 349908274,
+          "por_mes": [
+            10710774,
+            11988561,
+            58619540,
+            192201395,
+            13288046,
+            17040252,
+            12693204,
+            10168679,
+            17186463,
+            6011360,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1112500101000000",
+              "d": "IPTU - Principal - Próprio",
+              "v": 270123348
+            },
+            {
+              "c": "1112500301000000",
+              "d": "IPTU - Dívida Ativa - Próprio",
+              "v": 69147710
+            },
+            {
+              "c": "1112500401000000",
+              "d": "IPTU - Multas e Juros Dívida Ativa - Próprio",
+              "v": 9581181
+            },
+            {
+              "c": "1112500201000000",
+              "d": "IPTU - Multas e Juros - Próprio",
+              "v": 1056035
+            },
+            {
+              "c": "1112500102000000",
+              "d": "IPTU - Principal - MDE",
+              "v": 0
+            },
+            {
+              "c": "1112500103000000",
+              "d": "IPTU - Principal - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1112500202000000",
+              "d": "IPTU - Multas e Juros - MDE",
+              "v": 0
+            },
+            {
+              "c": "1112500203000000",
+              "d": "IPTU - Multas e Juros - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1112500302000000",
+              "d": "IPTU - Dívida Ativa - MDE",
+              "v": 0
+            },
+            {
+              "c": "1112500303000000",
+              "d": "IPTU - Dívida Ativa - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1112500402000000",
+              "d": "IPTU - Multas e Juros Dívida Ativa - MDE",
+              "v": 0
+            },
+            {
+              "c": "1112500403000000",
+              "d": "IPTU - Multas e Juros Dívida Ativa - ASPS",
+              "v": 0
+            }
+          ]
+        },
+        "itbi": {
+          "total": 73217517,
+          "por_mes": [
+            4785787,
+            5111500,
+            4391937,
+            16366562,
+            7787899,
+            6851697,
+            5983269,
+            7688651,
+            7739803,
+            6510412,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1112530101000000",
+              "d": "ITBI - Próprio",
+              "v": 72877456
+            },
+            {
+              "c": "1112530301000000",
+              "d": "ITBI - Dívida Ativa - PRÓPRIO",
+              "v": 247200
+            },
+            {
+              "c": "1112530201000000",
+              "d": "ITBI - Multas e Juros - Próprio",
+              "v": 92861
+            },
+            {
+              "c": "1112530102000000",
+              "d": "ITBI - MDE",
+              "v": 0
+            },
+            {
+              "c": "1112530103000000",
+              "d": "ITBI - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1112530202000000",
+              "d": "ITBI - Multas e Juros - MDE",
+              "v": 0
+            },
+            {
+              "c": "1112530203000000",
+              "d": "ITBI - Multas e Juros - ASPS",
+              "v": 0
+            }
+          ]
+        },
+        "irrf": {
+          "total": 211553607,
+          "por_mes": [
+            10812265,
+            18943659,
+            24754258,
+            25159376,
+            25158605,
+            24631941,
+            28373268,
+            17228142,
+            33954258,
+            2537835,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1113031101010000",
+              "d": "IRRF - Trabalho - PRÓPRIO",
+              "v": 169529035
+            },
+            {
+              "c": "1113034101010000",
+              "d": "IRRF - Outros Rendimentos - PRÓPRIO",
+              "v": 37065650
+            },
+            {
+              "c": "1113031102010000",
+              "d": "IRRF sobre Rendimentos do Trabalho - Principal - Ativos/Inativos do Poder Legislativo - PRÓPRIO",
+              "v": 3562745
+            },
+            {
+              "c": "1113034102010000",
+              "d": "IRRF - Outros Rendimentos - Principal - Poder Legislativo - PRÓPRIO",
+              "v": 1396177
+            },
+            {
+              "c": "1113034101020000",
+              "d": "IRRF - Outros Rendimentos - MDE",
+              "v": 0
+            },
+            {
+              "c": "1113034101030000",
+              "d": "IRRF - Outros Rendimentos - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1113031101020000",
+              "d": "IRRF - Trabalho - MDE",
+              "v": 0
+            },
+            {
+              "c": "1113031101030000",
+              "d": "IRRF - Trabalho - ASPS",
+              "v": 0
+            }
+          ]
+        },
+        "taxas": {
+          "total": 270333923,
+          "por_mes": [
+            8925388,
+            18937850,
+            54924743,
+            93795166,
+            22774804,
+            23799229,
+            14723014,
+            11162353,
+            11341565,
+            9949811,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1122530100000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Principal",
+              "v": 98289298
+            },
+            {
+              "c": "1122010103000000",
+              "d": "Taxa de Incêndio - Principal",
+              "v": 39662167
+            },
+            {
+              "c": "1121010107000000",
+              "d": "Taxa de Vistoria e Inspeção Sanitária",
+              "v": 23118698
+            },
+            {
+              "c": "1122530300000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Dívida Ativa",
+              "v": 20511356
+            },
+            {
+              "c": "1122010102000000",
+              "d": "Taxa de Expediente - Principal",
+              "v": 19106676
+            },
+            {
+              "c": "1121010105000000",
+              "d": "Taxa de Vistoria e Fiscalização - Principal",
+              "v": 18473005
+            },
+            {
+              "c": "1121010102000000",
+              "d": "Taxa de Licença para Execução de Obras - Principal",
+              "v": 12357515
+            },
+            {
+              "c": "1122010303000000",
+              "d": "Taxa de Incêndio - Dívida Ativa",
+              "v": 9721142
+            },
+            {
+              "c": "1121010106000000",
+              "d": "Taxa de Controle e Fiscal. Ambiental - Principal",
+              "v": 7512712
+            },
+            {
+              "c": "1122010403000000",
+              "d": "Taxa de Incêndio - Multas e Juros Dívida Ativa",
+              "v": 4488588
+            },
+            {
+              "c": "1121010305000000",
+              "d": "Taxa de Vistoria e Fiscalização - Dívida Ativa",
+              "v": 3996486
+            },
+            {
+              "c": "1122530400000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora da Dívida Ativa",
+              "v": 3055322
+            },
+            {
+              "c": "1121010101000000",
+              "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Principal",
+              "v": 2475240
+            },
+            {
+              "c": "1121010104000000",
+              "d": "Taxa de Vistoria Sanitária de Obras - Principal",
+              "v": 1900408
+            },
+            {
+              "c": "1121010405000000",
+              "d": "Taxa de Vistoria e Fiscalização - Multas e Juros Dívida Ativa",
+              "v": 1154960
+            },
+            {
+              "c": "1121010307000000",
+              "d": "Taxa de Vistoria e Inspeção Sanitária - Dívida Ativa",
+              "v": 1034228
+            },
+            {
+              "c": "1121010302000000",
+              "d": "Taxa de Licença para Execução de Obras - Divida Ativa",
+              "v": 586104
+            },
+            {
+              "c": "1121010306000000",
+              "d": "Taxa de Controle e Fiscal. Ambiental - Dívida Ativa",
+              "v": 562450
+            },
+            {
+              "c": "1122010302000000",
+              "d": "Taxa de Expediente - Dívida Ativa",
+              "v": 550001
+            },
+            {
+              "c": "1121010301000000",
+              "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Dívida Ativa",
+              "v": 278128
+            },
+            {
+              "c": "1122530200000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora",
+              "v": 263859
+            },
+            {
+              "c": "1121010407000000",
+              "d": "Taxa de Vistoria e Inspeção Sanitária - Dívida Ativa - Multas e Juros",
+              "v": 191907
+            },
+            {
+              "c": "1121010402000000",
+              "d": "Taxa de Licença para Execução de Obras - Multas e Juros Divida Ativa",
+              "v": 177951
+            },
+            {
+              "c": "1122010402000000",
+              "d": "Taxa de Expediente - Multas e Juros Dívida Ativa",
+              "v": 172920
+            },
+            {
+              "c": "1121010304000000",
+              "d": "Taxa de Vistoria Sanitária de Obras - Dívida Ativa",
+              "v": 153393
+            },
+            {
+              "c": "1121010205000000",
+              "d": "Taxa de Vistoria e Fiscalização - Multas e Juros",
+              "v": 122455
+            },
+            {
+              "c": "1122010203000000",
+              "d": "Taxa de Incêndio - Multas e Juros",
+              "v": 122133
+            },
+            {
+              "c": "1121010406000000",
+              "d": "Taxa de Controle e Fiscal. Ambiental - Multas e Juros Dívida Ativa",
+              "v": 72942
+            },
+            {
+              "c": "1121010404000000",
+              "d": "Taxa de Vistoria Sanitária de Obras - Multas e Juros Dívida Ativa",
+              "v": 50251
+            },
+            {
+              "c": "1121010207000000",
+              "d": "Taxa de Vistoria e Inspeção Sanitária - Multas e Juros",
+              "v": 49969
+            },
+            {
+              "c": "1121010401000000",
+              "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Multas e Juros Dívida Ativa",
+              "v": 39295
+            },
+            {
+              "c": "1122010202000000",
+              "d": "Taxa de Expediente - Multas e Juros",
+              "v": 38770
+            },
+            {
+              "c": "1121010206000000",
+              "d": "Taxa de Controle e Fiscal. Ambiental - Multas e Juros",
+              "v": 16346
+            },
+            {
+              "c": "1121010202000000",
+              "d": "Taxa de Licença para Execução de Obras - Multas e Juros",
+              "v": 11405
+            },
+            {
+              "c": "1121010204000000",
+              "d": "Taxa de Vistoria Sanitária de Obras - Multas e Juros",
+              "v": 10433
+            },
+            {
+              "c": "1121010201000000",
+              "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Multas e Juros",
+              "v": 5410
+            }
+          ]
+        },
+        "cosip": {
+          "total": 128568625,
+          "por_mes": [
+            11951870,
+            12673445,
+            11774757,
+            14253664,
+            13326241,
+            14018965,
+            11686001,
+            10654581,
+            12436771,
+            15792330,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1241500100000000",
+              "d": "Contribuição para o custeio do serviço de iluminação pública - Principal",
+              "v": 128568625
+            }
+          ]
+        },
+        "outros-municipais": {
+          "total": 1659260,
+          "por_mes": [
+            215034,
+            255615,
+            263977,
+            135391,
+            119462,
+            154725,
+            87680,
+            204350,
+            135259,
+            87767,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1131990300000000",
+              "d": "Outras contribuições de melhoria - Dívida Ativa",
+              "v": 842674
+            },
+            {
+              "c": "1131990400000000",
+              "d": "Outras contribuições de melhoria - Multas e Juros de Mora da Dívida Ativa",
+              "v": 308271
+            },
+            {
+              "c": "1131530300000000",
+              "d": "Contribuição de melhoria para pavimentação e obras complementares - Dívida Ativa",
+              "v": 225550
+            },
+            {
+              "c": "1131990100000000",
+              "d": "Outras contribuições de melhoria - Principal",
+              "v": 187832
+            },
+            {
+              "c": "1131530400000000",
+              "d": "Contribuição de melhoria para pavimentação e obras complementares - Multas e Juros de Mora da Dívida Ativa",
+              "v": 60369
+            },
+            {
+              "c": "1131990200000000",
+              "d": "Outras contribuições de melhoria - Multas e Juros de Mora",
+              "v": 14289
+            },
+            {
+              "c": "1119990100000000",
+              "d": "Outros impostos - Principal",
+              "v": 10599
+            },
+            {
+              "c": "1131530100000000",
+              "d": "Contribuição de melhoria para pavimentação e obras complementares - Principal",
+              "v": 5944
+            },
+            {
+              "c": "1131530200000000",
+              "d": "Contribuição de melhoria para pavimentação e obras complementares - Multas e Juros de Mora",
+              "v": 3732
+            }
+          ]
+        },
+        "transferencias": {
+          "total": 8827047828,
+          "por_mes": [
+            946527487,
+            764188815,
+            784437329,
+            760972185,
+            933684279,
+            944574439,
+            1415889992,
+            745499089,
+            913045878,
+            618228335,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1751500100000000",
+              "d": "Transferências de recursos do fundo de manutenção e desenvolvimento da educação básica e de valorização dos profissionais da educação - FUNDEB - Principal",
+              "v": 2623724593
+            },
+            {
+              "c": "1711511101000000",
+              "d": "Cota-Parte do FPM - Cota Mensal - Próprio",
+              "v": 2280855555
+            },
+            {
+              "c": "1721500101000000",
+              "d": "Cota-parte do ICMS - Próprio",
+              "v": 1183695299
+            },
+            {
+              "c": "2422990104000000",
+              "d": "Convênio FPE - 5033/25",
+              "v": 375000000
+            },
+            {
+              "c": "1711512101000000",
+              "d": "Cota-Parte FPM - Cotas Extraordinárias - Próprio",
+              "v": 313937826
+            },
+            {
+              "c": "1721510101000000",
+              "d": "Cota-Parte do IPVA - Principal - PRÓPRIO",
+              "v": 290095239
+            },
+            {
+              "c": "1713501101000000",
+              "d": "APS - Captação Ponderada",
+              "v": 209211526
+            },
+            {
+              "c": "2422990102000000",
+              "d": "Convênio DAER - FPE - 3058/2024",
+              "v": 168045612
+            },
+            {
+              "c": "1715520100000000",
+              "d": "Transferências de recursos de complementação da união ao FUNDEB - VAAR - Principal",
+              "v": 153157525
+            },
+            {
+              "c": "1714500100000000",
+              "d": "Transferências do salário-educação - Principal",
+              "v": 152684371
+            },
+            {
+              "c": "1724510101000000",
+              "d": "Transferências de convênios para o transporte escolar - Principal",
+              "v": 110151898
+            },
+            {
+              "c": "1713501103000000",
+              "d": "ACS - Agentes Comunitários de Saúde",
+              "v": 82671000
+            },
+            {
+              "c": "1712524100000000",
+              "d": "Cota-parte do fundo especial do petróleo - fep - Principal",
+              "v": 60431940
+            },
+            {
+              "c": "2414520101000000",
+              "d": "Ministério das Cidades - C - 968757",
+              "v": 53901958
+            },
+            {
+              "c": "1713502101000000",
+              "d": "Teto Financeiro",
+              "v": 46403511
+            },
+            {
+              "c": "1723500101000000",
+              "d": "PIAPS - Sociodemográfico",
+              "v": 42508034
+            },
+            {
+              "c": "2419510112000000",
+              "d": "Emenda Parlamentar nº 202636660011 - Pompeu de Mattos",
+              "v": 41069644
+            },
+            {
+              "c": "1713502104000000",
+              "d": "Portaria GM/MS 11.699/26",
+              "v": 40000000
+            },
+            {
+              "c": "1715500100000000",
+              "d": "Transferências de recursos de complementação da união ao FUNDEB - VAAT - Principal",
+              "v": 32881159
+            },
+            {
+              "c": "2419990113000000",
+              "d": "Ministério do Desenvolvimento Regional - Reconstrução",
+              "v": 32830332
+            },
+            {
+              "c": "1714520101000000",
+              "d": "PNAE - Fundamental",
+              "v": 31738400
+            },
+            {
+              "c": "1713501104000000",
+              "d": "Ações Estratégicas",
+              "v": 30450000
+            },
+            {
+              "c": "1729990102000000",
+              "d": "Defesa Civil - Resolução FUNDEC 008/26",
+              "v": 25000000
+            },
+            {
+              "c": "1723500104000000",
+              "d": "PIAPS - (ESF, EAP, ESB)",
+              "v": 24869000
+            },
+            {
+              "c": "1714530101000000",
+              "d": "Transporte Escolar PNATE",
+              "v": 21925766
+            },
+            {
+              "c": "1713501106000000",
+              "d": "Portaria 9402/25 - Emenda Individual - Marcel Van Hatten",
+              "v": 21360000
+            },
+            {
+              "c": "1713501108000000",
+              "d": "Emenda Parlam. 202620230008 - Paulo Paim",
+              "v": 20000000
+            },
+            {
+              "c": "1713501109000000",
+              "d": "Emenda Parlam. 202640730002 - Sanderson",
+              "v": 20000000
+            },
+            {
+              "c": "1714520103000000",
+              "d": "PNAE - Creche",
+              "v": 19687800
+            },
+            {
+              "c": "1719600100000000",
+              "d": "Transferências da política nacional aldir blanc de fomento à cultura - lei nº 14.399/2022 - Principal",
+              "v": 16960768
+            },
+            {
+              "c": "1714520104000000",
+              "d": "PNAE - Pré-Escola",
+              "v": 16090800
+            },
+            {
+              "c": "1713501107000000",
+              "d": "Emenda Parlam. 202628670002 - Marcon",
+              "v": 15000000
+            },
+            {
+              "c": "1713501111000000",
+              "d": "Emenda Parlam. 202637180001 - Marcio Biolchi",
+              "v": 15000000
+            },
+            {
+              "c": "1713504102000000",
+              "d": "Assistência Farmacêutica",
+              "v": 13936320
+            },
+            {
+              "c": "1723500106000000",
+              "d": "Saúde Mental - Port. 307/2007",
+              "v": 12000000
+            },
+            {
+              "c": "2422990105000000",
+              "d": "Convênio FPE - 1179/26",
+              "v": 12000000
+            },
+            {
+              "c": "1724990199060000",
+              "d": "Convênio FPE - 1730/2026 - Projeto Melhores Amigos",
+              "v": 12000000
+            },
+            {
+              "c": "1721520101000000",
+              "d": "Cota-Parte do IPI - Municípios - Principal - PRÓPRIO",
+              "v": 11434572
+            },
+            {
+              "c": "1713501110000000",
+              "d": "Emenda Parlam. 202643080002 - Any Ortiz",
+              "v": 10000000
+            },
+            {
+              "c": "1723500110000000",
+              "d": "Emenda Parlamentar 740 - Delegado Zucco",
+              "v": 10000000
+            },
+            {
+              "c": "1723500111000000",
+              "d": "Emenda Parlamentar 1653 - Elizandro Sabino",
+              "v": 10000000
+            },
+            {
+              "c": "1723500112000000",
+              "d": "Emenda Parlamentar 2173 - Adão Pretto",
+              "v": 10000000
+            },
+            {
+              "c": "1723500113000000",
+              "d": "Emenda Parlamentar 1871 - Elton Weber",
+              "v": 10000000
+            },
+            {
+              "c": "1723500114000000",
+              "d": "Emenda Parlamentar 1744 - Airton Artus",
+              "v": 10000000
+            },
+            {
+              "c": "2422990106000000",
+              "d": "Convênio FPE - 1649/26",
+              "v": 10000000
+            },
+            {
+              "c": "1729990105000000",
+              "d": "Defesa Civil - Resolução FUNDEC 13/26",
+              "v": 10000000
+            },
+            {
+              "c": "1724990199050000",
+              "d": "Convênio FPE - 3863/2025 - Programa RS Qualificação - Recomeçar",
+              "v": 8950000
+            },
+            {
+              "c": "1713505102000000",
+              "d": "Piso Enfermagem",
+              "v": 8940006
+            },
+            {
+              "c": "1719580100000000",
+              "d": "Transferência obrigatória decorrente da lei complementar nº 176/2020 - Principal",
+              "v": 7992130
+            },
+            {
+              "c": "1724990103000000",
+              "d": "Programa de atendimento à criança - Principal",
+              "v": 7878000
+            },
+            {
+              "c": "1723500108000000",
+              "d": "Programa Transporte Eletivo - Port. SES 976/25",
+              "v": 7864920
+            },
+            {
+              "c": "1712510100000000",
+              "d": "Cota-parte da compensação financeira pela exploração de recursos minerais - cfem - Principal",
+              "v": 5864893
+            },
+            {
+              "c": "1716500109000000",
+              "d": "Piso Básico Fixo",
+              "v": 5704829
+            },
+            {
+              "c": "1723500103000000",
+              "d": "Farmácia Básica",
+              "v": 5355040
+            },
+            {
+              "c": "1721530100000000",
+              "d": "Cota-parte da contribuição de intervenção no domínio econômico - Principal",
+              "v": 5160273
+            },
+            {
+              "c": "1716500104000000",
+              "d": "SCFV - Serv. Conv. Fortalec. Vínculos",
+              "v": 5002598
+            },
+            {
+              "c": "1729990104000000",
+              "d": "Portaria SEMA 128/26 - FUMBEA-RS",
+              "v": 5000000
+            },
+            {
+              "c": "1729510102000000",
+              "d": "Transferência do Estado - Piso Gaúcho Regular",
+              "v": 4832715
+            },
+            {
+              "c": "1719990125000000",
+              "d": "Ministério Integr. Desenv. Regional - Portaria 3156/26",
+              "v": 4409586
+            },
+            {
+              "c": "1716500105000000",
+              "d": "SUAS - Primeira Infância",
+              "v": 4088400
+            },
+            {
+              "c": "1716500110000000",
+              "d": "PVAC - Piso Variável de Alta Complexidade - Custeio",
+              "v": 4000000
+            },
+            {
+              "c": "2422990103000000",
+              "d": "Convênio FPE - 5469/2024",
+              "v": 3682734
+            },
+            {
+              "c": "1741990101000000",
+              "d": "Doações em benefício de crianças e adolescentes - PJ - Principal",
+              "v": 3306733
+            },
+            {
+              "c": "1715530100000000",
+              "d": "Transferências de recursos do FUNDEB destinados à criação de matrículas em eti - Principal",
+              "v": 3303857
+            },
+            {
+              "c": "1716500102000000",
+              "d": "IGD-BF",
+              "v": 2647840
+            },
+            {
+              "c": "1714520105000000",
+              "d": "PNAE - AEE",
+              "v": 1965600
+            },
+            {
+              "c": "1729510103000000",
+              "d": "Transferência do Estado - PGE Mulher",
+              "v": 1920000
+            },
+            {
+              "c": "1723500102000000",
+              "d": "Oficina Terapêutica - Saúde Mental",
+              "v": 1500000
+            },
+            {
+              "c": "1723500109000000",
+              "d": "Programa Inverno Gaúcho",
+              "v": 1500000
+            },
+            {
+              "c": "1711520101000000",
+              "d": "Cota-Parte do ITR - Principal - PRÓPRIO",
+              "v": 1396926
+            },
+            {
+              "c": "1716500111000000",
+              "d": "PROCAD - SUAS",
+              "v": 1200000
+            },
+            {
+              "c": "1713503102000000",
+              "d": "Vigilância Sanitária",
+              "v": 870300
+            },
+            {
+              "c": "1721510102000000",
+              "d": "Cota-Parte do IPVA - Principal - MDE",
+              "v": 0
+            },
+            {
+              "c": "1721510103000000",
+              "d": "Cota-Parte do IPVA - Principal - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1721510104000000",
+              "d": "Cota-Parte do IPVA - Principal - FUNDEB",
+              "v": 0
+            },
+            {
+              "c": "1721500102000000",
+              "d": "Cota-parte do ICMS - MDE",
+              "v": 0
+            },
+            {
+              "c": "1721500103000000",
+              "d": "Cota-parte do ICMS - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1721500104000000",
+              "d": "Cota-parte do ICMS - Fundeb",
+              "v": 0
+            },
+            {
+              "c": "1721520102000000",
+              "d": "Cota-Parte do IPI - Municípios - Principal - MDE",
+              "v": 0
+            },
+            {
+              "c": "1721520103000000",
+              "d": "Cota-Parte do IPI - Municípios - Principal - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1721520104000000",
+              "d": "Cota-Parte do IPI - Municípios - Principal - FUNDEB",
+              "v": 0
+            },
+            {
+              "c": "1711511102000000",
+              "d": "Cota-Parte do FPM - Cota Mensal - MDE",
+              "v": 0
+            },
+            {
+              "c": "1711511103000000",
+              "d": "Cota-Parte do FPM - Cota Mensal - ASPS",
+              "v": 0
+            },
+            {
+              "c": "1711511104000000",
+              "d": "Cota-Parte do FPM - Cota Mensal - FUNDEB",
+              "v": 0
+            }
+          ]
+        },
+        "outras": {
+          "total": 296206401,
+          "por_mes": [
+            6953041,
+            55057952,
+            8844006,
+            28053792,
+            3758612,
+            69709918,
+            4408332,
+            79887395,
+            3482208,
+            36051145,
+            null,
+            null
+          ],
+          "codigos": [
+            {
+              "c": "1321011104010000",
+              "d": "Rendimentos - Livre",
+              "v": 52696114
+            },
+            {
+              "c": "1921990100000000",
+              "d": "Outras indenizações - Principal",
+              "v": 32219632
+            },
+            {
+              "c": "1321011104280000",
+              "d": "Rendimentos - Rede Corsan ETE",
+              "v": 23581941
+            },
+            {
+              "c": "2213010102000000",
+              "d": "Alienação de bens móveis e semoventes - exceto RPPS - Principal",
+              "v": 22458000
+            },
+            {
+              "c": "1922990199990000",
+              "d": "Outras Restituições",
+              "v": 19673174
+            },
+            {
+              "c": "1321011102300000",
+              "d": "Rendimentos - Construção UBS",
+              "v": 15157263
+            },
+            {
+              "c": "1411010100000000",
+              "d": "Receita agropecuária - Principal",
+              "v": 12559690
+            },
+            {
+              "c": "1321011104540000",
+              "d": "Rendimentos - Convênio FPE - 5033/25",
+              "v": 11493703
+            },
+            {
+              "c": "1321011101130000",
+              "d": "Rendimentos - Fundeb 30%",
+              "v": 10207177
+            },
+            {
+              "c": "1321011101150000",
+              "d": "Rendimentos - Fundeb VAAR",
+              "v": 8669758
+            },
+            {
+              "c": "1321011103150000",
+              "d": "Rendimentos - Construção CRAS",
+              "v": 7108625
+            },
+            {
+              "c": "1321011104070000",
+              "d": "Rendimentos - Sistema Esgoto Sanitário",
+              "v": 6426621
+            },
+            {
+              "c": "1999992304000000",
+              "d": "Receitas decorrentes do recebimento de certidão - título executivo do tce - Dívida Ativa",
+              "v": 5788634
+            },
+            {
+              "c": "1321012100000000",
+              "d": "Remuneração de depósitos bancários - salário-educação - Principal",
+              "v": 4469963
+            },
+            {
+              "c": "1321011104240000",
+              "d": "Rendimentos - Finisa III",
+              "v": 4461339
+            },
+            {
+              "c": "1321011102270000",
+              "d": "Rendimentos - AT Especializada",
+              "v": 4027352
+            },
+            {
+              "c": "1321011104260000",
+              "d": "Rendimentos - Emenda Giovani Cherini",
+              "v": 3792884
+            },
+            {
+              "c": "1411010300000000",
+              "d": "Receita agropecuária - Dívida Ativa",
+              "v": 2487560
+            },
+            {
+              "c": "1321011101010000",
+              "d": "Rendimentos - MDE",
+              "v": 2219284
+            },
+            {
+              "c": "1611010301000000",
+              "d": "Serviços Agropecuários - Divida Ativa",
+              "v": 1876798
+            },
+            {
+              "c": "1321011103010000",
+              "d": "Rendimentos - FUNDICA",
+              "v": 1811151
+            },
+            {
+              "c": "1321011104220000",
+              "d": "Rendimentos - Urbanismo/Infraestrutura",
+              "v": 1649743
+            },
+            {
+              "c": "1321011104310000",
+              "d": "Rendimentos - Placas Solares",
+              "v": 1622093
+            },
+            {
+              "c": "1321011102380000",
+              "d": "Rendimentos - Portaria 9402/2025",
+              "v": 1449844
+            },
+            {
+              "c": "1321011104060000",
+              "d": "Rendimentos - Iluminação Pública",
+              "v": 1337681
+            },
+            {
+              "c": "1321011104270000",
+              "d": "Rendimentos - Pompeu Mattos",
+              "v": 1195822
+            },
+            {
+              "c": "1321011102200000",
+              "d": "Rendimentos - Incentivo Financeiro",
+              "v": 1136357
+            },
+            {
+              "c": "1321011102540000",
+              "d": "Rendimentos - Portaria GM/MS 11.699/26",
+              "v": 1119661
+            },
+            {
+              "c": "1321011104480000",
+              "d": "Rendimentos - Aldir Blanc",
+              "v": 1047941
+            },
+            {
+              "c": "1922990104000000",
+              "d": "Restituição pelo pagamento indevido - Principal",
+              "v": 935302
+            },
+            {
+              "c": "1321011104050000",
+              "d": "Rendimentos - Alienação de Bens",
+              "v": 934024
+            },
+            {
+              "c": "1321011102460000",
+              "d": "Rendimentos - E. P. - 202640730002 - SANDERSON",
+              "v": 850242
+            },
+            {
+              "c": "1321011104360000",
+              "d": "Rendimentos - Poços",
+              "v": 800702
+            },
+            {
+              "c": "1321011104490000",
+              "d": "Rendimentos - RS Qualifica I",
+              "v": 762691
+            },
+            {
+              "c": "1321011102470000",
+              "d": "Rendimentos - E. P. - 202620230008 PAULO PAIM",
+              "v": 724209
+            },
+            {
+              "c": "1321011104170000",
+              "d": "Rendimentos - Praça Boa Esperança",
+              "v": 705734
+            },
+            {
+              "c": "1321011104200000",
+              "d": "Rendimentos - Emenda Parl.",
+              "v": 700591
+            },
+            {
+              "c": "1321011102280000",
+              "d": "Rendimentos - Vigilância em Saúde",
+              "v": 673698
+            },
+            {
+              "c": "1321011102440000",
+              "d": "Rendimentos - E. P. 202637180001 - MARCIO BIOLCHI",
+              "v": 654409
+            },
+            {
+              "c": "1611010401000000",
+              "d": "Serviços Agropecuários - Divida Ativa - Multas e Juros",
+              "v": 618823
+            },
+            {
+              "c": "1321011101030000",
+              "d": "Rendimentos - PNAE FUNDAMENTAL",
+              "v": 601902
+            },
+            {
+              "c": "1999992404000000",
+              "d": "Receitas decorrentes do recebimento de certidão - título executivo do tce - Multas e Juros de Mora da Dívida Ativa",
+              "v": 587814
+            },
+            {
+              "c": "1321011102150000",
+              "d": "Rendimentos - Vigilância Saúde",
+              "v": 585924
+            },
+            {
+              "c": "1321011102060000",
+              "d": "Rendimentos - Equipamentos UBS",
+              "v": 575139
+            },
+            {
+              "c": "1321011104330000",
+              "d": "Rendimentos - Finisa II",
+              "v": 570189
+            },
+            {
+              "c": "1321011103020000",
+              "d": "Rendimentos - Bolsa Família",
+              "v": 560058
+            },
+            {
+              "c": "1321011102480000",
+              "d": "Rendimentos - E. P. 202628670002-MARCON",
+              "v": 551516
+            },
+            {
+              "c": "1321011102180000",
+              "d": "Rendimentos - Estruturação Especializada",
+              "v": 521975
+            },
+            {
+              "c": "1321011104530000",
+              "d": "Rendimentos - Convênio FPE - 1179/26",
+              "v": 520059
+            },
+            {
+              "c": "1321011102010000",
+              "d": "Rendimentos - ASPS",
+              "v": 519301
+            },
+            {
+              "c": "1999992199010000",
+              "d": "Receita de Venda de Sucatas e Materiais Inservíveis",
+              "v": 510000
+            },
+            {
+              "c": "1321011104370000",
+              "d": "Rendimentos - Sedac",
+              "v": 508654
+            },
+            {
+              "c": "1321011102230000",
+              "d": "Rendimentos - Qualifica Vigilância",
+              "v": 505573
+            },
+            {
+              "c": "1321011104350000",
+              "d": "Rendimentos - Emenda Patrícia Alba",
+              "v": 502768
+            },
+            {
+              "c": "1321011101070000",
+              "d": "Rendimentos - PNAP",
+              "v": 498224
+            },
+            {
+              "c": "1321011102120000",
+              "d": "Rendimentos - SIA/SUS",
+              "v": 497912
+            },
+            {
+              "c": "1321011104250000",
+              "d": "Rendimentos - Emenda Pompeu Mattos",
+              "v": 497882
+            },
+            {
+              "c": "1321011102080000",
+              "d": "Rendimentos - Sociodemográfico",
+              "v": 455291
+            },
+            {
+              "c": "1321011103030000",
+              "d": "Rendimentos - CRAS/PAIF",
+              "v": 448328
+            },
+            {
+              "c": "1321011102090000",
+              "d": "Rendimentos - Farmácia Cuidar Mais",
+              "v": 439126
+            },
+            {
+              "c": "1321011102450000",
+              "d": "Rendimentos - E. P. - 202643080002 - ANY ORTIZ",
+              "v": 438531
+            },
+            {
+              "c": "1321011103140000",
+              "d": "Rendimentos - Piso Gaúcho Regular- FEAS",
+              "v": 404764
+            },
+            {
+              "c": "1321011103100000",
+              "d": "Rendimentos - PVAC INVESTIMENTO",
+              "v": 402304
+            },
+            {
+              "c": "1321011102130000",
+              "d": "Rendimentos - PACS Agentes Comun",
+              "v": 392476
+            },
+            {
+              "c": "1321011101170000",
+              "d": "Rendimentos - Fundeb ETI",
+              "v": 385931
+            },
+            {
+              "c": "1321011104520000",
+              "d": "Rendimentos - Convênio FPE - 1730/2026 - Projeto Melhores Amigos",
+              "v": 382452
+            },
+            {
+              "c": "1411010400000000",
+              "d": "Receita agropecuária - Multas e Juros de Mora da Dívida Ativa",
+              "v": 370175
+            },
+            {
+              "c": "1321011102330000",
+              "d": "Rendimentos - Transporte Eletivo",
+              "v": 369561
+            },
+            {
+              "c": "1321011104510000",
+              "d": "Rendimentos - Convênio FPE - 1649/26",
+              "v": 330166
+            },
+            {
+              "c": "1321011102400000",
+              "d": "Rendimentos - Portaria SES 1228/25",
+              "v": 308940
+            },
+            {
+              "c": "1321011101060000",
+              "d": "Rendimentos - PNAC",
+              "v": 306670
+            },
+            {
+              "c": "1321011101050000",
+              "d": "Rendimentos - PNATE",
+              "v": 287287
+            },
+            {
+              "c": "1321011102030000",
+              "d": "Rendimentos - PIM",
+              "v": 280113
+            },
+            {
+              "c": "1321011104380000",
+              "d": "Rendimentos - Funasa Esgoto",
+              "v": 277261
+            },
+            {
+              "c": "1321011102430000",
+              "d": "Rendimentos - PORTARIA 7769/25",
+              "v": 273140
+            },
+            {
+              "c": "1321011102360000",
+              "d": "Rendimentos - Saúde Mental",
+              "v": 272207
+            },
+            {
+              "c": "1321011102390000",
+              "d": "Rendimentos - FME - Farmácia Especial",
+              "v": 270664
+            },
+            {
+              "c": "1321011102410000",
+              "d": "Rendimentos - Rede Bem Cuidar",
+              "v": 267793
+            },
+            {
+              "c": "1321011104440000",
+              "d": "Rendimentos - Defesa Civil Reconstrução",
+              "v": 264036
+            },
+            {
+              "c": "1321011102290000",
+              "d": "Rendimentos - Portaria 7287/25",
+              "v": 263672
+            },
+            {
+              "c": "1321011101180000",
+              "d": "Rendimentos - Transporte Escolar",
+              "v": 262301
+            },
+            {
+              "c": "1321011103050000",
+              "d": "Rendimentos - Progr PIM INF no SUAS",
+              "v": 254527
+            },
+            {
+              "c": "1321011102490000",
+              "d": "Rendimentos - E. P. - 1744 AIRTON ARTUS",
+              "v": 245852
+            },
+            {
+              "c": "1321011102370000",
+              "d": "Rendimentos - Portaria 200/25",
+              "v": 239617
+            },
+            {
+              "c": "1321011103130000",
+              "d": "Rendimentos - Medida Provisória 1218",
+              "v": 235963
+            },
+            {
+              "c": "1321011104120000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 235231
+            },
+            {
+              "c": "1321011102500000",
+              "d": "Rendimentos - E. P. 1871 ELTON WEBER",
+              "v": 233048
+            },
+            {
+              "c": "1321011102210000",
+              "d": "Rendimentos - Piso da Enfermagem",
+              "v": 233047
+            },
+            {
+              "c": "1321011102040000",
+              "d": "Rendimentos Oficina Terapêutica",
+              "v": 216364
+            },
+            {
+              "c": "1321011102520000",
+              "d": "Rendimentos - E. P. 1653 ELIZANDRO SABINO",
+              "v": 211275
+            },
+            {
+              "c": "1321011104100000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 198403
+            },
+            {
+              "c": "1321011103120000",
+              "d": "Rendimentos - Medida Provisória1284",
+              "v": 190070
+            },
+            {
+              "c": "1321011102510000",
+              "d": "Rendimentos - E. P. 2173 ADÃO PRETTO",
+              "v": 182684
+            },
+            {
+              "c": "1321011102170000",
+              "d": "Rendimentos - Assistência Farmacêutica",
+              "v": 180985
+            },
+            {
+              "c": "1321011104080000",
+              "d": "Rendimentos - Emenda Parlamentar - Retro",
+              "v": 180154
+            },
+            {
+              "c": "1321011104450000",
+              "d": "Rendimentos - FEP Fundo Especial Petróleo",
+              "v": 179255
+            },
+            {
+              "c": "1321011102240000",
+              "d": "Rendimentos - APS Port 8722/2024",
+              "v": 165150
+            },
+            {
+              "c": "1321011104550000",
+              "d": "Rendimentos - Convênio FPE - 3058/24 - Desvio Rodoviário",
+              "v": 156875
+            },
+            {
+              "c": "1321011102530000",
+              "d": "Rendimentos - E. P. 740 DELEGADO ZUCCO",
+              "v": 153453
+            },
+            {
+              "c": "1321011103040000",
+              "d": "Rendimentos - Serv de Fortalecimento de Veiculo",
+              "v": 149667
+            },
+            {
+              "c": "1321011104320000",
+              "d": "Rendimentos - Emenda Parlm/Arquibancada Rolantchê",
+              "v": 149401
+            },
+            {
+              "c": "1321011104160000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 148271
+            },
+            {
+              "c": "1321011102070000",
+              "d": "Rendimentos - Atenção Primária Estado",
+              "v": 146787
+            },
+            {
+              "c": "1321011104500000",
+              "d": "Rendimentos - Portaria SEMA 128/26 - FUMBEA-RS",
+              "v": 142129
+            },
+            {
+              "c": "1321011102100000",
+              "d": "Rendimentos - Ampliação UBS",
+              "v": 138417
+            },
+            {
+              "c": "1411010200000000",
+              "d": "Receita agropecuária - Multas e Juros de Mora",
+              "v": 133616
+            },
+            {
+              "c": "2221010102020000",
+              "d": "Terrenos",
+              "v": 132000
+            },
+            {
+              "c": "1321011104110000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 121150
+            },
+            {
+              "c": "1321011104130000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 106160
+            },
+            {
+              "c": "1321011104190000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 104975
+            },
+            {
+              "c": "1321011102310000",
+              "d": "Rendimentos - Portaria 7086/2025",
+              "v": 104638
+            },
+            {
+              "c": "1321011103090000",
+              "d": "Rendimentos - PVAC CUSTEIO",
+              "v": 102019
+            },
+            {
+              "c": "1321011104210000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 99889
+            },
+            {
+              "c": "1321011102250000",
+              "d": "Rendimentos - Digita SUS",
+              "v": 85323
+            },
+            {
+              "c": "1321011104140000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 83105
+            },
+            {
+              "c": "1321011104390000",
+              "d": "Rendimentos - CIDE",
+              "v": 81162
+            },
+            {
+              "c": "1321011104180000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 79046
+            },
+            {
+              "c": "1321011102160000",
+              "d": "Rendimentos - Vigilância Sanitária",
+              "v": 78378
+            },
+            {
+              "c": "1321011103110000",
+              "d": "Rendimentos - FNAS - Incremento Temporário",
+              "v": 76946
+            },
+            {
+              "c": "1321011101160000",
+              "d": "Rendimentos - Fundeb VAAT",
+              "v": 74748
+            },
+            {
+              "c": "1321011102110000",
+              "d": "Rendimentos - Saúde Mental",
+              "v": 72966
+            },
+            {
+              "c": "1321011103060000",
+              "d": "Rendimentos - Estruturação Rede SUAS",
+              "v": 65787
+            },
+            {
+              "c": "1321011102420000",
+              "d": "Rendimentos - Programa Inverno Gaúcho",
+              "v": 64491
+            },
+            {
+              "c": "1321011102340000",
+              "d": "Rendimentos - FUS",
+              "v": 61904
+            },
+            {
+              "c": "1321011101110000",
+              "d": "Rendimentos - PNAE AEE",
+              "v": 61116
+            },
+            {
+              "c": "1321011103080000",
+              "d": "Rendimentos - Procad SUAS",
+              "v": 57554
+            },
+            {
+              "c": "1321011104020000",
+              "d": "Rendimentos - PNAB - Aldir Blanc",
+              "v": 54961
+            },
+            {
+              "c": "1321011102020000",
+              "d": "Rendimentos - Farmácia Básica",
+              "v": 53673
+            },
+            {
+              "c": "1321011102140000",
+              "d": "Rendimentos - Farm Básica",
+              "v": 49099
+            },
+            {
+              "c": "1321011104090000",
+              "d": "Rendimentos - Emenda Parlamentar Praça",
+              "v": 47051
+            },
+            {
+              "c": "1321011103070000",
+              "d": "Rendimentos - Port 886 - Estrut SUAS",
+              "v": 41805
+            },
+            {
+              "c": "1321011102320000",
+              "d": "Rendimentos - Portaria 7632/2025.",
+              "v": 27820
+            },
+            {
+              "c": "1321011104150000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 26444
+            },
+            {
+              "c": "1321011104040000",
+              "d": "Rendimentos - Multas de Transito",
+              "v": 23271
+            },
+            {
+              "c": "1321011101090000",
+              "d": "Rendimentos - FNDE NOVAS TURMAS",
+              "v": 20112
+            },
+            {
+              "c": "1321011101080000",
+              "d": "Rendimentos - ETI Escola Tempo Integral",
+              "v": 20005
+            },
+            {
+              "c": "1321011101120000",
+              "d": "Rendimentos - FNDE REFORMA",
+              "v": 10707
+            },
+            {
+              "c": "1321011104470000",
+              "d": "Rendimentos - Emenda Parl",
+              "v": 10321
+            },
+            {
+              "c": "1942010200000000",
+              "d": "Multas e juros de mora das alienações de bens imóveis em geral - Multas e Juros de Mora",
+              "v": 9638
+            },
+            {
+              "c": "1321011104030000",
+              "d": "Rendimentos - Emenda Parlamentar - Carlos Burigo",
+              "v": 7029
+            },
+            {
+              "c": "1321011101100000",
+              "d": "Rendimentos - FNDE Equipamentos",
+              "v": 4825
+            },
+            {
+              "c": "1321011104460000",
+              "d": "Rendimentos - Aldir Blanc",
+              "v": 4507
+            },
+            {
+              "c": "1321011101140000",
+              "d": "Rendimentos - FNDE TC Contra Partida",
+              "v": 4082
+            },
+            {
+              "c": "1321011102260000",
+              "d": "Rendimentos - APS Calamidade",
+              "v": 1443
+            },
+            {
+              "c": "1321011102050000",
+              "d": "Rendimentos - SAMU - 192",
+              "v": 1136
+            },
+            {
+              "c": "1321011101040000",
+              "d": "Rendimentos - PDDE",
+              "v": 565
+            },
+            {
+              "c": "1321011104410000",
+              "d": "Rendimentos - Defesa Civil 4146/24",
+              "v": 0
+            },
+            {
+              "c": "1321011104420000",
+              "d": "Rendimentos - Defesa Civil 4151/24",
+              "v": 0
+            },
+            {
+              "c": "1321011104290000",
+              "d": "Rendimentos - RS Qualifica",
+              "v": 0
+            },
+            {
+              "c": "1321011104430000",
+              "d": "Rendimentos - Defesa Civil 4137/24",
+              "v": 0
+            },
+            {
+              "c": "1321011104300000",
+              "d": "Rendimentos - Recuperação de Solo",
+              "v": 0
+            }
+          ]
+        }
+      },
+      "anterior": {
+        "ate": "2025-10-26",
+        "arrecadado": 10729191169,
+        "grupos": {
+          "municipal": 1678811369,
+          "fora": 8753415037,
+          "outras": 296964763
+        },
+        "categorias": {
+          "iss": 682566747,
+          "iptu": 317723822,
+          "itbi": 79403855,
+          "irrf": 248135422,
+          "taxas": 237059076,
+          "cosip": 110652204,
+          "outros-municipais": 3270243,
+          "transferencias": 8753415037,
+          "outras": 296964763
+        }
+      }
+    }
+  }
+}
