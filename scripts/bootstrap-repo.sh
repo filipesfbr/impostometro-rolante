@@ -41,8 +41,14 @@ gh api -X PATCH "repos/$REPO" \
 # privado no Free a API responde 403 — não é falha do script, é o plano.
 echo "-- rulesets"
 create_ruleset() {
-  local body="$1" out
+  local body="$1" out name
+  name=$(jq -r .name <<<"$body")
+  if gh api "repos/$REPO/rulesets" --jq '.[].name' | grep -qx "$name"; then
+    echo "   $name: já existe"
+    return 0
+  fi
   if out=$(gh api -X POST "repos/$REPO/rulesets" --input - <<<"$body" 2>&1); then
+    echo "   $name: criado"
     return 0
   fi
   if grep -q "Upgrade to GitHub" <<<"$out"; then
@@ -59,8 +65,18 @@ create_ruleset '{
   "enforcement": "active",
   "conditions": { "ref_name": { "include": ["refs/heads/main"], "exclude": [] } },
   "rules": [
-    { "type": "pull_request", "parameters": { "allowed_merge_methods": ["merge"] } },
-    { "type": "required_status_checks", "parameters": { "required_status_checks": [{ "context": "ci" }] } },
+    { "type": "pull_request", "parameters": {
+        "allowed_merge_methods": ["merge"],
+        "required_approving_review_count": 0,
+        "dismiss_stale_reviews_on_push": false,
+        "require_code_owner_review": false,
+        "require_last_push_approval": false,
+        "required_review_thread_resolution": false
+    } },
+    { "type": "required_status_checks", "parameters": {
+        "strict_required_status_checks_policy": false,
+        "required_status_checks": [{ "context": "ci" }]
+    } },
     { "type": "non_fast_forward" },
     { "type": "deletion" }
   ],

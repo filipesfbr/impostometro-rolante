@@ -99,13 +99,17 @@ async function main() {
     }
   }
 
+  // População é dado de apoio (só o "por habitante"): falha do IBGE nunca impede a coleta.
+  // O IBGE costuma não responder a servidores fora do Brasil (como os do GitHub Actions);
+  // por isso a coleta parte da última população gravada ou da semente em config/.
+  const semente = lerJson<{ municipios: Populacao }>('config/populacao-ibge.json');
   const pop = lerJson<Populacao>(join(DATA, 'populacao.json'), {});
+  pop[fonte.ibge] = { ...semente.municipios[fonte.ibge], ...pop[fonte.ibge] };
   if (!pop[fonte.ibge]?.[anoAtual]) {
     try {
       pop[fonte.ibge] = { ...pop[fonte.ibge], ...(await populacao(fonte)) };
     } catch (erro) {
-      if (!pop[fonte.ibge]) throw erro;
-      console.warn(`IBGE indisponível, mantendo população anterior: ${String(erro)}`);
+      console.warn(`IBGE indisponível, mantendo a população já conhecida: ${String(erro)}`);
     }
   }
 
@@ -145,8 +149,6 @@ async function main() {
     fonte: {
       portal: fonte.portal,
       portalReceitas: fonte.portalReceitas,
-      api: fonte.api,
-      token: fonte.token,
       entidade: fonte.entidade,
       repositorio: fonte.repositorio,
     },

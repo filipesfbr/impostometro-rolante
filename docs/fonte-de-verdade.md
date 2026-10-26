@@ -66,19 +66,19 @@ O site **não produz dados**: ele copia, organiza e mostra o que o portal public
 ## 4. Como o site interativo aplica isso
 
 ```
-coletor diário (06:00) ──► API do portal (Abase)
+coletor diário (06:17) ──► API do portal (Abase)
    │  valida R2, descarta nomes (R8)
    ▼
-snapshots versionados (JSON + hash + data/hora)   ◄── R3, R5
+snapshots versionados na branch `data` (JSON + hash + data/hora)   ◄── R3, R5
    ▼
 site estático lê os JSON  ──► gráficos, filtros, comparações
    │
-   └─ botão "Conferir agora": o navegador do visitante consulta o
-      totalizador do portal ao vivo e compara com o número exibido   ◄── R4
+   └─ link "conferir no portal" em cada número: abre a tela de Receitas
+      do portal com o mesmo ano, mês e código                       ◄── R4
 ```
 
-- O site **não depende da API em tempo real** para funcionar. A API tem rate limit com reCAPTCHA e pode mudar sem aviso; se o portal cair, o site mostra o último snapshot com a data.
-- **"Conferir agora" é viável:** a API responde com `access-control-allow-origin: *` (testado em 26/10/2026), então o navegador do visitante pode chamar o portal direto. Qualquer pessoa verifica o número sem confiar em nós.
+- O site **não depende da API em tempo real**. A API tem rate limit com reCAPTCHA e pode mudar sem aviso; se o portal cair, o site mostra o último snapshot com a data.
+- A conferência é diária e automática: a coleta só é publicada se cada mês bater com o portal (R2). O site mostra quantos meses conferiram na última coleta.
 - A interatividade (filtrar por mês, comparar anos, ver por tributo) usa só os dados do snapshot (níveis 1 e 2).
 
 ---

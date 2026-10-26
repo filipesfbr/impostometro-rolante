@@ -11,15 +11,19 @@ import {
   formatVariation,
 } from './format.ts';
 
+// Os valores usam espaço inseparável; nos testes ele vira espaço comum para legibilidade.
+const txt = (s: string) => s.replace(/\u00a0/g, ' ');
+
 describe('format', () => {
   it('moeda exata e abreviada', () => {
-    expect(formatBRL(10599142190)).toBe('R$ 105.991.421,90');
-    expect(formatBRL(-20011)).toBe('−R$ 200,11');
-    expect(formatBRLShort(10599142190)).toBe('R$ 106,0 mi');
-    expect(formatBRLShort(440647232)).toBe('R$ 4,41 mi');
-    expect(formatBRLShort(73217517)).toBe('R$ 732 mil');
-    expect(formatBRLShort(1659260)).toBe('R$ 16,6 mil');
-    expect(formatBRLShort(3100)).toBe('R$ 31,00');
+    expect(formatBRL(100)).toBe('R$\u00a01,00');
+    expect(txt(formatBRL(10599142190))).toBe('R$ 105.991.421,90');
+    expect(txt(formatBRL(-20011))).toBe('−R$ 200,11');
+    expect(txt(formatBRLShort(10599142190))).toBe('R$ 106,0 mi');
+    expect(txt(formatBRLShort(440647232))).toBe('R$ 4,41 mi');
+    expect(txt(formatBRLShort(73217517))).toBe('R$ 732 mil');
+    expect(txt(formatBRLShort(1659260))).toBe('R$ 16,6 mil');
+    expect(txt(formatBRLShort(3100))).toBe('R$ 31,00');
   });
   it('percentuais e variação com sinal de menos verdadeiro', () => {
     expect(formatPct(74.31)).toBe('74,31%');
@@ -32,7 +36,7 @@ describe('format', () => {
     expect(formatDateTime('2026-10-27T06:00:12-03:00')).toBe('27/10/2026 06:00');
   });
   it('por habitante', () => {
-    expect(formatPerCapita(487250)).toBe('R$ 4.872,50/hab.');
+    expect(txt(formatPerCapita(487250))).toBe('R$ 4.872,50/hab.');
   });
 });
 
