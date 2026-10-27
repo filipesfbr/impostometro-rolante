@@ -34,7 +34,7 @@ export function Hero() {
         <span className="sr">{brl(atual.arrecadado)}</span>
       </p>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px 24px', alignItems: 'center', marginTop: 28 }}>
-        <Seg label="Formato dos valores" valor={exato} opcoes={[[true, 'Valor exato'], [false, 'Abreviado']]} onChange={setExato} />
+        <Seg label="Formato dos valores" valor={exato} opcoes={[[false, 'Abreviado'], [true, 'Valor exato']]} onChange={setExato} />
         <div className="srcbox">
           {/* R4: data do último lançamento junto do número principal */}
           <Fonte antes={<span>Último lançamento em {formatDate(atual.ate)} ·</span>} />
