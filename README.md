@@ -1,38 +1,74 @@
-<h1 align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/img/lockup-dark.png">
-    <img src="docs/img/lockup.png" alt="Impostômetro Rolante" width="250">
-  </picture>
-</h1>
+<div align="center">
 
-Quanto a Prefeitura de Rolante (RS) arrecada, com dado real e diário. **Todos os números vêm do
-[Portal da Transparência da Prefeitura de Rolante](https://transparencia.abase.com.br/home/apvqyIT7vjY=)**
-e cada um tem link para conferir no próprio portal.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/brand/impostometro-rolante/assets/impostometro-rolante/mark-dark.svg">
+  <img src="docs/brand/impostometro-rolante/assets/impostometro-rolante/mark.svg" alt="" height="72">
+</picture>
 
-**Site:** [filipesfbr.github.io/impostometro-rolante](https://filipesfbr.github.io/impostometro-rolante/)
+# Impostômetro Rolante
+
+**Quanto a Prefeitura de Rolante/RS arrecada, com dado real e diário do Portal da Transparência.**
+
+[![Acessar o site](https://img.shields.io/badge/Acessar_o_site-filipesfbr.github.io%2Fimpostometro--rolante-b4622f?style=for-the-badge&labelColor=26221d)](https://filipesfbr.github.io/impostometro-rolante/)
+
+[![CI](https://github.com/filipesfbr/impostometro-rolante/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/filipesfbr/impostometro-rolante/actions/workflows/ci.yml)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-24-5FA04E?logo=nodedotjs&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/deploy-GitHub_Pages-222222?logo=github&logoColor=white)
+[![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-b4622f)](LICENSE)
+
+</div>
+
+---
+
+## O que é
+
+Um site que mostra quanto a Prefeitura de Rolante arrecadou no ano, de onde vem esse dinheiro e como ele se
+compara ao ano anterior. **Todos os números vêm do
+[Portal da Transparência da Prefeitura de Rolante](https://transparencia.abase.com.br/home/apvqyIT7vjY=)**,
+e cada um tem link para conferir no próprio portal. Nada de estimativa, projeção ou contador por segundo.
 
 Site independente, sem vínculo com a prefeitura. As regras de onde vem cada número estão em
 [`docs/fonte-de-verdade.md`](docs/fonte-de-verdade.md) (R1–R9).
+
+## O que tem
+
+- **Arrecadado no ano**, com a data do último lançamento e da nossa coleta.
+- **Orçamento:** quanto do previsto na Lei Orçamentária já entrou.
+- **De onde vem o dinheiro:** o que é arrecadado em Rolante e o que é recebido da União e do Estado.
+- **Tributos municipais** (ISS, IPTU, taxas, ITBI…): comparação com o mesmo período do ano anterior, gráficos
+  mês a mês e acumulado, e os códigos oficiais que compõem cada um.
+- **Mês a mês** e **por habitante** (estimativa populacional do IBGE).
+- **De onde vêm os números:** validação da última coleta, dados para baixar (JSON e CSV), a tabela
+  código → categoria e o histórico de alterações feitas pelo portal em dias já coletados.
 
 ## Como funciona
 
 Sem servidor e sem banco:
 
+```mermaid
+flowchart LR
+    P["Portal da Transparência<br/>(API Abase)"] -- "1 mês por chamada" --> C["Coletor<br/>(GitHub Actions, diário)"]
+    C -- "só se a soma bater com o portal" --> D[("branch data<br/>JSON + CSV")]
+    D -- "build" --> S["Site estático<br/>(GitHub Pages)"]
+    S -. "conferir no portal" .-> P
 ```
-GitHub Actions (todo dia, 06:17 em Brasília)
-  └─ coletor (Node + TS, sem dependências) ──► API do portal (Abase)
-       ├─ R2: soma dos lançamentos == total do portal, mês a mês (senão nada é publicado)
-       ├─ R8: agrega por (dia, código) e descarta o nome do contribuinte
-       ├─ R5: registra alterações em dias já coletados
-       └─ grava na branch `data` (histórico público dos snapshots, R3)
-            └─ deploy: site estático (Vite + React) no GitHub Pages
-```
+
+1. Todo dia, às 06:17 de Brasília, o coletor (Node + TypeScript, sem dependências) lê os lançamentos do portal.
+2. Para cada mês, a soma dos lançamentos tem de bater ao centavo com o total do portal (R2); se algum mês não
+   bater, nada é publicado e o site continua na coleta anterior.
+3. Os lançamentos são agregados por dia e código, sem o nome do contribuinte (R8), e as mudanças em dias já
+   coletados entram no histórico (R5).
+4. O resultado vai para a branch `data` (histórico público dos snapshots, R3) e o site é publicado no
+   GitHub Pages.
 
 | Pasta | O quê |
 |---|---|
 | `coletor/` | coleta, validação, agregação, classificação, diff e o resumo que o site lê (`site.json`) |
 | `config/` | `fonte.json` (endereço, token e entidade do portal), `categorias.json` (código → categoria, R6) e `populacao-ibge.json` (última estimativa do IBGE, usada quando a API do IBGE não responde) |
-| `site/` | a página (única, navegação por âncoras) |
+| `site/` | a página (única, navegação por âncoras), em Vite + React |
 | `data/` | **não fica na `main`**: é a branch `data`, gerada pelo coletor |
 | `docs/` | regras da fonte de verdade e o pacote de marca (`docs/brand/`) |
 
@@ -74,24 +110,11 @@ Na branch [`data`](../../tree/data), todos em centavos inteiros, datas `AAAA-MM-
 
 ## Identidade visual
 
-O site segue o sistema de marcas Rolante. A fonte de verdade é [`docs/brand/`](docs/brand/README.md)
-(regras, `brands.json` e os SVGs da marca).
-
-- **Uma cor de acento:** terracota `#b4622f` no tema claro, âmbar `#d98a52` no escuro. Nada de outra cor;
-  séries de apoio nos gráficos usam neutros e forma (tracejado, opacidade).
-- **Neutros:** tinta `#26221d`, creme `#fbf4e9`, fundo `#faf8f4`, corpo `#5a534a`, linha `#ece7df`.
-- **Forma:** sem sombras e sem gradientes; cartões brancos com borda de 1 px e raio de 14 px; ícones em
-  traço único de 1.8 com pontas redondas.
-- **Fonte:** Inter (local, via `@fontsource-variable/inter`); números com `tabular-nums`.
-- **Contraste:** texto pequeno nunca em terracota nem no cinza apagado (`#9a9082`); eles ficam para
-  texto grande, traços e ícones.
-
-| Onde | O quê |
-|---|---|
-| `site/src/styles/tokens.css` | único lugar com cores; temas claro e escuro |
-| `site/src/components/brand/` | `BrandMark` e `BrandLockup`: a marca só entra por eles |
-| `site/public/` | favicon, ícones do manifest, `apple-touch-icon` e `og-image` |
-| `docs/img/` | assinatura em PNG para este README (o `<text>` dos SVGs não carrega a Inter no GitHub) |
+Família Rolante (a mesma do Câmeras Rolante): símbolo de medidor com ponteiro em terracota, fonte Inter,
+fundo `#faf8f4`, tinta `#26221d` e um único acento, `#b4622f` (âmbar `#d98a52` no tema escuro). Sem sombras
+nem gradientes. Os tokens ficam em [`site/src/styles/tokens.css`](site/src/styles/tokens.css), a marca entra
+pelos componentes de [`site/src/components/brand/`](site/src/components/brand/), e a especificação e os
+arquivos da marca estão em [`docs/brand/`](docs/brand/README.md).
 
 ## Fluxo de trabalho
 
@@ -134,7 +157,7 @@ só com mudança de código, e o da `data` é o registro diário do que o portal
    o GitHub Pages pelo Actions.
 3. Rode a primeira coleta na mão: `gh workflow run coleta.yml --ref main`.
 
-## Licença
+## Licença e créditos
 
-Código sob [MIT](LICENSE). Os dados são públicos e pertencem à fonte: Portal da Transparência da
-Prefeitura de Rolante e IBGE.
+Licença **MIT**, veja [`LICENSE`](LICENSE). Os dados são públicos e pertencem à fonte: Portal da Transparência
+da Prefeitura de Rolante e IBGE.
