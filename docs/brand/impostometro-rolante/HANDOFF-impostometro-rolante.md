@@ -11,7 +11,7 @@ Documento para o Claude Code. Objetivo: aplicar na aplicação existente a ident
 
 ## 2. Fonte de verdade
 
-Pasta `impostometro-rolante_handoff/` (este pacote, só com o Impostômetro Rolante; copie para o repositório, por exemplo em `docs/brand/`, ou aponte para ela). O `README.md` descreve o sistema de marcas Rolante inteiro (inclui TransparêncIA Rolante e auditoria-rolante), mas só o Impostômetro Rolante é escopo desta tarefa:
+Pasta `impostometro-rolante_handoff/` (este pacote, só com o Impostômetro Rolante; copie para o repositório, por exemplo em `docs/brand/`, ou aponte para ela). O `README.md` descreve o sistema de marcas Rolante inteiro (inclui também auditoria-rolante), mas só o Impostômetro Rolante é escopo desta tarefa:
 
 | Caminho | Para quê |
 | --- | --- |
