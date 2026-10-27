@@ -38,7 +38,7 @@ function Rodape({ repo }: { repo?: string }) {
       <p style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: '6px 22px' }}>
         <a href="#de-onde-vem">De onde vêm os números</a>
         {repo && <a href={repo} target="_blank" rel="noopener">Repositório público</a>}
-        <a href="#inicio">Voltar ao topo</a>
+        <a href="#top">Voltar ao topo</a>
       </p>
     </footer>
   );

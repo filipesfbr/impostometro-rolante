@@ -1,4 +1,4 @@
-<h1>
+<h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/img/lockup-dark.png">
     <img src="docs/img/lockup.png" alt="Impostômetro Rolante" width="250">
@@ -74,9 +74,8 @@ Na branch [`data`](../../tree/data), todos em centavos inteiros, datas `AAAA-MM-
 
 ## Identidade visual
 
-O site segue o sistema de marcas Rolante. A fonte de verdade é
-[`docs/brand/impostometro-rolante/`](docs/brand/impostometro-rolante/README.md) (regras, `brands.json`
-e os SVGs da marca).
+O site segue o sistema de marcas Rolante. A fonte de verdade é [`docs/brand/`](docs/brand/README.md)
+(regras, `brands.json` e os SVGs da marca).
 
 - **Uma cor de acento:** terracota `#b4622f` no tema claro, âmbar `#d98a52` no escuro. Nada de outra cor;
   séries de apoio nos gráficos usam neutros e forma (tracejado, opacidade).

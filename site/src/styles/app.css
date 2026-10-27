@@ -27,7 +27,6 @@ html{scroll-behavior:smooth}
 .bignum{font-weight:800;letter-spacing:-.03em;line-height:.95;font-size:clamp(32px,8.8cqw,116px);margin:18px 0 14px}
 .pill{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 14px;border-radius:var(--r-pill);font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
 .pill.accent{background:transparent;color:inherit;border:1px solid var(--accent)}
-.pill.line{border:1px solid var(--line-strong);color:var(--ink-2);font-weight:500}
 .pill.up{border:1px solid var(--line);color:var(--ink)}
 .pill.down{border:1px solid var(--line);color:var(--ink-2)}
 .pill.neu{background:var(--panel-2);color:var(--ink-2)}

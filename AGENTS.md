@@ -13,6 +13,12 @@ Portal da Transparência. Visão geral, comandos e dados: `README.md`.
   cada 2 s, parâmetro vazio é string vazia (o texto `null` zera os totais).
 - Fixtures sem nomes de contribuintes.
 
+## Identidade visual
+
+Fonte de verdade em `docs/brand/`. Cor só em `site/src/styles/tokens.css` (um único acento: terracota,
+âmbar no escuro); sem sombras nem gradientes; fonte Inter local; marca só via `BrandMark`/`BrandLockup`;
+texto pequeno nunca em `--accent` nem `--line-strong`.
+
 ## Pipeline
 
 Padrão do repositório [`workflow-test`](https://github.com/filipesfbr/workflow-test): leia o README de

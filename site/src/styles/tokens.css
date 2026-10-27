@@ -27,7 +27,6 @@
 
   /* acento */
   --accent: #B4622F;
-  --on-accent: #FFFFFF;    /* só texto grande ou negrito de 18,7 px+ */
   --accent-soft: #FBF4E9;
   --btn: #26221D;
   --on-btn: #FAF8F4;
@@ -69,7 +68,6 @@
   --line-strong: rgba(251, 244, 233, .45);
 
   --accent: #D98A52;
-  --on-accent: #26221D;
   --accent-soft: #312C27;
   --btn: #FBF4E9;
   --on-btn: #26221D;
@@ -99,7 +97,6 @@
     --line-strong: rgba(251, 244, 233, .45);
 
     --accent: #D98A52;
-    --on-accent: #26221D;
     --accent-soft: #312C27;
     --btn: #FBF4E9;
     --on-btn: #26221D;
