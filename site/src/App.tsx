@@ -92,17 +92,13 @@ export function App() {
         {!dados && !erro && <Carregando />}
         {dados && (
           <Dados.Provider value={{ dados, ano, atual: dados.anos[ano]!, anterior: dados.anos[ano - 1], exato, setExato }}>
-            {atrasado ? (
+            {atrasado && (
               <div className="msg warn" role="status" style={{ marginTop: 12 }}>
                 <IcoRelogio />
                 <p>
                   <b>Atualização pendente.</b> A última coleta foi em {formatDateTime(dados.coletado_em).replace(' ', ' às ')}, há mais de 36
                   horas. Os valores abaixo são dessa coleta e podem estar um pouco atrás do portal.
                 </p>
-              </div>
-            ) : (
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
-                <span className="pill line">coleta de {formatDateTime(dados.coletado_em)}</span>
               </div>
             )}
             <main>
