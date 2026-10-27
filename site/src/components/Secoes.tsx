@@ -10,7 +10,6 @@ export function MesAMes() {
   const parcial = atual.mes_parcial;
   return (
     <section id="mes-a-mes" className="sec" aria-labelledby="h-mes">
-      <p className="eyebrow">{trib ? 'Tributos municipais' : 'Receita total'} · por mês</p>
       <h2 id="h-mes" className="h2">Mês a mês</h2>
       <p className="lead">
         {ano} ao lado de {ano - 1}.
@@ -48,7 +47,6 @@ export function PorHabitante() {
   const ate = formatDate(atual.ate).slice(0, 5);
   return (
     <section id="por-habitante" className="sec" aria-labelledby="h-hab">
-      <p className="eyebrow">Em escala de pessoa</p>
       <h2 id="h-hab" className="h2">Por habitante</h2>
       <div style={{ margin: '20px 0' }}>
         <Seg label="Total ou por habitante" valor={porHab} opcoes={[[false, 'Total'], [true, 'Por habitante']]} onChange={setPorHab} />
@@ -87,11 +85,11 @@ export function DeOndeVem() {
   const repo = dados.fonte.repositorio;
   const caixa = { background: 'color-mix(in srgb,var(--on-inv) 10%,transparent)', borderRadius: 'var(--r-card)', padding: 28, display: 'flex', flexDirection: 'column', gap: 12 } as const;
   const { meses_ok, meses_total } = dados.validacao;
+  const [qtdHistorico, setQtdHistorico] = useState(5);
   return (
     <section id="de-onde-vem" className="sec" aria-labelledby="h-onde">
       <div className="inv">
-        <span className="pill accent">a parte mais importante do site</span>
-        <h2 id="h-onde" className="h2" style={{ fontSize: 'clamp(34px,9.5cqw,84px)', margin: '22px 0 18px', maxWidth: '18ch' }}>De onde vêm os números</h2>
+        <h2 id="h-onde" className="h2" style={{ fontSize: 'clamp(30px,8cqw,72px)', margin: '0 0 18px', maxWidth: '18ch' }}>De onde vêm os números</h2>
         <p style={{ fontSize: 'clamp(18px,3cqw,26px)', lineHeight: 1.3, maxWidth: '34ch', letterSpacing: '-.02em' }}>
           Todos os valores vêm do Portal da Transparência da Prefeitura de Rolante. Não fazemos estimativas.
         </p>
@@ -171,14 +169,21 @@ export function DeOndeVem() {
         <div id="historico" style={{ marginTop: 56 }}>
           <p style={{ fontWeight: 700, fontSize: 24, letterSpacing: '-.02em' }}>Histórico de alterações</p>
           {dados.historico.length ? (
-            <ul className="hist">
-              {[...dados.historico].reverse().map((h) => (
-                <li key={`${h.detectado_em}-${h.ano}-${h.mes}-${h.codigo}`}>
-                  <b>{formatDate(h.detectado_em)}</b> · {MESES_EXTENSO[h.mes - 1]} de {h.ano} · código <span className="num">{h.codigo}</span>: de{' '}
-                  {brl(h.antes)} para {brl(h.depois)}
-                </li>
-              ))}
-            </ul>
+            <>
+              <ul className="hist">
+                {[...dados.historico].reverse().slice(0, qtdHistorico).map((h) => (
+                  <li key={`${h.detectado_em}-${h.ano}-${h.mes}-${h.codigo}`}>
+                    <b>{formatDate(h.detectado_em)}</b> · {MESES_EXTENSO[h.mes - 1]} de {h.ano} · código <span className="num">{h.codigo}</span>: de{' '}
+                    {brl(h.antes)} para {brl(h.depois)}
+                  </li>
+                ))}
+              </ul>
+              {qtdHistorico < dados.historico.length && (
+                <button type="button" className="btn-inv o" onClick={() => setQtdHistorico(qtdHistorico + 5)} style={{ display: 'flex', margin: '14px auto 0' }}>
+                  Ver mais
+                </button>
+              )}
+            </>
           ) : (
             <div style={{ marginTop: 14, border: '1px dashed color-mix(in srgb,var(--on-inv) 45%,transparent)', borderRadius: 'var(--r-card)', padding: '22px 24px' }}>
               <p className="mut" style={{ fontSize: 15, lineHeight: '22px', maxWidth: '62ch' }}>
