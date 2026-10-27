@@ -138,7 +138,7 @@ export function Barras({ atual, anterior, parcial, rotulo }: Props) {
             <p style={{ fontSize: 13, color: 'var(--ink-3)', marginLeft: 34 }}>Eixo em {esc.nome}.</p>
           </div>
           <div className="read" aria-live="polite">
-            <p style={{ fontWeight: 600, fontSize: 20, letterSpacing: '-.02em' }}>{rd.titulo}</p>
+            <p style={{ fontWeight: 700, fontSize: 20, letterSpacing: '-.02em' }}>{rd.titulo}</p>
             <p className="num"><b>{rd.a === null ? '—' : brl(rd.a)}</b> em {ano}</p>
             {anterior && <p className="num" style={{ color: 'var(--ink-2)' }}>{rd.b === null ? '—' : brl(rd.b)} em {ano - 1}</p>}
             {rd.delta !== null && <Delta v={rd.delta} />}

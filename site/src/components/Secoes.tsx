@@ -56,11 +56,11 @@ export function PorHabitante() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(340px,100%),1fr))', gap: 12 }} aria-live="polite">
         <div className="panel" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           <p className="eyebrow">Receita total · {ano} até {ate}</p>
-          <p className="num" style={{ fontWeight: 600, letterSpacing: '-.045em', lineHeight: 1, fontSize: 'clamp(30px,7cqw,60px)' }}>{v(atual.arrecadado)}</p>
+          <p className="num" style={{ fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1, fontSize: 'clamp(30px,7cqw,60px)' }}>{v(atual.arrecadado)}</p>
         </div>
         <div className="panel" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           <p className="eyebrow">Tributos municipais · {ano} até {ate}</p>
-          <p className="num" style={{ fontWeight: 600, letterSpacing: '-.045em', lineHeight: 1, fontSize: 'clamp(30px,7cqw,60px)' }}>{v(atual.grupos.municipal)}</p>
+          <p className="num" style={{ fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1, fontSize: 'clamp(30px,7cqw,60px)' }}>{v(atual.grupos.municipal)}</p>
         </div>
       </div>
       <Fonte
@@ -85,7 +85,7 @@ const REGRAS = [
 export function DeOndeVem() {
   const { dados, ano, atual, brl } = useDados();
   const repo = dados.fonte.repositorio;
-  const caixa = { background: 'color-mix(in srgb,var(--on-inv) 10%,transparent)', borderRadius: 28, padding: 28, display: 'flex', flexDirection: 'column', gap: 12 } as const;
+  const caixa = { background: 'color-mix(in srgb,var(--on-inv) 10%,transparent)', borderRadius: 'var(--r-card)', padding: 28, display: 'flex', flexDirection: 'column', gap: 12 } as const;
   const { meses_ok, meses_total } = dados.validacao;
   return (
     <section id="de-onde-vem" className="sec" aria-labelledby="h-onde">
@@ -108,7 +108,7 @@ export function DeOndeVem() {
           {REGRAS.map(([t, d], i) => (
             <div key={t} className="rule">
               <p className="num mut" style={{ fontSize: 14 }}>0{i + 1}</p>
-              <p style={{ fontWeight: 600, fontSize: 20, letterSpacing: '-.02em', margin: '4px 0 6px' }}>{t}</p>
+              <p style={{ fontWeight: 700, fontSize: 20, letterSpacing: '-.02em', margin: '4px 0 6px' }}>{t}</p>
               <p className="mut" style={{ fontSize: 15, lineHeight: '22px' }}>{d}</p>
             </div>
           ))}
@@ -117,7 +117,7 @@ export function DeOndeVem() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(320px,100%),1fr))', gap: 12, marginTop: 48 }}>
           <div style={caixa}>
             <p className="mut" style={{ fontSize: 14, fontWeight: 500 }}>Status da última coleta</p>
-            <p className="num" style={{ fontWeight: 600, letterSpacing: '-.035em', fontSize: 34, lineHeight: 1.05 }}>
+            <p className="num" style={{ fontWeight: 700, letterSpacing: '-.03em', fontSize: 34, lineHeight: 1.05 }}>
               {formatDate(dados.coletado_em)} às {dados.coletado_em.slice(11, 16)}
             </p>
             <span className="pill accent" style={{ alignSelf: 'flex-start' }}>
@@ -144,7 +144,7 @@ export function DeOndeVem() {
         </div>
 
         <div style={{ marginTop: 56 }}>
-          <p style={{ fontWeight: 600, fontSize: 24, letterSpacing: '-.03em' }}>Como agrupamos os códigos</p>
+          <p style={{ fontWeight: 700, fontSize: 24, letterSpacing: '-.02em' }}>Como agrupamos os códigos</p>
           <p className="mut" style={{ margin: '6px 0 16px', maxWidth: '60ch' }}>
             Cada categoria é a soma dos códigos oficiais de 16 dígitos do portal que começam com o prefixo indicado. Vale o primeiro prefixo que
             casar, de cima para baixo.
@@ -158,7 +158,7 @@ export function DeOndeVem() {
                 {dados.categorias.map((c) => (
                   <tr key={c.id}>
                     <td style={{ fontWeight: 600 }}>{c.nome}</td>
-                    <td style={{ fontFamily: 'var(--font-mono)', fontSize: 14 }}>{c.prefixos.map((p) => p || 'demais').join(' · ')}</td>
+                    <td className="num" style={{ fontSize: 14 }}>{c.prefixos.map((p) => p || 'demais').join(' · ')}</td>
                     <td className="r">{atual.categorias[c.id]!.codigos.length}</td>
                     <td className="r num">{brl(atual.categorias[c.id]!.total)}</td>
                   </tr>
@@ -169,18 +169,18 @@ export function DeOndeVem() {
         </div>
 
         <div id="historico" style={{ marginTop: 56 }}>
-          <p style={{ fontWeight: 600, fontSize: 24, letterSpacing: '-.03em' }}>Histórico de alterações</p>
+          <p style={{ fontWeight: 700, fontSize: 24, letterSpacing: '-.02em' }}>Histórico de alterações</p>
           {dados.historico.length ? (
             <ul className="hist">
               {[...dados.historico].reverse().map((h) => (
                 <li key={`${h.detectado_em}-${h.ano}-${h.mes}-${h.codigo}`}>
-                  <b>{formatDate(h.detectado_em)}</b> · {MESES_EXTENSO[h.mes - 1]} de {h.ano} · código <span style={{ fontFamily: 'var(--font-mono)' }}>{h.codigo}</span>: de{' '}
+                  <b>{formatDate(h.detectado_em)}</b> · {MESES_EXTENSO[h.mes - 1]} de {h.ano} · código <span className="num">{h.codigo}</span>: de{' '}
                   {brl(h.antes)} para {brl(h.depois)}
                 </li>
               ))}
             </ul>
           ) : (
-            <div style={{ marginTop: 14, border: '1.5px dashed color-mix(in srgb,var(--on-inv) 45%,transparent)', borderRadius: 24, padding: '22px 24px' }}>
+            <div style={{ marginTop: 14, border: '1px dashed color-mix(in srgb,var(--on-inv) 45%,transparent)', borderRadius: 'var(--r-card)', padding: '22px 24px' }}>
               <p className="mut" style={{ fontSize: 15, lineHeight: '22px', maxWidth: '62ch' }}>
                 Nenhuma alteração registrada até agora. Quando o portal mudar um valor de um dia que já tínhamos coletado, o registro aparece aqui:
                 data da nossa coleta, mês, código, valor anterior e valor novo.

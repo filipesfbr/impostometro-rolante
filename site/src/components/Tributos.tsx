@@ -1,10 +1,10 @@
 import { Fragment, useState } from 'react';
 import { variacao } from '../lib/compare.ts';
-import { formatDate, formatPeriod } from '../lib/format.ts';
+import { formatPeriod } from '../lib/format.ts';
 import { linkPortal } from '../lib/portal.ts';
 import { SEM_VARIACAO, TRIBUTOS } from '../lib/textos.ts';
 import { Acumulado, Barras } from './Graficos.tsx';
-import { Delta, Fonte, LinkPortal, Seg, useDados } from './ui.tsx';
+import { Delta, Fonte, IcoSeta, LinkPortal, Seg, useDados } from './ui.tsx';
 
 export function Tributos() {
   const { dados, ano, atual, anterior, brl } = useDados();
@@ -41,7 +41,7 @@ export function Tributos() {
           const open = aberto === c.id;
           return (
             <Fragment key={c.id}>
-              <div className={open ? 'tcard open' : 'tcard'} id={c.id} style={open ? { gridColumn: '1/-1' } : undefined}>
+              <div className={open ? 'tcard open' : 'tcard'} id={c.id}>
                 <button type="button" className="thead" aria-expanded={open} aria-controls={`${c.id}-detalhe`} onClick={() => abrir(c.id)}>
                   <span className="tt">
                     <span>
@@ -50,7 +50,7 @@ export function Tributos() {
                     </span>
                     <span className="ic" aria-hidden="true">
                       <svg width="16" height="16" viewBox="0 0 16 16">
-                        <path d={open ? 'M3 8h10' : 'M8 3v10M3 8h10'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                        <path d={open ? 'M3 8h10' : 'M8 3v10M3 8h10'} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
                       </svg>
                     </span>
                   </span>
@@ -68,11 +68,11 @@ export function Tributos() {
       </div>
       <div className="tot" style={{ marginTop: 12 }}>
         <div>
-          <p style={{ fontWeight: 600, fontSize: 20, letterSpacing: '-.02em' }}>Total dos tributos municipais</p>
+          <p style={{ fontWeight: 700, fontSize: 20, letterSpacing: '-.02em' }}>Total dos tributos municipais</p>
           {ant && <p className="num" style={{ fontSize: 14, color: 'var(--on-inv-2)' }}>{ano - 1}, mesmo período: {brl(ant.grupos.municipal)}</p>}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-          <span className="num" style={{ fontWeight: 600, letterSpacing: '-.04em', fontSize: 'clamp(30px,6cqw,48px)', lineHeight: 1 }}>{brl(totalMunicipal)}</span>
+          <span className="num" style={{ fontWeight: 700, letterSpacing: '-.03em', fontSize: 'clamp(30px,6cqw,48px)', lineHeight: 1 }}>{brl(totalMunicipal)}</span>
           <Delta v={variacao(totalMunicipal, ant?.grupos.municipal)} />
         </div>
       </div>
@@ -88,41 +88,10 @@ function Detalhe({ id, explica, nome }: { id: string; explica: string; nome: str
   const cat = atual.categorias[id]!;
   const catAnt = anterior?.categorias[id];
   const doAno = anoSel === ano ? cat : catAnt!;
-  const fim = anoSel === ano ? atual.ate : anterior!.ate;
-  const antes = atual.anterior?.categorias[id] ?? null;
-  const delta = SEM_VARIACAO.has(id) ? null : variacao(cat.total, antes);
 
   return (
-    <div className="tdetail" id={`${id}-detalhe`} style={{ gridColumn: '1/-1' }}>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px 24px', alignItems: 'center', justifyContent: 'space-between', paddingTop: 8 }}>
-        <p style={{ fontWeight: 500, fontSize: 'clamp(18px,3cqw,24px)', letterSpacing: '-.02em', maxWidth: '36ch' }}>{explica}</p>
-        {catAnt && <Seg label="Ano" valor={anoSel} opcoes={[[ano, String(ano)], [ano - 1, String(ano - 1)]]} onChange={setAnoSel} />}
-      </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(360px,100%),1fr))', gap: 12 }}>
-        <div className="sub" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-          <p className="eyebrow">Arrecadado em {anoSel} · {formatPeriod(`${anoSel}-01-01`, fim)}</p>
-          <p className="num" style={{ fontWeight: 600, letterSpacing: '-.045em', lineHeight: 1, fontSize: 'clamp(32px,8cqw,60px)' }}>{brl(doAno.total)}</p>
-          {anoSel === ano ? (
-            antes !== null && (
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 12px', alignItems: 'center' }}>
-                <Delta v={delta} />
-                <span style={{ color: 'var(--ink-2)', fontSize: 15 }}>
-                  em relação ao mesmo período de {ano - 1} ({brl(antes)})
-                </span>
-              </div>
-            )
-          ) : (
-            <span style={{ color: 'var(--ink-2)', fontSize: 15 }}>Ano fechado. Sem comparação: não coletamos {anoSel - 1}.</span>
-          )}
-          <Fonte ano={anoSel} style={{ marginTop: 4 }} />
-        </div>
-        {antes !== null && anoSel === ano && (
-          <div className="sub" style={{ display: 'flex', flexDirection: 'column', gap: 8, justifyContent: 'center' }}>
-            <p className="eyebrow">Mesmo período de {ano - 1} · até {formatDate(atual.anterior!.ate)}</p>
-            <p className="num" style={{ fontWeight: 600, letterSpacing: '-.04em', lineHeight: 1, fontSize: 'clamp(28px,6cqw,44px)' }}>{brl(antes)}</p>
-          </div>
-        )}
-      </div>
+    <div className="tdetail" id={`${id}-detalhe`}>
+      <p className="ex">{explica}</p>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(380px,100%),1fr))', gap: 12 }}>
         <div className="sub" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           <p style={{ fontWeight: 600 }}>Mês a mês</p>
@@ -133,11 +102,17 @@ function Detalhe({ id, explica, nome }: { id: string; explica: string; nome: str
           <Acumulado atual={cat.por_mes} anterior={catAnt?.por_mes ?? null} />
         </div>
       </div>
-      <div className="sub">
-        <p className="eyebrow">Códigos oficiais que compõem {id === 'outros-municipais' ? 'esta categoria' : `o ${nome}`}</p>
-        <p style={{ color: 'var(--ink-2)', maxWidth: '60ch', margin: '6px 0 8px' }}>
-          Cada código e descrição vêm do portal. Só publicamos quando a soma de todos os códigos bate com o total do portal.
-        </p>
+      <details className="cods">
+        <summary>
+          <IcoSeta size={14} />
+          Ver os {cat.codigos.length} códigos oficiais {id === 'outros-municipais' ? 'desta categoria' : `do ${nome}`}
+        </summary>
+        <div className="top">
+          <p style={{ color: 'var(--ink-2)', maxWidth: '60ch' }}>
+            Cada código e descrição vêm do portal. Só publicamos quando a soma de todos os códigos bate com o total do portal.
+          </p>
+          {catAnt && <Seg label="Ano" valor={anoSel} opcoes={[[ano, String(ano)], [ano - 1, String(ano - 1)]]} onChange={setAnoSel} />}
+        </div>
         <div className="crow head" aria-hidden="true">
           <span>Código</span><span>Descrição oficial</span><span>Valor em {anoSel}</span><span />
         </div>
@@ -149,7 +124,8 @@ function Detalhe({ id, explica, nome }: { id: string; explica: string; nome: str
             <span className="lk"><LinkPortal href={linkPortal(dados.fonte, { ano: anoSel, codigo: c.c })} /></span>
           </div>
         ))}
-      </div>
+        <Fonte ano={anoSel} style={{ marginTop: 12 }} />
+      </details>
     </div>
   );
 }
