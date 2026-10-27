@@ -61,7 +61,7 @@ function Carregando() {
 export function App() {
   const [dados, setDados] = useState<Resumo | null>(null);
   const [erro, setErro] = useState(false);
-  const [exato, setExato] = useState(true);
+  const [exato, setExato] = useState(false);
 
   useEffect(() => {
     fetch('dados/site.json', { cache: 'no-cache' })
