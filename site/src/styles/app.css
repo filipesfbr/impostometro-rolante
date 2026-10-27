@@ -22,7 +22,7 @@ html{scroll-behavior:smooth}
 .sec{padding:56px 0 0}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;line-height:16px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2)}
 .eyebrow::before{content:'';flex:none;width:16px;height:2px;border-radius:1px;background:var(--accent)}
-.h2{font-weight:700;letter-spacing:-.03em;line-height:1;font-size:clamp(34px,10cqw,64px);margin:10px 0 12px}
+.h2{font-weight:700;letter-spacing:-.03em;line-height:1;font-size:clamp(30px,8.5cqw,56px);margin:10px 0 12px}
 .lead{color:var(--ink-2);max-width:56ch;font-size:17px;line-height:26px}
 .bignum{font-weight:800;letter-spacing:-.03em;line-height:.95;font-size:clamp(32px,8.8cqw,116px);margin:18px 0 14px}
 .pill{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 14px;border-radius:var(--r-pill);font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -37,6 +37,8 @@ html{scroll-behavior:smooth}
 .seg{display:inline-flex;padding:4px;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r-pill)}
 .segb{border:0;background:transparent;min-height:44px;padding:0 18px;border-radius:var(--r-pill);font-weight:500;font-size:15px;color:var(--ink-2)}
 .segb[aria-pressed="true"]{background:var(--btn);color:var(--on-btn);font-weight:600}
+.seg.sm{padding:3px}
+.seg.sm .segb{min-height:32px;padding:0 12px;font-size:13px}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-card);padding:24px}
 .sub{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-card);padding:20px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:var(--r-pill);border:0;background:var(--btn);color:var(--on-btn);font-weight:600;font-size:16px;text-decoration:none}
@@ -124,7 +126,7 @@ html{scroll-behavior:smooth}
 .btn-inv{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:var(--r-pill);background:var(--on-inv);color:var(--inv);font-weight:600;font-size:15px;text-decoration:none}
 .btn-inv.o{background:transparent;color:var(--on-inv);border:1px solid var(--on-inv-2)}
 .inv .pill.accent{color:var(--on-inv);border-color:var(--ambar)}
-.ftr{padding:56px 0 56px;color:var(--ink-2);font-size:15px}
+.ftr{padding:40px 0;color:var(--ink-2);font-size:14px;text-align:center}
 .ftr a{color:var(--ink);font-weight:600;text-underline-offset:4px}
 @media (prefers-reduced-motion:reduce){.pg{scroll-behavior:auto}}
 @container pg (min-width:720px){

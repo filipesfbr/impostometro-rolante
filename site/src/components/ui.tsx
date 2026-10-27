@@ -112,15 +112,17 @@ export function Seg<T extends string | number | boolean>({
   opcoes,
   onChange,
   style,
+  sm,
 }: {
   label: string;
   valor: T;
   opcoes: [T, string][];
   onChange: (v: T) => void;
   style?: React.CSSProperties;
+  sm?: boolean;
 }) {
   return (
-    <div className="seg" role="group" aria-label={label} style={style}>
+    <div className={sm ? 'seg sm' : 'seg'} role="group" aria-label={label} style={style}>
       {opcoes.map(([v, txt]) => (
         <button key={String(v)} type="button" className="segb" aria-pressed={valor === v} onClick={() => onChange(v)}>
           {txt}
