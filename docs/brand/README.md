@@ -10,7 +10,7 @@ Identidade visual do Impostômetro Rolante, parte do sistema de marcas Rolante.
 | [`impostometro-rolante/HANDOFF-impostometro-rolante.md`](impostometro-rolante/HANDOFF-impostometro-rolante.md) | como o sistema foi aplicado no site: tokens, componentes, contraste, decisões |
 
 O README do pacote descreve o sistema inteiro. Este repositório guarda só o Impostômetro Rolante: as
-pastas das outras marcas (`transparencia/`, `auditoria-rolante/`), o `PROMPT.md` e as páginas HTML de
+pastas das outras marcas (`auditoria-rolante/`), o `PROMPT.md` e as páginas HTML de
 `reference/` citadas lá não estão aqui.
 
 No site, a marca entra só pelos componentes `BrandMark` e `BrandLockup` (`site/src/components/brand/`)
