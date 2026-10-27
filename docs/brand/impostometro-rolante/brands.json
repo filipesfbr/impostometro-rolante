@@ -1,0 +1,103 @@
+{
+  "system": "Marcas Rolante",
+  "base": {
+    "viewBox": "0 0 26 34",
+    "outline": {
+      "x": 2,
+      "y": 2,
+      "width": 22,
+      "height": 30,
+      "rx": 11,
+      "strokeWidth": 1.8
+    },
+    "innerStroke": [
+      1.4,
+      1.5
+    ],
+    "axisX": 13,
+    "safeArea": {
+      "x": [
+        5,
+        21
+      ],
+      "y": [
+        6,
+        28
+      ]
+    },
+    "font": "Inter, 'Helvetica Neue', Arial, sans-serif",
+    "colors": {
+      "terracota": "#b4622f",
+      "ambar": "#d98a52",
+      "tinta": "#26221d",
+      "creme": "#fbf4e9",
+      "branco": "#ffffff",
+      "fundoPagina": "#faf8f4",
+      "corpo": "#5a534a",
+      "apagado": "#9a9082",
+      "linha": "#ece7df"
+    },
+    "geometry": {
+      "lockupHorizontal": {
+        "height": 34,
+        "textX": 38,
+        "textY": 24,
+        "fontSize": 20
+      },
+      "lockupStacked": {
+        "height": 96,
+        "markScale": 1.15,
+        "textY": 88,
+        "fontSize": 20
+      },
+      "favicon": {
+        "size": 32,
+        "rx": 7,
+        "markTransform": "translate(7.3 4.6) scale(0.67)"
+      },
+      "appIcon": {
+        "size": 512,
+        "rx": 112,
+        "markTransform": "translate(88.3 36.8) scale(12.9)"
+      },
+      "social": {
+        "size": 1200,
+        "markTransform": "translate(366.2 190.2) scale(18)",
+        "textY": 940,
+        "fontSize": 84
+      }
+    },
+    "minSize": {
+      "mark": 16,
+      "lockupHorizontal": 132
+    }
+  },
+  "brands": [
+    {
+      "id": "impostometro-rolante",
+      "name": "Impostômetro Rolante",
+      "audience": "cidadao",
+      "description": "Site que mostra a receita acumulada de Rolante",
+      "wordmark": {
+        "base": "Impostômetro ",
+        "accent": "Rolante",
+        "weight": 700,
+        "letterSpacing": "-0.02em"
+      },
+      "outline": "#b4622f",
+      "outlineDark": "#d98a52",
+      "inner": "Mostrador de meia volta com ponteiro apontando para cima e à direita",
+      "innerSvg": "<path d=\"M6.2 22 A6.8 6.8 0 0 1 19.8 22\" stroke-width=\"1.4\" opacity=\".45\"/><path d=\"M13 22 L17.2 15.6\" stroke-width=\"1.8\"/><circle cx=\"13\" cy=\"22\" r=\"1.9\"/>",
+      "assets": "assets/impostometro-rolante/",
+      "files": 10,
+      "explorations": [
+        "2b contador",
+        "2c pilha",
+        "3a escala",
+        "3b arco e contador",
+        "3c velocímetro",
+        "1 gota com nível"
+      ]
+    }
+  ]
+}
