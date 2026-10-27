@@ -27,14 +27,15 @@ export function Hero() {
   return (
     <section id="inicio" style={{ padding: '44px 0 8px' }} aria-labelledby="h-hero">
       <h1 id="h-hero" style={{ fontSize: 'clamp(18px,3cqw,26px)', fontWeight: 500, letterSpacing: '-.02em' }}>
-        A Prefeitura de Rolante arrecadou em {ano}
+        A Prefeitura de Rolante/RS arrecadou em {ano}
       </h1>
-      <p className="bignum num">
+      {/* Abreviado ("R$ 106,0 mi") tem ~11 caracteres e cabe maior que o exato (~17) */}
+      <p className="bignum num" style={exato ? undefined : { fontSize: 'clamp(40px,13cqw,128px)' }}>
         <span aria-hidden="true">{brl(valor)}</span>
         <span className="sr">{brl(atual.arrecadado)}</span>
       </p>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px 24px', alignItems: 'center', marginTop: 28 }}>
-        <Seg label="Formato dos valores" valor={exato} opcoes={[[false, 'Abreviado'], [true, 'Valor exato']]} onChange={setExato} />
+        <Seg sm label="Formato dos valores" valor={exato} opcoes={[[false, 'Abreviado'], [true, 'Valor exato']]} onChange={setExato} />
         <div className="srcbox">
           {/* R4: data do último lançamento junto do número principal */}
           <Fonte antes={<span>Último lançamento em {formatDate(atual.ate)} ·</span>} />

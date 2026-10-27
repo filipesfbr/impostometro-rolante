@@ -28,17 +28,12 @@ function Cabecalho() {
 function Rodape({ repo }: { repo?: string }) {
   return (
     <footer className="ftr">
-      <p style={{ marginBottom: 16 }}>
-        <BrandLockup markHeight={26} />
+      <p style={{ marginBottom: 12 }}>
+        <BrandLockup markHeight={22} />
       </p>
-      <p style={{ maxWidth: '70ch' }}>
-        Dados: Portal da Transparência da Prefeitura de Rolante · Coleta diária · Site independente, sem vínculo com a prefeitura · Código e
-        dados abertos.
-      </p>
-      <p style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: '6px 22px' }}>
+      <p style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '6px 22px' }}>
         <a href="#de-onde-vem">De onde vêm os números</a>
         {repo && <a href={repo} target="_blank" rel="noopener">Repositório público</a>}
-        <a href="#top">Voltar ao topo</a>
       </p>
     </footer>
   );
