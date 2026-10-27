@@ -4,7 +4,7 @@ import { formatDateTime } from './lib/format.ts';
 import { DeOndeVem, MesAMes, PorHabitante } from './components/Secoes.tsx';
 import { Composicao, Hero, Orcamento } from './components/Topo.tsx';
 import { Tributos } from './components/Tributos.tsx';
-import { Dados, IcoCheck, IcoRelogio } from './components/ui.tsx';
+import { Dados, IcoRelogio } from './components/ui.tsx';
 import { BrandLockup } from './components/brand/BrandLockup.tsx';
 import { BrandMark } from './components/brand/BrandMark.tsx';
 
@@ -21,13 +21,6 @@ function Cabecalho() {
         <a href="#mes-a-mes">Mês a mês</a>
         <a href="#de-onde-vem">De onde vêm os números</a>
       </nav>
-      <span className="badge">
-        <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
-          <circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" strokeWidth="1.8" />
-          <path d="M8 7.2v4M8 4.9v.01" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-        </svg>
-        Site independente · não oficial
-      </span>
     </header>
   );
 }
@@ -109,7 +102,6 @@ export function App() {
               </div>
             ) : (
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
-                <span className="pill up"><IcoCheck size={14} />Dados atualizados</span>
                 <span className="pill line">coleta de {formatDateTime(dados.coletado_em)}</span>
               </div>
             )}
