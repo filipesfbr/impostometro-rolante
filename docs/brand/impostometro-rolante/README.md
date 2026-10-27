@@ -6,7 +6,6 @@ Marcas atuais:
 
 | Marca | O que é | Símbolo interno | Pasta |
 | --- | --- | --- | --- |
-| **auditoria-rolante** | Orquestração de agentes de IA que alimenta o portal | Três nós ligados em fila (pipeline) | `assets/auditoria-rolante/` |
 | **Impostômetro Rolante** | Site que mostra a receita acumulada de Rolante | Mostrador de meia volta com ponteiro | `assets/impostometro-rolante/` |
 
 Arquivos do pacote:
@@ -27,7 +26,7 @@ Arquivos do pacote:
 | --- | --- | --- |
 | Terracota | `#b4622f` | Cor de marca. Traço do símbolo e palavra de acento em fundo claro |
 | Âmbar | `#d98a52` | Terracota em fundo escuro |
-| Tinta | `#26221d` | Texto, fundo escuro, contorno da marca interna (auditoria) |
+| Tinta | `#26221d` | Texto, fundo escuro, contorno da marca interna |
 | Creme | `#fbf4e9` | Preenchimento do símbolo, fundo de peças de marca |
 | Branco | `#ffffff` | Versão negativa |
 | Fundo de página | `#faf8f4` | Fundo dos sites |
@@ -40,7 +39,7 @@ Uma única cor de acento (terracota). Não introduzir outra. Para variações po
 ### Tipografia
 
 - Família única: **Inter** (400 a 800). Fallback `'Helvetica Neue', Arial, sans-serif`.
-- Nomes de marca: 700 (Impostômetro Rolante) ou 600 (auditoria-rolante).
+- Nomes de marca: 700 (Impostômetro Rolante) ou 600 (marcas técnicas).
 - Rótulos pequenos: 12 px, 600, caixa alta, tracking `0.08em`.
 
 ### Forma
@@ -76,13 +75,12 @@ Regras para o desenho interno:
 
 | Marca | Contorno | Interior |
 | --- | --- | --- |
-| auditoria-rolante | tinta, preenchimento creme | `M13 12.4 L13 15.6 M13 19.4 L13 22.6` (.55, 1.4) e círculos r 1.9 em `(13,10.4)`, `(13,17.5)`, `(13,24.6)`; o último em terracota |
 | Impostômetro Rolante | terracota, preenchimento creme | arco `M6.2 22 A6.8 6.8 0 0 1 19.8 22` (.45, 1.4), ponteiro `M13 22 L17.2 15.6` (1.8) e círculo r 1.9 em `(13,22)` |
 
 ### Lógica de cor
 
 - **Voltada ao cidadão** (portal, impostômetro): contorno terracota sobre creme; palavra de acento em terracota.
-- **Interna e técnica** (auditoria): contorno em tinta, terracota só no elemento de saída.
+- **Interna e técnica**: contorno em tinta, terracota só no elemento de saída.
 - Fundo escuro: fundo `#26221d`; contorno e acento em âmbar `#d98a52` (voltada ao cidadão) ou contorno creme `#fbf4e9` com acento âmbar (técnica).
 - Uma cor: tinta `#26221d` ou branco, sem preenchimento.
 
@@ -92,7 +90,6 @@ Regras para o desenho interno:
 
 | Marca | Texto | Peso | Tracking | Acento |
 | --- | --- | --- | --- | --- |
-| auditoria-rolante | `auditoria` + **`-rolante`** | 600 | -0.01em | `-rolante` em terracota |
 | Impostômetro Rolante | `Impostômetro ` + **`Rolante`** | 700 | -0.02em | `Rolante` em terracota |
 
 Padrão para novas marcas: nome do produto em tinta + a palavra que liga ao município (ou o sufixo que o define) em terracota. Capitalização igual à do nome público. Produtos técnicos e internos usam minúsculas, hífen e peso 600.
@@ -136,10 +133,8 @@ Cada marca tem este conjunto. Marca nova deve entregar pelo menos os itens marca
 
 Disponibilidade hoje:
 
-- `auditoria-rolante/` — 9 arquivos (sem `social-square-1200.svg`).
 - `impostometro-rolante/` — 10 arquivos (conjunto obrigatório completo).
 
-Pendente: gerar `social-square-1200.svg` do auditoria-rolante e os extras mono das duas marcas novas, se forem necessários.
 
 ---
 
