@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { pontos } from '../lib/compare.ts';
-import { formatBRLShort, formatDate, formatPct, formatPeriod } from '../lib/format.ts';
+import { formatBRLShort, formatDate, formatPct } from '../lib/format.ts';
 import { Fonte, Seg, useDados } from './ui.tsx';
 
 /** Anima de 0 até o valor real uma vez (900 ms). Nunca um contador por estimativa (R1). */
@@ -24,27 +24,20 @@ function useContagem(alvo: number) {
 export function Hero() {
   const { ano, atual, exato, setExato, brl } = useDados();
   const valor = useContagem(atual.arrecadado);
-  const periodo = formatPeriod(`${ano}-01-01`, atual.ate);
   return (
     <section id="inicio" style={{ padding: '44px 0 8px' }} aria-labelledby="h-hero">
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-        <span className="pill accent">dado real · atualizado todo dia</span>
-        <span className="pill line">{periodo}</span>
-      </div>
-      <h1 id="h-hero" style={{ fontSize: 'clamp(18px,3cqw,26px)', fontWeight: 500, letterSpacing: '-.02em', marginTop: 26 }}>
+      <h1 id="h-hero" style={{ fontSize: 'clamp(18px,3cqw,26px)', fontWeight: 500, letterSpacing: '-.02em' }}>
         A Prefeitura de Rolante arrecadou em {ano}
       </h1>
       <p className="bignum num">
         <span aria-hidden="true">{brl(valor)}</span>
         <span className="sr">{brl(atual.arrecadado)}</span>
       </p>
-      <p style={{ color: 'var(--ink-2)', fontSize: 17 }}>
-        de {periodo} · último lançamento em {formatDate(atual.ate)}
-      </p>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px 24px', alignItems: 'center', marginTop: 28 }}>
         <Seg label="Formato dos valores" valor={exato} opcoes={[[true, 'Valor exato'], [false, 'Abreviado']]} onChange={setExato} />
         <div className="srcbox">
-          <Fonte />
+          {/* R4: data do último lançamento junto do número principal */}
+          <Fonte antes={<span>Último lançamento em {formatDate(atual.ate)} ·</span>} />
         </div>
       </div>
     </section>
