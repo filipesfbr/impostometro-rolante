@@ -28,24 +28,24 @@ export const IcoSeta = ({ size = 12 }: Svg) => (
 );
 export const IcoExterno = () => (
   <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
-    <path d="M4.5 2.5h5v5M9.5 2.5l-7 7" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M4.5 2.5h5v5M9.5 2.5l-7 7" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 export const IcoEscudo = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-    <path d="M8 1.5l5.5 2v4c0 3.2-2.3 5.6-5.5 7-3.2-1.4-5.5-3.8-5.5-7v-4l5.5-2z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-    <path d="M5.6 8l1.7 1.7 3.2-3.4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M8 1.5l5.5 2v4c0 3.2-2.3 5.6-5.5 7-3.2-1.4-5.5-3.8-5.5-7v-4l5.5-2z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M5.6 8l1.7 1.7 3.2-3.4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 export const IcoRelogio = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
-    <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" strokeWidth="2" />
-    <path d="M10 5.5V10l3 2" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" strokeWidth="1.8" />
+    <path d="M10 5.5V10l3 2" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
   </svg>
 );
 export const IcoCheck = ({ size = 18 }: Svg) => (
   <svg width={size} height={size} viewBox="0 0 18 18" aria-hidden="true">
-    <path d="M4 9.5l3.2 3.2L14 5.8" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M4 9.5l3.2 3.2L14 5.8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 export const IcoBaixar = () => (
@@ -55,8 +55,8 @@ export const IcoBaixar = () => (
 );
 export const IcoTabela = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-    <rect x="2" y="3" width="12" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M2 7h12M6.5 7v6" stroke="currentColor" strokeWidth="1.5" fill="none" />
+    <rect x="2" y="3" width="12" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+    <path d="M2 7h12M6.5 7v6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" fill="none" />
   </svg>
 );
 
@@ -71,7 +71,7 @@ export function Delta({ v }: { v: number | null }) {
           d={sobe ? 'M8 13V3M3.5 7.5L8 3l4.5 4.5' : 'M8 3v10M3.5 8.5L8 13l4.5-4.5'}
           fill="none"
           stroke="currentColor"
-          strokeWidth="2"
+          strokeWidth="1.8"
           strokeLinecap="round"
           strokeLinejoin="round"
         />

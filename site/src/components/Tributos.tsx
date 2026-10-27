@@ -50,7 +50,7 @@ export function Tributos() {
                     </span>
                     <span className="ic" aria-hidden="true">
                       <svg width="16" height="16" viewBox="0 0 16 16">
-                        <path d={open ? 'M3 8h10' : 'M8 3v10M3 8h10'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                        <path d={open ? 'M3 8h10' : 'M8 3v10M3 8h10'} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
                       </svg>
                     </span>
                   </span>
@@ -68,11 +68,11 @@ export function Tributos() {
       </div>
       <div className="tot" style={{ marginTop: 12 }}>
         <div>
-          <p style={{ fontWeight: 600, fontSize: 20, letterSpacing: '-.02em' }}>Total dos tributos municipais</p>
+          <p style={{ fontWeight: 700, fontSize: 20, letterSpacing: '-.02em' }}>Total dos tributos municipais</p>
           {ant && <p className="num" style={{ fontSize: 14, color: 'var(--on-inv-2)' }}>{ano - 1}, mesmo período: {brl(ant.grupos.municipal)}</p>}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-          <span className="num" style={{ fontWeight: 600, letterSpacing: '-.04em', fontSize: 'clamp(30px,6cqw,48px)', lineHeight: 1 }}>{brl(totalMunicipal)}</span>
+          <span className="num" style={{ fontWeight: 700, letterSpacing: '-.03em', fontSize: 'clamp(30px,6cqw,48px)', lineHeight: 1 }}>{brl(totalMunicipal)}</span>
           <Delta v={variacao(totalMunicipal, ant?.grupos.municipal)} />
         </div>
       </div>
@@ -101,7 +101,7 @@ function Detalhe({ id, explica, nome }: { id: string; explica: string; nome: str
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(360px,100%),1fr))', gap: 12 }}>
         <div className="sub" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
           <p className="eyebrow">Arrecadado em {anoSel} · {formatPeriod(`${anoSel}-01-01`, fim)}</p>
-          <p className="num" style={{ fontWeight: 600, letterSpacing: '-.045em', lineHeight: 1, fontSize: 'clamp(32px,8cqw,60px)' }}>{brl(doAno.total)}</p>
+          <p className="num" style={{ fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1, fontSize: 'clamp(32px,8cqw,60px)' }}>{brl(doAno.total)}</p>
           {anoSel === ano ? (
             antes !== null && (
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 12px', alignItems: 'center' }}>
@@ -119,7 +119,7 @@ function Detalhe({ id, explica, nome }: { id: string; explica: string; nome: str
         {antes !== null && anoSel === ano && (
           <div className="sub" style={{ display: 'flex', flexDirection: 'column', gap: 8, justifyContent: 'center' }}>
             <p className="eyebrow">Mesmo período de {ano - 1} · até {formatDate(atual.anterior!.ate)}</p>
-            <p className="num" style={{ fontWeight: 600, letterSpacing: '-.04em', lineHeight: 1, fontSize: 'clamp(28px,6cqw,44px)' }}>{brl(antes)}</p>
+            <p className="num" style={{ fontWeight: 700, letterSpacing: '-.03em', lineHeight: 1, fontSize: 'clamp(28px,6cqw,44px)' }}>{brl(antes)}</p>
           </div>
         )}
       </div>
