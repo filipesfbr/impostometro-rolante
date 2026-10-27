@@ -31,7 +31,7 @@
   --accent-soft: #FBF4E9;
   --btn: #26221D;
   --on-btn: #FAF8F4;
-  --inv: #26221D;          /* bloco invertido (faixa do topo, "De onde vêm os números") */
+  --inv: #26221D;          /* bloco invertido ("De onde vêm os números", total dos tributos) */
   --on-inv: #FBF4E9;
   --on-inv-2: rgba(251, 244, 233, .72);
 

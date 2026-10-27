@@ -4,22 +4,11 @@ import { formatDateTime } from './lib/format.ts';
 import { DeOndeVem, MesAMes, PorHabitante } from './components/Secoes.tsx';
 import { Composicao, Hero, Orcamento } from './components/Topo.tsx';
 import { Tributos } from './components/Tributos.tsx';
-import { Dados, IcoCheck, IcoRelogio, IcoSeta } from './components/ui.tsx';
+import { Dados, IcoCheck, IcoRelogio } from './components/ui.tsx';
 import { BrandLockup } from './components/brand/BrandLockup.tsx';
 import { BrandMark } from './components/brand/BrandMark.tsx';
 
 const LIMITE_ATRASO_MS = 36 * 3600_000;
-
-function FaixaOrigem() {
-  return (
-    <div className="origin">
-      <a href="#de-onde-vem">
-        <span className="t">Todos os números vêm do Portal da Transparência da Prefeitura de Rolante</span>
-        <span className="ar"><IcoSeta /></span>
-      </a>
-    </div>
-  );
-}
 
 function Cabecalho() {
   return (
@@ -99,7 +88,6 @@ export function App() {
 
   return (
     <div className="pg">
-      <FaixaOrigem />
       <div className="wrap">
         <Cabecalho />
         {erro && (
