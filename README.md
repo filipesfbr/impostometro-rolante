@@ -1,8 +1,15 @@
-# Impostômetro Rolante
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/img/lockup-dark.png">
+    <img src="docs/img/lockup.png" alt="Impostômetro Rolante" width="250">
+  </picture>
+</h1>
 
 Quanto a Prefeitura de Rolante (RS) arrecada, com dado real e diário. **Todos os números vêm do
 [Portal da Transparência da Prefeitura de Rolante](https://transparencia.abase.com.br/home/apvqyIT7vjY=)**
 e cada um tem link para conferir no próprio portal.
+
+**Site:** [filipesfbr.github.io/impostometro-rolante](https://filipesfbr.github.io/impostometro-rolante/)
 
 Site independente, sem vínculo com a prefeitura. As regras de onde vem cada número estão em
 [`docs/fonte-de-verdade.md`](docs/fonte-de-verdade.md) (R1–R9).
@@ -27,7 +34,7 @@ GitHub Actions (todo dia, 06:17 em Brasília)
 | `config/` | `fonte.json` (endereço, token e entidade do portal), `categorias.json` (código → categoria, R6) e `populacao-ibge.json` (última estimativa do IBGE, usada quando a API do IBGE não responde) |
 | `site/` | a página (única, navegação por âncoras) |
 | `data/` | **não fica na `main`**: é a branch `data`, gerada pelo coletor |
-| `docs/` | regras da fonte de verdade |
+| `docs/` | regras da fonte de verdade e o pacote de marca (`docs/brand/`) |
 
 ## Rodar local
 
@@ -64,6 +71,28 @@ Na branch [`data`](../../tree/data), todos em centavos inteiros, datas `AAAA-MM-
 | `historico-alteracoes.json` | mudanças em dias já coletados (R5) |
 | `populacao.json` | estimativas do IBGE |
 | `manifest.json` | data da coleta, validação mês a mês e SHA-256 de cada arquivo |
+
+## Identidade visual
+
+O site segue o sistema de marcas Rolante. A fonte de verdade é
+[`docs/brand/impostometro-rolante/`](docs/brand/impostometro-rolante/README.md) (regras, `brands.json`
+e os SVGs da marca).
+
+- **Uma cor de acento:** terracota `#b4622f` no tema claro, âmbar `#d98a52` no escuro. Nada de outra cor;
+  séries de apoio nos gráficos usam neutros e forma (tracejado, opacidade).
+- **Neutros:** tinta `#26221d`, creme `#fbf4e9`, fundo `#faf8f4`, corpo `#5a534a`, linha `#ece7df`.
+- **Forma:** sem sombras e sem gradientes; cartões brancos com borda de 1 px e raio de 14 px; ícones em
+  traço único de 1.8 com pontas redondas.
+- **Fonte:** Inter (local, via `@fontsource-variable/inter`); números com `tabular-nums`.
+- **Contraste:** texto pequeno nunca em terracota nem no cinza apagado (`#9a9082`); eles ficam para
+  texto grande, traços e ícones.
+
+| Onde | O quê |
+|---|---|
+| `site/src/styles/tokens.css` | único lugar com cores; temas claro e escuro |
+| `site/src/components/brand/` | `BrandMark` e `BrandLockup`: a marca só entra por eles |
+| `site/public/` | favicon, ícones do manifest, `apple-touch-icon` e `og-image` |
+| `docs/img/` | assinatura em PNG para este README (o `<text>` dos SVGs não carrega a Inter no GitHub) |
 
 ## Fluxo de trabalho
 

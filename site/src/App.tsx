@@ -13,9 +13,9 @@ const LIMITE_ATRASO_MS = 36 * 3600_000;
 function Cabecalho() {
   return (
     <header className="hdr">
-      <a className="logo" href="#inicio" aria-label="Impostômetro Rolante, início">
+      <span className="logo">
         <BrandLockup />
-      </a>
+      </span>
       <nav className="nav" aria-label="Seções da página">
         <a href="#tributos">Tributos</a>
         <a href="#mes-a-mes">Mês a mês</a>
