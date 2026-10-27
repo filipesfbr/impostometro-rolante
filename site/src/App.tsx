@@ -5,6 +5,8 @@ import { DeOndeVem, MesAMes, PorHabitante } from './components/Secoes.tsx';
 import { Composicao, Hero, Orcamento } from './components/Topo.tsx';
 import { Tributos } from './components/Tributos.tsx';
 import { Dados, IcoCheck, IcoRelogio, IcoSeta } from './components/ui.tsx';
+import { BrandLockup } from './components/brand/BrandLockup.tsx';
+import { BrandMark } from './components/brand/BrandMark.tsx';
 
 const LIMITE_ATRASO_MS = 36 * 3600_000;
 
@@ -23,12 +25,7 @@ function Cabecalho() {
   return (
     <header className="hdr">
       <a className="logo" href="#inicio" aria-label="Impostômetro Rolante, início">
-        <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" rx="10" fill="var(--accent)" />
-          <path d="M7 21a9 9 0 0 1 18 0" fill="none" stroke="var(--on-accent)" strokeWidth="3.4" strokeLinecap="round" />
-          <circle cx="16" cy="21" r="2.2" fill="var(--on-accent)" />
-        </svg>
-        <b>Impostômetro Rolante</b>
+        <BrandLockup />
       </a>
       <nav className="nav" aria-label="Seções da página">
         <a href="#tributos">Tributos</a>
@@ -37,7 +34,7 @@ function Cabecalho() {
       </nav>
       <span className="badge">
         <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
-          <circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" strokeWidth="1.6" />
+          <circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" strokeWidth="1.8" />
           <path d="M8 7.2v4M8 4.9v.01" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
         </svg>
         Site independente · não oficial
@@ -49,6 +46,9 @@ function Cabecalho() {
 function Rodape({ repo }: { repo?: string }) {
   return (
     <footer className="ftr">
+      <p style={{ marginBottom: 16 }}>
+        <BrandLockup markHeight={26} />
+      </p>
       <p style={{ maxWidth: '70ch' }}>
         Dados: Portal da Transparência da Prefeitura de Rolante · Coleta diária · Site independente, sem vínculo com a prefeitura · Código e
         dados abertos.
@@ -69,8 +69,8 @@ function Carregando() {
       <div className="sk" style={{ width: '100%', height: 72 }} />
       <div className="sk" style={{ width: '46%', height: 16 }} />
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 6 }}>
-        <div className="sk" style={{ height: 96, borderRadius: 20 }} />
-        <div className="sk" style={{ height: 96, borderRadius: 20 }} />
+        <div className="sk" style={{ height: 96 }} />
+        <div className="sk" style={{ height: 96 }} />
       </div>
     </div>
   );
@@ -104,6 +104,7 @@ export function App() {
         <Cabecalho />
         {erro && (
           <div className="msg err" role="alert">
+            <BrandMark height={52} />
             <p>Não conseguimos carregar os dados deste site agora. Tente recarregar a página.</p>
           </div>
         )}
