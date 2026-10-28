@@ -25,6 +25,8 @@ function Cabecalho() {
   );
 }
 
+const GASTOMETRO = 'https://gastometro.rolanters.com.br/';
+
 function Rodape({ repo }: { repo?: string }) {
   return (
     <footer className="ftr">
@@ -33,6 +35,7 @@ function Rodape({ repo }: { repo?: string }) {
       </p>
       <p style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '6px 22px' }}>
         <a href="#de-onde-vem">De onde vêm os números</a>
+        <a href={GASTOMETRO}>Gastômetro Rolante: como a prefeitura gasta</a>
         {repo && <a href={repo} target="_blank" rel="noopener">Repositório público</a>}
       </p>
     </footer>
