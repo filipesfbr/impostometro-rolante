@@ -77,6 +77,18 @@ describe('api', () => {
   const fonte = { api: 'https://api.exemplo/', token: 't', entidade: 0, userAgent: 'teste', intervaloMs: 2000 } as Fonte;
   const resposta = (status: number, corpo: unknown = {}) => new Response(JSON.stringify(corpo), { status });
 
+  it('conexão cai no meio do corpo → tenta de novo', async () => {
+    const cortado = { text: () => Promise.reject(new TypeError('terminated')) };
+    const fetch = vi
+      .fn()
+      .mockResolvedValueOnce(cortado)
+      .mockResolvedValueOnce(resposta(200, { status: 'success', data: '10.5000' }));
+    const esperar = vi.fn().mockResolvedValue(undefined);
+    const api = criarApi(fonte, { fetch, esperar });
+    expect(await api.totalizador(2026, 1)).toBe(1050);
+    expect(fetch).toHaveBeenCalledTimes(2);
+  });
+
   it('429 → espera e tenta de novo', async () => {
     const fetch = vi
       .fn()
