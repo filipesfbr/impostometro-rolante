@@ -15,7 +15,7 @@ export function Tributos() {
   );
   const [aberto, setAberto] = useState<string | null>(() => {
     const h = location.hash.slice(1);
-    return municipais.some((c) => c.id === h) ? h : 'iss';
+    return municipais.some((c) => c.id === h) ? h : null;
   });
   const abrir = (id: string) => {
     const novo = aberto === id ? null : id;
