@@ -1,5 +1,5 @@
 {
-  "coletado_em": "2026-10-31T12:19:54-03:00",
+  "coletado_em": "2026-11-01T13:01:55-03:00",
   "fonte": {
     "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
     "api": "https://apitransparencia.abase.com.br/",
@@ -123,6 +123,11 @@
         "soma": 958290356,
         "totalizador": 958290356,
         "ok": true
+      },
+      "11": {
+        "soma": 0,
+        "totalizador": 0,
+        "ok": true
       }
     }
   },
@@ -132,10 +137,10 @@
     "totais/2025.json": "sha256:084d2af37c2f062bbf5d99053894b29c056e3ba26f2f695bef370c49fdeec98b",
     "receitas/2026.json": "sha256:cd1cf6aeb8dff77556f5f84f89eec93e6a1ea48b7af75de16d080738319ed3ac",
     "receitas/2026.csv": "sha256:df7acea62fb5d542faaa0a05b5d34a08ee264a8165611858249ba7174b318a48",
-    "totais/2026.json": "sha256:c35b57b31a159134f61337fa865f26489053063dfb945a7b10d50cbbd66f1d6a",
+    "totais/2026.json": "sha256:b8aaf36f5ee06775eb96dd88ddecad477b5d9b059994259239d6963d6ef3f027",
     "codigos.json": "sha256:b8904cba58813541c3e49c42aa2a1220b6da7622178ea15d4504358acba1ee0c",
     "populacao.json": "sha256:53ef5d5b7e24fbf228a861462f830b75f820a11a989cac4a858aef28a16bdd92",
     "historico-alteracoes.json": "sha256:8b0cfaaf800f8fc84eee1b54c4551fefacaea4639ddd946922bb5f59598d0820",
-    "site.json": "sha256:b23d869774e6e9d42c467e3b395bfb72227337b3f6d00ce44ae5a9a4b1e14c85"
+    "site.json": "sha256:dc12bb6ad214264d09c5850efd3a5dc4bf4206a56cbab52b753cf40811507b7b"
   }
 }
