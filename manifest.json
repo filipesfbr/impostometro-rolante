@@ -1,11 +1,11 @@
 {
-  "coletado_em": "2026-11-03T14:02:45-03:00",
+  "coletado_em": "2026-11-04T14:14:16-03:00",
   "fonte": {
     "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
     "api": "https://apitransparencia.abase.com.br/",
     "entidade": 0
   },
-  "ultimo_lancamento": "2026-10-30",
+  "ultimo_lancamento": "2026-11-04",
   "anos": [
     2025,
     2026
@@ -120,13 +120,13 @@
         "ok": true
       },
       "10": {
-        "soma": 958290356,
-        "totalizador": 958290356,
+        "soma": 997446127,
+        "totalizador": 997446127,
         "ok": true
       },
       "11": {
-        "soma": 0,
-        "totalizador": 0,
+        "soma": 48887204,
+        "totalizador": 48887204,
         "ok": true
       }
     }
@@ -135,12 +135,12 @@
     "receitas/2025.json": "sha256:9dd4eb9fcf2f6e36f4fc64641e3b4e0132e226a0bc785f83ac73a0de4df956b9",
     "receitas/2025.csv": "sha256:8e453e0972f4e85f7ea968a6a68fb3f3b9b7cb6b4d3d0054abeaeceb1cc8e4c8",
     "totais/2025.json": "sha256:084d2af37c2f062bbf5d99053894b29c056e3ba26f2f695bef370c49fdeec98b",
-    "receitas/2026.json": "sha256:cd1cf6aeb8dff77556f5f84f89eec93e6a1ea48b7af75de16d080738319ed3ac",
-    "receitas/2026.csv": "sha256:df7acea62fb5d542faaa0a05b5d34a08ee264a8165611858249ba7174b318a48",
-    "totais/2026.json": "sha256:b8aaf36f5ee06775eb96dd88ddecad477b5d9b059994259239d6963d6ef3f027",
+    "receitas/2026.json": "sha256:edf30808628c8f3a32aece36c71eba70db2c646fd96ca91756a447398e51b37c",
+    "receitas/2026.csv": "sha256:c4362cc63133760d852043be7c196e8f493ca49fa923204b2c3fff3b1538539f",
+    "totais/2026.json": "sha256:251aa46e3053f8a58a7a7871f955f176dd794928a1fdfed942ea91da6f8f7d1e",
     "codigos.json": "sha256:b8904cba58813541c3e49c42aa2a1220b6da7622178ea15d4504358acba1ee0c",
     "populacao.json": "sha256:53ef5d5b7e24fbf228a861462f830b75f820a11a989cac4a858aef28a16bdd92",
-    "historico-alteracoes.json": "sha256:8b0cfaaf800f8fc84eee1b54c4551fefacaea4639ddd946922bb5f59598d0820",
-    "site.json": "sha256:6a4fac574f700779db37811f284667f06a78c16a9a72a82fcf5466e73363acb5"
+    "historico-alteracoes.json": "sha256:7e0964ac8aac5de21478adbd6fdebc39ff13f63db3add67c284835ea5e8a3ddd",
+    "site.json": "sha256:528138a4a774eb7244aa542c379628dfe2d9eff660ad356a5e5edcd6cfa98b45"
   }
 }
