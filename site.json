@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "coletado_em": "2026-11-08T12:57:58-03:00",
-  "ultimo_lancamento": "2026-11-06",
+  "coletado_em": "2026-11-09T16:49:25-03:00",
+  "ultimo_lancamento": "2026-11-09",
   "fonte": {
     "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
     "portalReceitas": "https://transparencia.abase.com.br/receitas/apvqyIT7vjY=",
@@ -1048,6 +1048,150 @@
       "codigo": "1724510101000000",
       "antes": 0,
       "depois": 13752430
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1112500101000000",
+      "antes": 152752,
+      "depois": 158389
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1112500201000000",
+      "antes": 11770,
+      "depois": 12248
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1112500301000000",
+      "antes": 423638,
+      "depois": 472060
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1112500401000000",
+      "antes": 72596,
+      "depois": 87514
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1112530101000000",
+      "antes": 1005653,
+      "depois": 1291653
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1114511101000000",
+      "antes": 1585753,
+      "depois": 1681329
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1114511201000000",
+      "antes": 299395,
+      "depois": 300951
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1121010102000000",
+      "antes": 489436,
+      "depois": 609836
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122010102000000",
+      "antes": 231926,
+      "depois": 259016
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122010103000000",
+      "antes": 34714,
+      "depois": 36219
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122010203000000",
+      "antes": 2714,
+      "depois": 2844
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122010303000000",
+      "antes": 79765,
+      "depois": 96699
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122010403000000",
+      "antes": 49180,
+      "depois": 60338
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122530100000000",
+      "antes": 91051,
+      "depois": 95566
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122530200000000",
+      "antes": 7013,
+      "depois": 7396
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122530300000000",
+      "antes": 189626,
+      "depois": 214237
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "1122530400000000",
+      "antes": 37854,
+      "depois": 44702
+    },
+    {
+      "detectado_em": "2026-11-09",
+      "ano": 2026,
+      "mes": 11,
+      "codigo": "2414520101000000",
+      "antes": 58139100,
+      "depois": 4237100
     }
   ],
   "anos": {
@@ -2958,11 +3102,11 @@
     },
     "2026": {
       "ano": 2026,
-      "ate": "2026-11-06",
+      "ate": "2026-11-09",
       "mes_parcial": 11,
-      "arrecadado": 10956454739,
+      "arrecadado": 10904766770,
       "orcado": 14264000000,
-      "percentual": 76.81,
+      "percentual": 76.45,
       "por_mes": [
         1033599526,
         909962775,
@@ -2974,7 +3118,7 @@
         923355447,
         1062804445,
         997446127,
-        126175581,
+        74487612,
         null
       ],
       "municipal_por_mes": [
@@ -2988,17 +3132,17 @@
         97968963,
         146276359,
         145444513,
-        20162962,
+        22332086,
         null
       ],
       "grupos": {
-        "municipal": 1529465757,
-        "fora": 9129663362,
-        "outras": 297325620
+        "municipal": 1531634881,
+        "fora": 9075761362,
+        "outras": 297370527
       },
       "categorias": {
         "iss": {
-          "total": 446885386,
+          "total": 447414711,
           "por_mes": [
             32717880,
             22805378,
@@ -3010,29 +3154,29 @@
             40862207,
             63482240,
             75394293,
-            1984502,
+            2513827,
             null
           ],
           "codigos": [
             {
               "c": "1114511101000000",
               "d": "ISS - Próprio",
-              "v": 432068185
+              "v": 432534559
             },
             {
               "c": "1114511301000000",
               "d": "ISS - Dívida Ativa - Próprio",
-              "v": 8518772
+              "v": 8568467
             },
             {
               "c": "1114511201000000",
               "d": "ISS - Multas e Juros - Próprio",
-              "v": 5104839
+              "v": 5106395
             },
             {
               "c": "1114511401000000",
               "d": "ISS - Multas e Juros Dívida Ativa - Próprio",
-              "v": 1193590
+              "v": 1205290
             },
             {
               "c": "1114511102000000",
@@ -3077,7 +3221,7 @@
           ]
         },
         "iptu": {
-          "total": 352280301,
+          "total": 352533525,
           "por_mes": [
             10710774,
             11988561,
@@ -3089,29 +3233,29 @@
             10168679,
             17186463,
             7722631,
-            660756,
+            913980,
             null
           ],
           "codigos": [
             {
               "c": "1112500101000000",
               "d": "IPTU - Principal - Próprio",
-              "v": 270488122
+              "v": 270540909
             },
             {
               "c": "1112500301000000",
               "d": "IPTU - Dívida Ativa - Próprio",
-              "v": 70977059
+              "v": 71135112
             },
             {
               "c": "1112500401000000",
               "d": "IPTU - Multas e Juros Dívida Ativa - Próprio",
-              "v": 9730929
+              "v": 9769136
             },
             {
               "c": "1112500201000000",
               "d": "IPTU - Multas e Juros - Próprio",
-              "v": 1084191
+              "v": 1088368
             },
             {
               "c": "1112500102000000",
@@ -3156,7 +3300,7 @@
           ]
         },
         "itbi": {
-          "total": 77533060,
+          "total": 77977060,
           "por_mes": [
             4785787,
             5111500,
@@ -3168,14 +3312,14 @@
             7688651,
             7739803,
             9820302,
-            1005653,
+            1449653,
             null
           ],
           "codigos": [
             {
               "c": "1112530101000000",
               "d": "ITBI - Próprio",
-              "v": 77186279
+              "v": 77630279
             },
             {
               "c": "1112530301000000",
@@ -3210,7 +3354,7 @@
           ]
         },
         "irrf": {
-          "total": 233931933,
+          "total": 234156909,
           "por_mes": [
             10812265,
             18943659,
@@ -3222,7 +3366,7 @@
             17228142,
             33954258,
             24591003,
-            325158,
+            550134,
             null
           ],
           "codigos": [
@@ -3234,7 +3378,7 @@
             {
               "c": "1113034101010000",
               "d": "IRRF - Outros Rendimentos - PRÓPRIO",
-              "v": 40192446
+              "v": 40417422
             },
             {
               "c": "1113031102010000",
@@ -3269,7 +3413,7 @@
           ]
         },
         "taxas": {
-          "total": 273915713,
+          "total": 274633312,
           "por_mes": [
             8925388,
             18937850,
@@ -3281,19 +3425,19 @@
             11162353,
             11341565,
             11883653,
-            1647948,
+            2365547,
             null
           ],
           "codigos": [
             {
               "c": "1122530100000000",
               "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Principal",
-              "v": 98470649
+              "v": 98513541
             },
             {
               "c": "1122010103000000",
               "d": "Taxa de Incêndio - Principal",
-              "v": 39730291
+              "v": 39742481
             },
             {
               "c": "1121010107000000",
@@ -3303,47 +3447,47 @@
             {
               "c": "1122530300000000",
               "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Dívida Ativa",
-              "v": 20911981
+              "v": 21009577
             },
             {
               "c": "1122010102000000",
               "d": "Taxa de Expediente - Principal",
-              "v": 19624451
+              "v": 19720771
             },
             {
               "c": "1121010105000000",
               "d": "Taxa de Vistoria e Fiscalização - Principal",
-              "v": 18554275
+              "v": 18581365
             },
             {
               "c": "1121010102000000",
               "d": "Taxa de Licença para Execução de Obras - Principal",
-              "v": 13134081
+              "v": 13388282
             },
             {
               "c": "1122010303000000",
               "d": "Taxa de Incêndio - Dívida Ativa",
-              "v": 9935442
+              "v": 9987009
             },
             {
               "c": "1121010106000000",
               "d": "Taxa de Controle e Fiscal. Ambiental - Principal",
-              "v": 8257265
+              "v": 8268155
             },
             {
               "c": "1122010403000000",
               "d": "Taxa de Incêndio - Multas e Juros Dívida Ativa",
-              "v": 4608143
+              "v": 4645439
             },
             {
               "c": "1121010305000000",
               "d": "Taxa de Vistoria e Fiscalização - Dívida Ativa",
-              "v": 4101531
+              "v": 4148583
             },
             {
               "c": "1122530400000000",
               "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora da Dívida Ativa",
-              "v": 3122502
+              "v": 3143297
             },
             {
               "c": "1121010101000000",
@@ -3358,7 +3502,7 @@
             {
               "c": "1121010405000000",
               "d": "Taxa de Vistoria e Fiscalização - Multas e Juros Dívida Ativa",
-              "v": 1215273
+              "v": 1227699
             },
             {
               "c": "1121010307000000",
@@ -3378,17 +3522,17 @@
             {
               "c": "1122010302000000",
               "d": "Taxa de Expediente - Dívida Ativa",
-              "v": 550527
+              "v": 550609
+            },
+            {
+              "c": "1122530200000000",
+              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora",
+              "v": 281253
             },
             {
               "c": "1121010301000000",
               "d": "Taxa de Licença Func.Est.Com.,Ind e Serviços - Dívida Ativa",
               "v": 278128
-            },
-            {
-              "c": "1122530200000000",
-              "d": "Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora",
-              "v": 277853
             },
             {
               "c": "1121010407000000",
@@ -3403,7 +3547,7 @@
             {
               "c": "1122010402000000",
               "d": "Taxa de Expediente - Multas e Juros Dívida Ativa",
-              "v": 173441
+              "v": 173455
             },
             {
               "c": "1121010304000000",
@@ -3413,12 +3557,12 @@
             {
               "c": "1121010205000000",
               "d": "Taxa de Vistoria e Fiscalização - Multas e Juros",
-              "v": 128777
+              "v": 130945
             },
             {
               "c": "1122010203000000",
               "d": "Taxa de Incêndio - Multas e Juros",
-              "v": 127488
+              "v": 128486
             },
             {
               "c": "1121010406000000",
@@ -3448,7 +3592,7 @@
             {
               "c": "1121010206000000",
               "d": "Taxa de Controle e Fiscal. Ambiental - Multas e Juros",
-              "v": 16346
+              "v": 16968
             },
             {
               "c": "1121010202000000",
@@ -3556,7 +3700,7 @@
           ]
         },
         "transferencias": {
-          "total": 9129663362,
+          "total": 9075761362,
           "por_mes": [
             946527487,
             764188815,
@@ -3568,7 +3712,7 @@
             745499089,
             913045878,
             815316801,
-            105527068,
+            51625068,
             null
           ],
           "codigos": [
@@ -3628,11 +3772,6 @@
               "v": 123904328
             },
             {
-              "c": "2414520101000000",
-              "d": "Ministério das Cidades - C - 968757",
-              "v": 112041058
-            },
-            {
               "c": "1713501103000000",
               "d": "ACS - Agentes Comunitários de Saúde",
               "v": 82671000
@@ -3641,6 +3780,11 @@
               "c": "1712524100000000",
               "d": "Cota-parte do fundo especial do petróleo - fep - Principal",
               "v": 68087612
+            },
+            {
+              "c": "2414520101000000",
+              "d": "Ministério das Cidades - C - 968757",
+              "v": 58139058
             },
             {
               "c": "1713502101000000",
@@ -3995,7 +4139,7 @@
           ]
         },
         "outras": {
-          "total": 297325620,
+          "total": 297370527,
           "por_mes": [
             6953041,
             55057952,
@@ -4007,7 +4151,7 @@
             79887395,
             3482208,
             36684813,
-            485551,
+            530458,
             null
           ],
           "codigos": [
@@ -4044,7 +4188,7 @@
             {
               "c": "1411010100000000",
               "d": "Receita agropecuária - Principal",
-              "v": 12919987
+              "v": 12954301
             },
             {
               "c": "1321011104540000",
@@ -4109,7 +4253,7 @@
             {
               "c": "1611010301000000",
               "d": "Serviços Agropecuários - Divida Ativa",
-              "v": 1938819
+              "v": 1948350
             },
             {
               "c": "1321011103010000",
@@ -4209,7 +4353,7 @@
             {
               "c": "1611010401000000",
               "d": "Serviços Agropecuários - Divida Ativa - Multas e Juros",
-              "v": 639753
+              "v": 640815
             },
             {
               "c": "1321011101030000",
@@ -4770,23 +4914,23 @@
         }
       },
       "anterior": {
-        "ate": "2025-11-06",
-        "arrecadado": 11093621338,
+        "ate": "2025-11-09",
+        "arrecadado": 11098472340,
         "grupos": {
-          "municipal": 1734363444,
-          "fora": 9028875285,
-          "outras": 330382609
+          "municipal": 1737417884,
+          "fora": 9029988748,
+          "outras": 331065708
         },
         "categorias": {
-          "iss": 686937611,
-          "iptu": 321233836,
-          "itbi": 81187602,
+          "iss": 687280519,
+          "iptu": 322171984,
+          "itbi": 82131520,
           "irrf": 277899379,
-          "taxas": 241202610,
+          "taxas": 242032076,
           "cosip": 122518021,
           "outros-municipais": 3384385,
-          "transferencias": 9028875285,
-          "outras": 330382609
+          "transferencias": 9029988748,
+          "outras": 331065708
         }
       }
     }
