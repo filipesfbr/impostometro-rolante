@@ -1,11 +1,11 @@
 {
-  "coletado_em": "2026-11-16T16:36:11-03:00",
+  "coletado_em": "2026-11-17T15:34:01-03:00",
   "fonte": {
     "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
     "api": "https://apitransparencia.abase.com.br/",
     "entidade": 0
   },
-  "ultimo_lancamento": "2026-11-16",
+  "ultimo_lancamento": "2026-11-17",
   "anos": [
     2025,
     2026
@@ -125,8 +125,8 @@
         "ok": true
       },
       "11": {
-        "soma": 442096227,
-        "totalizador": 442096227,
+        "soma": 551974466,
+        "totalizador": 551974466,
         "ok": true
       }
     }
@@ -135,12 +135,12 @@
     "receitas/2025.json": "sha256:9dd4eb9fcf2f6e36f4fc64641e3b4e0132e226a0bc785f83ac73a0de4df956b9",
     "receitas/2025.csv": "sha256:8e453e0972f4e85f7ea968a6a68fb3f3b9b7cb6b4d3d0054abeaeceb1cc8e4c8",
     "totais/2025.json": "sha256:084d2af37c2f062bbf5d99053894b29c056e3ba26f2f695bef370c49fdeec98b",
-    "receitas/2026.json": "sha256:b706532c0247b604b1881174925ae39a11448ae29963532a6579b2d3d15baed1",
-    "receitas/2026.csv": "sha256:6bef6a146b4c85e9f622fe1d8772a5d6fd303e75cb1c1decd641e12a1463b31e",
-    "totais/2026.json": "sha256:5bd7d374a3a28d04d43839bd9558e97232de541ff642cd102f54e8403600db77",
-    "codigos.json": "sha256:b8904cba58813541c3e49c42aa2a1220b6da7622178ea15d4504358acba1ee0c",
+    "receitas/2026.json": "sha256:f547d59c475369bc3a9db34e0db120ef7184c1a3b1968e4b479063ea20bb6fee",
+    "receitas/2026.csv": "sha256:7e4eb6de7b4f5ebb17a32ec7233c69efa7071d617b3e02282380151962e88e1f",
+    "totais/2026.json": "sha256:a443e614d58c4228e0a00d0c0fd69537ddece30ca4bc836d91638294c16b5251",
+    "codigos.json": "sha256:3d28e2df4d571c1b9af3e7d098b6857f4d99025cd67040432b03ae21f73c94a9",
     "populacao.json": "sha256:53ef5d5b7e24fbf228a861462f830b75f820a11a989cac4a858aef28a16bdd92",
-    "historico-alteracoes.json": "sha256:162a29260b3e51676584c0ad787811febbfedbd26efc1f636528f102c8b169a9",
-    "site.json": "sha256:d59ba47ad63c641f97ccab25189de994d79e8734121c362bb4d26af1eb1a6e58"
+    "historico-alteracoes.json": "sha256:d190894c637ad6265fd4d41ed8a766001bfd0d3adb31d749a52e6d3ce1605737",
+    "site.json": "sha256:c80af355b31b2537813dce0d7c873af6390f8719154f192424e034c8641ddc5e"
   }
 }
