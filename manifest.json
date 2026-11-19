@@ -1,11 +1,11 @@
 {
-  "coletado_em": "2026-11-18T15:03:39-03:00",
+  "coletado_em": "2026-11-19T15:16:29-03:00",
   "fonte": {
     "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
     "api": "https://apitransparencia.abase.com.br/",
     "entidade": 0
   },
-  "ultimo_lancamento": "2026-11-18",
+  "ultimo_lancamento": "2026-11-19",
   "anos": [
     2025,
     2026
@@ -125,8 +125,8 @@
         "ok": true
       },
       "11": {
-        "soma": 691010844,
-        "totalizador": 691010844,
+        "soma": 730386241,
+        "totalizador": 730386241,
         "ok": true
       }
     }
@@ -135,12 +135,12 @@
     "receitas/2025.json": "sha256:9dd4eb9fcf2f6e36f4fc64641e3b4e0132e226a0bc785f83ac73a0de4df956b9",
     "receitas/2025.csv": "sha256:8e453e0972f4e85f7ea968a6a68fb3f3b9b7cb6b4d3d0054abeaeceb1cc8e4c8",
     "totais/2025.json": "sha256:084d2af37c2f062bbf5d99053894b29c056e3ba26f2f695bef370c49fdeec98b",
-    "receitas/2026.json": "sha256:b24a7ee1b88df504fc0d6ef67a157053ee4ecc4d30ab0916fc00107bbadc5273",
-    "receitas/2026.csv": "sha256:a5f48f8263586636526f3cef99d1a09e9f756c4fdea8906e06d1e4e3aa5f414f",
-    "totais/2026.json": "sha256:99d92e1e35589dbc33d1f3cd8dc424b20b310902c4100ce5b8803a8598ac51b3",
+    "receitas/2026.json": "sha256:cb67dee6c9b9ecb1b09d9350ada9a8bca0a489d7cae74ccf590f1e14ddfb54b3",
+    "receitas/2026.csv": "sha256:2d987d9b5b54b6eea824e0fd276b0f6726ce0930133ac81fcccddcdbb0d696f5",
+    "totais/2026.json": "sha256:9519249f58cb53e4707046039110326b8a581ed059e609d4d301569aee2748ea",
     "codigos.json": "sha256:3d28e2df4d571c1b9af3e7d098b6857f4d99025cd67040432b03ae21f73c94a9",
     "populacao.json": "sha256:53ef5d5b7e24fbf228a861462f830b75f820a11a989cac4a858aef28a16bdd92",
     "historico-alteracoes.json": "sha256:209078f55430b9c1bcaed6dd68651d6fa2e7e27af9e656db234a7127155c6d60",
-    "site.json": "sha256:6d8954f4c9aae5dfeb170e300ac7793014db33ad8c2663f61150faa5a3df2cdc"
+    "site.json": "sha256:fa639c8a27dbf8f92ff483d1cb235be6bc94754d3523c98ac566b15c3cffa7b7"
   }
 }
