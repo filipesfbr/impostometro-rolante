@@ -101,9 +101,20 @@ describe('api', () => {
     expect(fetch).toHaveBeenCalledTimes(2);
   });
 
-  it('data.length != recordsTotal → erro', async () => {
-    const fetch = vi.fn().mockResolvedValue(resposta(200, { status: true, recordsTotal: 3, data: [linhas[0]] }));
+  it('data.length != recordsTotal em todas as tentativas → erro', async () => {
+    const fetch = vi.fn().mockImplementation(async () => resposta(200, { status: true, recordsTotal: 3, data: [linhas[0]] }));
     const api = criarApi(fonte, { fetch, esperar: async () => {} });
     await expect(api.listarReceitas(2026, 1)).rejects.toThrow('vieram 1 de 3');
+    expect(fetch).toHaveBeenCalledTimes(3);
+  });
+
+  it('resposta truncada → pede de novo e aceita a completa', async () => {
+    const fetch = vi
+      .fn()
+      .mockResolvedValueOnce(resposta(200, { status: true, recordsTotal: 2, data: [linhas[0]] }))
+      .mockResolvedValueOnce(resposta(200, { status: true, recordsTotal: 2, data: [linhas[0], linhas[0]] }));
+    const api = criarApi(fonte, { fetch, esperar: async () => {} });
+    expect(await api.listarReceitas(2026, 1)).toHaveLength(2);
+    expect(fetch).toHaveBeenCalledTimes(2);
   });
 });
