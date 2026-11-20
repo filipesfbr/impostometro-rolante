@@ -80,16 +80,20 @@ export function criarApi(fonte: Fonte, op: Opcoes = {}) {
   return {
     /** Lançamentos de um mês inteiro em uma chamada: paginar repete e pula linhas. */
     async listarReceitas(ano: number, mes: number): Promise<Linha[]> {
-      const r = await chamar<Linha[] | null>(
-        'Usuario/Receitas/ListarReceitas',
-        { token: fonte.token, draw: 1, start: 0, length: 20000, Ano: ano, entidade: fonte.entidade, Mes: mes },
-        'POST',
-      );
-      const linhas: Linha[] = r.data ?? [];
-      if (linhas.length !== r.recordsTotal) {
-        throw new Error(`ListarReceitas ${ano}/${mes}: vieram ${linhas.length} de ${r.recordsTotal} linhas`);
+      for (let tentativa = 1; ; tentativa++) {
+        const r = await chamar<Linha[] | null>(
+          'Usuario/Receitas/ListarReceitas',
+          { token: fonte.token, draw: 1, start: 0, length: 20000, Ano: ano, entidade: fonte.entidade, Mes: mes },
+          'POST',
+        );
+        const linhas: Linha[] = r.data ?? [];
+        if (linhas.length === r.recordsTotal) return linhas;
+        // O portal às vezes responde 200 com só parte das linhas: pedir de novo.
+        if (tentativa >= TENTATIVAS) {
+          throw new Error(`ListarReceitas ${ano}/${mes}: vieram ${linhas.length} de ${r.recordsTotal} linhas`);
+        }
+        await esperar(5000 * tentativa);
       }
-      return linhas;
     },
 
     /** Total arrecadado (cartão do portal), em centavos. Sem `mes` = ano inteiro. */
