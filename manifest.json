@@ -1,11 +1,11 @@
 {
-  "coletado_em": "2026-11-23T18:23:22-03:00",
+  "coletado_em": "2026-11-24T17:09:28-03:00",
   "fonte": {
     "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
     "api": "https://apitransparencia.abase.com.br/",
     "entidade": 0
   },
-  "ultimo_lancamento": "2026-11-23",
+  "ultimo_lancamento": "2026-11-24",
   "anos": [
     2025,
     2026
@@ -125,8 +125,8 @@
         "ok": true
       },
       "11": {
-        "soma": 793193020,
-        "totalizador": 793193020,
+        "soma": 824599484,
+        "totalizador": 824599484,
         "ok": true
       }
     }
@@ -135,12 +135,12 @@
     "receitas/2025.json": "sha256:9dd4eb9fcf2f6e36f4fc64641e3b4e0132e226a0bc785f83ac73a0de4df956b9",
     "receitas/2025.csv": "sha256:d72476501b50f0cf7a02dbe2ad876a0321b43065c16e31bee19fcc9fbd1b81c3",
     "totais/2025.json": "sha256:084d2af37c2f062bbf5d99053894b29c056e3ba26f2f695bef370c49fdeec98b",
-    "receitas/2026.json": "sha256:0cf8c4280b58f1293253d64e7df5eaa8ccf1797efcf5ec9401c52fb095b98e68",
-    "receitas/2026.csv": "sha256:bdfc8ddb382f5d0329ae229f2b34abbc04783bc86dc5956e346e33cfc02049e6",
-    "totais/2026.json": "sha256:82f97c7951de2a13421492c2c739772e6ecd4a000f06382fab17e477ea4c69d4",
+    "receitas/2026.json": "sha256:ef1ac8f16c74594e6a3913caff7a788b59f9bb2f1f86bc998ec7a0f7cae2c55b",
+    "receitas/2026.csv": "sha256:c81272fbc8f9717bf97de02af4557dc89196ecb3fd099c11059c287ae0e82e17",
+    "totais/2026.json": "sha256:9e1fc6148bfd3ebef90e21d385bde48207cf0e0f0ff713ded3f6c24ae6a8bc4d",
     "codigos.json": "sha256:6fa5033656ab36348e6764c7f371de820482aca852933cff41c33fbf6c57cdc2",
     "populacao.json": "sha256:53ef5d5b7e24fbf228a861462f830b75f820a11a989cac4a858aef28a16bdd92",
-    "historico-alteracoes.json": "sha256:8f417f63346acf01693ca427e317bca9d3bdcd48917b26d0ecce62ed84c22ad7",
-    "site.json": "sha256:465557689030d4e6532576e65d7a8e6bf98d522869e05e3e9ad48c818d2823e4"
+    "historico-alteracoes.json": "sha256:27303f4ca869b0555c8143cc79b03abb755aa37ff4f1156432528157a25b6ee7",
+    "site.json": "sha256:bd9c46c3b161062a44f61397cba2ca4e84f4fc95aa2b421b77b2aa0c1e4e433a"
   }
 }
