@@ -8688,32 +8688,60 @@ data;codigo;descricao;categoria;valor_reais
 2026-11-23;1999992304000000;"Receitas decorrentes do recebimento de certidão - título executivo do tce - Dívida Ativa";"Outras receitas";148,61
 2026-11-23;1999992404000000;"Receitas decorrentes do recebimento de certidão - título executivo do tce - Multas e Juros de Mora da Dívida Ativa";"Outras receitas";14,93
 2026-11-23;2419990114000000;"Ministério do Turismo - C-989902/2025";"Transferências";389864,00
+2026-11-23;2422990104000000;"Convênio FPE - 5033/25";"Transferências";7500000,00
 2026-11-24;1112500101000000;"IPTU - Principal - Próprio";"IPTU";289,36
 2026-11-24;1112500201000000;"IPTU - Multas e Juros - Próprio";"IPTU";23,89
-2026-11-24;1112500301000000;"IPTU - Dívida Ativa - Próprio";"IPTU";2372,35
-2026-11-24;1112500401000000;"IPTU - Multas e Juros Dívida Ativa - Próprio";"IPTU";493,93
+2026-11-24;1112500301000000;"IPTU - Dívida Ativa - Próprio";"IPTU";2734,46
+2026-11-24;1112500401000000;"IPTU - Multas e Juros Dívida Ativa - Próprio";"IPTU";599,80
 2026-11-24;1112530101000000;"ITBI - Próprio";"ITBI";400,00
 2026-11-24;1113034101010000;"IRRF - Outros Rendimentos - PRÓPRIO";"IRRF";3330,81
-2026-11-24;1114511101000000;"ISS - Próprio";"ISS";4066,84
+2026-11-24;1114511101000000;"ISS - Próprio";"ISS";30231,80
+2026-11-24;1114511201000000;"ISS - Multas e Juros - Próprio";"ISS";21,79
 2026-11-24;1114511301000000;"ISS - Dívida Ativa - Próprio";"ISS";176,93
 2026-11-24;1114511401000000;"ISS - Multas e Juros Dívida Ativa - Próprio";"ISS";72,68
-2026-11-24;1121010102000000;"Taxa de Licença para Execução de Obras - Principal";"Taxas";1204,00
+2026-11-24;1121010102000000;"Taxa de Licença para Execução de Obras - Principal";"Taxas";1456,84
+2026-11-24;1121010104000000;"Taxa de Vistoria Sanitária de Obras - Principal";"Taxas";481,60
+2026-11-24;1121010106000000;"Taxa de Controle e Fiscal. Ambiental - Principal";"Taxas";1189,31
 2026-11-24;1121010107000000;"Taxa de Vistoria e Inspeção Sanitária";"Taxas";226,95
 2026-11-24;1121010207000000;"Taxa de Vistoria e Inspeção Sanitária - Multas e Juros";"Taxas";17,02
 2026-11-24;1121010305000000;"Taxa de Vistoria e Fiscalização - Dívida Ativa";"Taxas";17,85
 2026-11-24;1121010405000000;"Taxa de Vistoria e Fiscalização - Multas e Juros Dívida Ativa";"Taxas";4,33
-2026-11-24;1122010102000000;"Taxa de Expediente - Principal";"Taxas";458,41
+2026-11-24;1122010102000000;"Taxa de Expediente - Principal";"Taxas";927,97
 2026-11-24;1122010103000000;"Taxa de Incêndio - Principal";"Taxas";70,74
+2026-11-24;1122010202000000;"Taxa de Expediente - Multas e Juros";"Taxas";5,42
 2026-11-24;1122010203000000;"Taxa de Incêndio - Multas e Juros";"Taxas";5,98
-2026-11-24;1122010303000000;"Taxa de Incêndio - Dívida Ativa";"Taxas";153,55
-2026-11-24;1122010403000000;"Taxa de Incêndio - Multas e Juros Dívida Ativa";"Taxas";73,92
+2026-11-24;1122010303000000;"Taxa de Incêndio - Dívida Ativa";"Taxas";229,47
+2026-11-24;1122010403000000;"Taxa de Incêndio - Multas e Juros Dívida Ativa";"Taxas";104,71
 2026-11-24;1122530100000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Principal";"Taxas";225,75
 2026-11-24;1122530200000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora";"Taxas";18,68
-2026-11-24;1122530300000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Dívida Ativa";"Taxas";349,68
-2026-11-24;1122530400000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora da Dívida Ativa";"Taxas";51,37
+2026-11-24;1122530300000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Dívida Ativa";"Taxas";657,32
+2026-11-24;1122530400000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora da Dívida Ativa";"Taxas";142,25
 2026-11-24;1611010301000000;"Serviços Agropecuários - Divida Ativa";"Outras receitas";152,94
 2026-11-24;1611010401000000;"Serviços Agropecuários - Divida Ativa - Multas e Juros";"Outras receitas";99,72
 2026-11-24;1714500100000000;"Transferências do salário-educação - Principal";"Transferências";145472,36
 2026-11-24;1721500101000000;"Cota-parte do ICMS - Próprio";"Transferências";31599,12
 2026-11-24;1721520101000000;"Cota-Parte do IPI - Municípios - Principal - PRÓPRIO";"Transferências";3450,40
 2026-11-24;1751500100000000;"Transferências de recursos do fundo de manutenção e desenvolvimento da educação básica e de valorização dos profissionais da educação - FUNDEB - Principal";"Transferências";66814,36
+2026-11-25;1112500101000000;"IPTU - Principal - Próprio";"IPTU";37,21
+2026-11-25;1112500201000000;"IPTU - Multas e Juros - Próprio";"IPTU";3,15
+2026-11-25;1112500301000000;"IPTU - Dívida Ativa - Próprio";"IPTU";4092,14
+2026-11-25;1112500401000000;"IPTU - Multas e Juros Dívida Ativa - Próprio";"IPTU";71,50
+2026-11-25;1113034101010000;"IRRF - Outros Rendimentos - PRÓPRIO";"IRRF";2583,38
+2026-11-25;1114511101000000;"ISS - Próprio";"ISS";59405,30
+2026-11-25;1114511201000000;"ISS - Multas e Juros - Próprio";"ISS";150,87
+2026-11-25;1121010107000000;"Taxa de Vistoria e Inspeção Sanitária";"Taxas";623,07
+2026-11-25;1121010207000000;"Taxa de Vistoria e Inspeção Sanitária - Multas e Juros";"Taxas";7,86
+2026-11-25;1122010102000000;"Taxa de Expediente - Principal";"Taxas";150,50
+2026-11-25;1122010103000000;"Taxa de Incêndio - Principal";"Taxas";10,54
+2026-11-25;1122010203000000;"Taxa de Incêndio - Multas e Juros";"Taxas";0,91
+2026-11-25;1122010303000000;"Taxa de Incêndio - Dívida Ativa";"Taxas";479,50
+2026-11-25;1122010403000000;"Taxa de Incêndio - Multas e Juros Dívida Ativa";"Taxas";101,36
+2026-11-25;1122530100000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Principal";"Taxas";45,15
+2026-11-25;1122530200000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora";"Taxas";3,84
+2026-11-25;1122530300000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Dívida Ativa";"Taxas";463,83
+2026-11-25;1122530400000000;"Taxa pela prestação de serviços de limpeza pública e manejo de resíduos sólidos. - Multas e Juros de Mora da Dívida Ativa";"Taxas";92,12
+2026-11-25;1711520101000000;"Cota-Parte do ITR - Principal - PRÓPRIO";"Transferências";19929,57
+2026-11-25;1712510100000000;"Cota-parte da compensação financeira pela exploração de recursos minerais - cfem - Principal";"Transferências";3899,32
+2026-11-25;1716500102000000;"IGD-BF";"Transferências";6962,00
+2026-11-25;1999992304000000;"Receitas decorrentes do recebimento de certidão - título executivo do tce - Dívida Ativa";"Outras receitas";128,21
+2026-11-25;1999992404000000;"Receitas decorrentes do recebimento de certidão - título executivo do tce - Multas e Juros de Mora da Dívida Ativa";"Outras receitas";12,18
