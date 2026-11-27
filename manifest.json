@@ -1,11 +1,11 @@
 {
-  "coletado_em": "2026-11-26T15:59:41-03:00",
+  "coletado_em": "2026-11-27T15:58:25-03:00",
   "fonte": {
     "portal": "https://transparencia.abase.com.br/home/apvqyIT7vjY=",
     "api": "https://apitransparencia.abase.com.br/",
     "entidade": 0
   },
-  "ultimo_lancamento": "2026-11-26",
+  "ultimo_lancamento": "2026-11-27",
   "anos": [
     2025,
     2026
@@ -125,8 +125,8 @@
         "ok": true
       },
       "11": {
-        "soma": 1600396281,
-        "totalizador": 1600396281,
+        "soma": 1606804555,
+        "totalizador": 1606804555,
         "ok": true
       }
     }
@@ -135,12 +135,12 @@
     "receitas/2025.json": "sha256:9dd4eb9fcf2f6e36f4fc64641e3b4e0132e226a0bc785f83ac73a0de4df956b9",
     "receitas/2025.csv": "sha256:d72476501b50f0cf7a02dbe2ad876a0321b43065c16e31bee19fcc9fbd1b81c3",
     "totais/2025.json": "sha256:084d2af37c2f062bbf5d99053894b29c056e3ba26f2f695bef370c49fdeec98b",
-    "receitas/2026.json": "sha256:008327808d2d5695ffa3057c85230ce4730917ec6a00731b5590fef0b8efd1c2",
-    "receitas/2026.csv": "sha256:cb8427fc429d4f318d59c6e7ba5cc849d8bee1ca79929831cf6a1ae03f25d1f7",
-    "totais/2026.json": "sha256:2bea8e91ecb9931371e689b43daf00ddd6034886a0332abecaef48e87fca57a4",
+    "receitas/2026.json": "sha256:b6c8803d138ff970a7a7b40d62f2bbe576ed2cd75736cc222d860a28e3e8aafc",
+    "receitas/2026.csv": "sha256:d6ba475af94c13763d285a732e73ed0714e05f1d390ca7527f71d3b6bf5e5381",
+    "totais/2026.json": "sha256:b46e9a0734464d88dc0f1d3e6fc9ccb382e094d9dfd4171b5da0ed357499e1a4",
     "codigos.json": "sha256:6fa5033656ab36348e6764c7f371de820482aca852933cff41c33fbf6c57cdc2",
     "populacao.json": "sha256:53ef5d5b7e24fbf228a861462f830b75f820a11a989cac4a858aef28a16bdd92",
-    "historico-alteracoes.json": "sha256:53956fa8ca2d9bed60dbc71fc408073521ffae4534e1aefab1fcf329f0e7d0b7",
-    "site.json": "sha256:06e6dc087332cf49b96c60f86fadcf08b379b07ac6eee7e1e487b96f1addd89a"
+    "historico-alteracoes.json": "sha256:04ef7f6d7b7c25c9642d81bb2ef9cfab3cacf0ecd21182fee47dd745d5c78238",
+    "site.json": "sha256:87abe58691d982031c482d38e1ed5da3808a25226f9624ae364a140f59e4344f"
   }
 }
